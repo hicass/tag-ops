@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('./assets/fonts/Tahoma.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Light.ttf');
+}
+
+:root {
+    --purple: #612FC4;
+    --light-blue: #B1C5EC;
+    --grey: #737D91;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;;
+}
