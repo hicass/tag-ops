@@ -1,0 +1,121 @@
+#landing-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#landing-page-intro {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+#intro-txt-top {
+    font-size: 2.5rem;
+    font-family: 'Tahoma', sans-serif;
+    color: var(--purple)
+}
+
+#intro-txt-bottom {
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.blob-6 {
+    position: absolute;
+    left: -15%;
+    top: 50%;
+    background: var(--light-blue);
+    animation: sliderShape 10s linear infinite;
+    -webkit-animation: sliderShape 10s linear infinite;
+}
+
+.blob-5 {
+    position: absolute;
+    left: 15%;
+    top: 53%;
+    background: var(--light-blue);
+    animation: sliderShape 15s linear infinite;
+    -webkit-animation: sliderShape 15s linear infinite;
+}
+
+.blob-4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: var(--light-blue);
+    animation: sliderShape 13s linear infinite;
+    -webkit-animation: sliderShape 13s linear infinite;
+}
+
+.blob-3 {
+    position: absolute;
+    left: -20%;
+    top: 55%;
+    background: var(--purple);
+    animation: sliderShape 15s linear infinite;
+    -webkit-animation: sliderShape 15s linear infinite;
+}
+
+.blob-2 {
+    position: absolute;
+    left: 55%;
+    top: 55%;
+    background: var(--purple);
+    animation: sliderShape 18s linear infinite;
+    -webkit-animation: sliderShape 18s linear infinite;
+}
+
+.blob-1 {
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    background: var(--purple);
+    animation: sliderShape 16s linear infinite;
+    -webkit-animation: sliderShape 16s linear infinite;
+}
+
+.blue-blob::before {
+    content: "";
+    width: 60vw;
+    height: 80vh;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    display: block;
+    z-index: -2;
+}
+
+.purple-blob::before {
+    content: "";
+    width: 60vw;
+    height: 50vh;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    display: block;
+    z-index: -2;
+}
+
+@keyframes sliderShape{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+}
+
+#secret-title {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+}
