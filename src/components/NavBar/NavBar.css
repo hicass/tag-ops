@@ -1,4 +1,47 @@
+#main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #nav-logo {
     margin: 0.5rem;
     width: 5rem;
+}
+
+.nav-link {
+    margin: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.nav-link:hover {
+    color: var(--light-purple);
+}
+
+.down-arrow {
+    position: absolute;
+    transform: translate(10%, 20%);
+}
+
+#contact-link {
+    padding: 0.2rem 0.5rem;
+    background-color: var(--purple);
+    color: white;
+    border: 0.17rem solid var(--purple);
+    border-radius: 7px;
+    box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
+    transition: all 0.3s ease;
+}
+
+#contact-link:hover {
+    cursor: pointer;
+    background-color: var(--light-purple);
+}
+
+#contact-link:active {
+    box-shadow: none;
+    transform: translateY(.3vw)
 }
