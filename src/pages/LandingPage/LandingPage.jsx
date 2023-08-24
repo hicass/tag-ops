@@ -25,8 +25,22 @@ export default function LandingPage() {
                 <div className='purple-blob blob-1'></div>
             </div>
 
-            <div id='landing-solutions'>
-                <h2>Our Solutions</h2>
+            <div id='landing-solutions-section'>
+                <h2 id='landing-solutions-h2'>Our Solutions</h2>
+
+                <div id='solutions-container'>
+                    <div id='hr-solution' className='solution'>
+                        <h3 className='solution-txt'>Human Resources</h3>
+                    </div>
+                    <div id='operations-solution' className='solution'>
+                        <h3 className='solution-txt'>Operations</h3>
+                    </div>
+                    <div id='finance-solution' className='solution'>
+                        <h3 className='solution-txt'>Finance</h3>
+                    </div>
+                </div>
+
+                <p id='solutions-bottom-txt'>We bring you expert level knowledge, automated processes, and clear policies</p>
             </div>
         </section>
     )
