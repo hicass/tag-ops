@@ -30,7 +30,7 @@
     padding: 0.2rem 0.5rem;
     background-color: var(--purple);
     color: white;
-    border: 0.17rem solid var(--purple);
+    border: 0.2rem solid var(--purple);
     border-radius: 7px;
     box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
     transition: all 0.3s ease;
