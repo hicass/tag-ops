@@ -22,6 +22,7 @@
     font-family: 'Tahoma', sans-serif;
     color: var(--purple);
     text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+    letter-spacing: 0.2rem;
 }
 
 #txt-container {
@@ -44,6 +45,10 @@
 #intro-logo {
     width: 60rem;
 }
+
+
+/*--------------------*/
+
 
 #landing-solutions-section {
     margin-top: 20%;
@@ -89,6 +94,7 @@
     border-radius: 7px;
     box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
     transition: all 0.3s ease;
+    letter-spacing: 0.15rem;
 }
 
 #hr-solution {
@@ -111,6 +117,87 @@
 #solutions-bottom-txt {
     margin: 4rem;
     font-size: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+
+/*--------------------*/
+
+
+#landing-stats-section {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#stats-h2 {
+    font-size: 3rem;
+    color: var(--light-blue);
+}
+
+
+/*--------------------*/
+
+
+#landing-flow-section {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flow-h2 {
+    font-size: 3rem;
+    color: var(--purple);
+}
+
+
+/*--------------------*/
+
+
+#landing-testimonials-section {
+    margin: 7% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonials-h2 {
+    font-size: 2.5rem;
+    color: var(--purple);
+}
+
+#testimonials-container {
+    margin: 6% 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial-card {
+   margin: 0 2%;
+   width: 80%;
+   padding: 1.5rem;
+   border-radius: 25px;
+   box-shadow: 0.4rem 0.4rem 0 var(--purple);
+   background-color: var(--light-purple);
+   font-size: 1.3rem;
+   letter-spacing: 0.2rem;
+   font-weight: bolder;
+   color: var(--black);
+}
+
+.testimonial-card:hover {
+    box-shadow: 0.6rem 0.6rem 0 var(--purple);
+}
+
+.testimonial-name {
+    margin-top: 3rem;
+}
+
+.testimonial-role {
+    margin-top: 1rem;
 }
 
 
