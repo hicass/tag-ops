@@ -125,15 +125,17 @@
 
 
 #landing-stats-section {
-    margin-top: 7%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 70vh;
+    background-color: var(--light-blue);
 }
 
 #stats-h2 {
+    margin-top: 7%;
     font-size: 3rem;
-    color: var(--light-blue);
+    color: white;
 }
 
 
@@ -148,8 +150,58 @@
 }
 
 #flow-h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--purple);
+}
+
+#flow-container {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.flow-card {
+    height: 20rem;
+    width: 15rem;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.3rem solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+}
+
+.flow-icon {
+    padding: 0.8rem;
+    background-color: var(--purple);
+    color: white;
+    font-size: 2.8rem;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+}
+
+.flow-number {
+    margin-top: -8%;
+    font-family: 'Tahoma', sans-serif;
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+.flow-title {
+    font-family: 'Tahoma', sans-serif;
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+.flow-txt {
+    margin: 10% 7%;
+    color: var(--purple);
+    font-size: 1.05rem;
+    text-align: center;
+    letter-spacing: 0.15rem;
 }
 
 
@@ -204,7 +256,7 @@
 .blob-6 {
     position: absolute;
     left: -15%;
-    top: 20%;
+    top: 15%;
     background: var(--light-blue);
     animation: sliderShape 10s linear infinite;
     -webkit-animation: sliderShape 10s linear infinite;
@@ -214,7 +266,7 @@
 .blob-5 {
     position: absolute;
     left: 15%;
-    top: 23%;
+    top: 18%;
     background: var(--light-blue);
     animation: sliderShape 15s linear infinite;
     -webkit-animation: sliderShape 15s linear infinite;
@@ -224,7 +276,7 @@
 .blob-4 {
     position: absolute;
     left: 55%;
-    top: 20%;
+    top: 15%;
     background: var(--light-blue);
     animation: sliderShape 13s linear infinite;
     -webkit-animation: sliderShape 13s linear infinite;
@@ -234,7 +286,7 @@
 .blob-3 {
     position: absolute;
     left: -20%;
-    top: 22%;
+    top: 17%;
     background: var(--purple);
     animation: sliderShape 15s linear infinite;
     -webkit-animation: sliderShape 15s linear infinite;
@@ -244,7 +296,7 @@
 .blob-2 {
     position: absolute;
     left: 60%;
-    top: 22%;
+    top: 17%;
     background: var(--purple);
     animation: sliderShape 18s linear infinite;
     -webkit-animation: sliderShape 18s linear infinite;
@@ -254,7 +306,7 @@
 .blob-1 {
     position: absolute;
     left: 15%;
-    top: 25%;
+    top: 20%;
     background: var(--purple);
     animation: sliderShape 16s linear infinite;
     -webkit-animation: sliderShape 16s linear infinite;

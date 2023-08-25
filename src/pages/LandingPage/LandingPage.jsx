@@ -52,6 +52,53 @@ export default function LandingPage() {
 
             <div id='landing-flow-section'>
                 <h2 id='flow-h2'>The Tag Ops Flow:</h2>
+
+                <div id='flow-container'>
+                    <div className='flow-card'>
+                        <span class='material-symbols-outlined flow-icon'>
+                            call
+                        </span>
+                        <p className='flow-number'>1</p>
+                        <p className='flow-title'>Intake</p>
+                        <p className='flow-txt'>Schedule a discovery call to identify your needs and where Tag Ops can help</p>
+                    </div>
+
+                    <div className='flow-card'>
+                        <span class='material-symbols-outlined flow-icon'>
+                            pending_actions
+                        </span>
+                        <p className='flow-number'>2</p>
+                        <p className='flow-title'>Assess</p>
+                        <p className='flow-txt'>We'll create a project scope and timeline to get your project(s) across the finish line</p>
+                    </div>
+
+                    <div className='flow-card'>
+                        <span class='material-symbols-outlined flow-icon'>
+                            rocket_launch
+                        </span>
+                        <p className='flow-number'>3</p>
+                        <p className='flow-title'>Launch</p>
+                        <p className='flow-txt'>We'll sync up, review the project scope, and set expectations to guarantee that the project(s) run smoothly</p>
+                    </div>
+
+                    <div className='flow-card'>
+                        <span class='material-symbols-outlined flow-icon'>
+                            emoji_people
+                        </span>
+                        <p className='flow-number'>4</p>
+                        <p className='flow-title'>Execute</p>
+                        <p className='flow-txt'>A weekly sync will be scheduled and you'll be invited to a project tracking system to ensure accountability</p>
+                    </div>
+
+                    <div className='flow-card'>
+                        <span class='material-symbols-outlined flow-icon'>
+                            door_front
+                        </span>
+                        <p className='flow-number'>5</p>
+                        <p className='flow-title'>Exit</p>
+                        <p className='flow-txt'>Assess whether Maintenance Mode is needed after project completion or if the project(s) can be closed out</p>
+                    </div>
+                </div>
             </div>
 
             <div id='landing-testimonials-section'>
