@@ -1,6 +1,6 @@
 #landing-page {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -180,16 +180,13 @@
    width: 80%;
    padding: 1.5rem;
    border-radius: 25px;
-   box-shadow: 0.4rem 0.4rem 0 var(--purple);
-   background-color: var(--light-purple);
+   box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+   border: 0.2rem solid white;
+   background-color: var(--light-grey);
    font-size: 1.3rem;
    letter-spacing: 0.2rem;
    font-weight: bolder;
-   color: var(--black);
-}
-
-.testimonial-card:hover {
-    box-shadow: 0.6rem 0.6rem 0 var(--purple);
+   color: var(--purple);
 }
 
 .testimonial-name {
@@ -207,7 +204,7 @@
 .blob-6 {
     position: absolute;
     left: -15%;
-    top: 70%;
+    top: 20%;
     background: var(--light-blue);
     animation: sliderShape 10s linear infinite;
     -webkit-animation: sliderShape 10s linear infinite;
@@ -217,7 +214,7 @@
 .blob-5 {
     position: absolute;
     left: 15%;
-    top: 73%;
+    top: 23%;
     background: var(--light-blue);
     animation: sliderShape 15s linear infinite;
     -webkit-animation: sliderShape 15s linear infinite;
@@ -226,8 +223,8 @@
 
 .blob-4 {
     position: absolute;
-    left: 50%;
-    top: 70%;
+    left: 55%;
+    top: 20%;
     background: var(--light-blue);
     animation: sliderShape 13s linear infinite;
     -webkit-animation: sliderShape 13s linear infinite;
@@ -237,7 +234,7 @@
 .blob-3 {
     position: absolute;
     left: -20%;
-    top: 75%;
+    top: 22%;
     background: var(--purple);
     animation: sliderShape 15s linear infinite;
     -webkit-animation: sliderShape 15s linear infinite;
@@ -246,8 +243,8 @@
 
 .blob-2 {
     position: absolute;
-    left: 55%;
-    top: 75%;
+    left: 60%;
+    top: 22%;
     background: var(--purple);
     animation: sliderShape 18s linear infinite;
     -webkit-animation: sliderShape 18s linear infinite;
@@ -257,7 +254,7 @@
 .blob-1 {
     position: absolute;
     left: 15%;
-    top: 80%;
+    top: 25%;
     background: var(--purple);
     animation: sliderShape 16s linear infinite;
     -webkit-animation: sliderShape 16s linear infinite;
