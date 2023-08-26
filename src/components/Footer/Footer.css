@@ -42,8 +42,13 @@ footer {
     color: white;
 }
 
-#creator-link {
-    color: white;
+.creator-link {
+    color: var(--light-purple);
+    text-decoration: none;
+}
+
+.creator-link:hover {
+    cursor: pointer;
 }
 
 .footer-link:hover, a:hover {

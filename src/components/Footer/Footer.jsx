@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
 
             <div id='footer-right'>
-                <p>Website created by: <a href='https://hicass.dev/' target='_blank' rel='noreferrer'  id='creator-link'>Cass Walters</a></p>
+                <p className='creator-link'>Website created by: <a href='https://hicass.dev/' target='_blank' rel='noreferrer'  className='creator-link'>Cass Walters</a></p>
             </div>
         </footer>
     )
