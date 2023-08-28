@@ -102,7 +102,7 @@ export default function LandingPage() {
             </div>
 
             <div id='landing-testimonials-section'>
-                <h2 id='testimonials-h2'>See what our clients are saying</h2>
+                <h2 id='testimonials-h2'>See what our clients are saying...</h2>
 
                 <div id='testimonials-container'>
                     <div className='testimonial-card'>

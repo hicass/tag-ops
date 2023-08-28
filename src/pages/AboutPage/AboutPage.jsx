@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import sfImage from '../../assets/images/about-page/about-sf.jpg';
 import courtneyImage from '../../assets/images/about-page/courtney-profile.jpeg'
 import './AboutPage.css'
@@ -14,11 +15,10 @@ export default function AboutPage() {
                         </div>
                         <div id='about-intro-txt'>
                             <p>
-                                Master cleanse keffiyeh tote bag blog. Taxidermy forage everyday carry, gatekeep 
-                                cold-pressed affogato literally kombucha XOXO gentrify pour-over same neutral milk 
-                                hotel man bun brunch. Neutra wolf food truck, viral next level shoreditch pop-up small 
-                                batch synth. ote bag twee pabst, pitchfork XOXO woke cornhole direct trade yr kickstarter 
-                                distillery waistcoat messenger bag marxism stumptown. 
+                                We are Tag Ops! Your partner in operational excellence. We believe that every business, 
+                                regardless of size, deserves tailored support to thrive. Born from this belief, 
+                                Tag Ops offers innovative and flexible back-office solutions, empowering you to streamline operations, 
+                                optimize resources, and achieve lasting success.
                             </p>
                         </div>
                     </div>
@@ -26,15 +26,31 @@ export default function AboutPage() {
                 </div>
             </div>
 
+            <div id='about-story-section'>
+                <h2 id='story-h2'>Our story</h2>
+
+                <p className='story-txt'>
+                    Tag Ops was founded on the fundamental belief that every company, regardless of its size, requires operational support. 
+                    We understand that not every business necessitates a full-time Operations leader to oversee extensive back-office projects 
+                    or manage repetitive tasks such as payroll and invoicing.
+                </p>
+
+                <p className='story-txt'>
+                    Our approach at Tag Ops is different. We provide a customizable model designed to meet you where you are in your business 
+                    journey while offering the flexibility to scale as needed. We take the time to understand your unique requirements, 
+                    conducting in-depth research to identify the most cost-effective tools, processes, and policies. Our goal is to dig deep 
+                    with our clients, assisting in the establishment of a robust infrastructure that ensures your company runs 
+                    smoothly without exhausting your resources.
+                </p>
+            </div>
+
             <div id='about-mission-section'>
                 <div id='blob-container'>
                     <div id='about-mission-text'>
                         <h2 id='mission-h2'>Our Mission</h2>
                         <p id='mission-p'>
-                            Fingerstache fit vice glossier tilde typewriter. Semiotics kogi fanny pack selfies 
-                            salvia gentrify leggings gorpcore, yuccie next level celiac irony. Artisan street 
-                            art beard, food truck cupping chia gentrify literally yr. Selvage woke vinyl portland 
-                            gentrify food truck. Bicycle rights beard semiotics blue bottle wayfarers XOXO.
+                            Simplify your operations, optimize your resources, and help you thrive.<br />
+                            We make your business journey smoother, more efficient, and ultimately more successful!
                         </p>
                     </div>
                     <div className='mission-blue-blob mission-blob-1'></div>
@@ -93,7 +109,18 @@ export default function AboutPage() {
                             </p>
                         </div>
                     </div>
+
                 </div>
+                
+                <div id='team-txt-container'>
+                    <p className='story-txt'>
+                        Our Tag Ops team is a dynamic group of experts dedicated to operational excellence. With diverse industry backgrounds, 
+                        we bring a wealth of knowledge to every project. We're committed to tailoring solutions to your specific needs, 
+                        from process optimization to strategic guidance.
+                    </p>
+                </div>
+
+                <Link id='about-contact-link' to='/contact'>Let's talk!</Link>
             </div>
         </section>
     )

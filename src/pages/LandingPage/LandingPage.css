@@ -51,8 +51,8 @@
 
 
 #landing-solutions-section {
-    margin-top: 20%;
-    padding-top: 5%;
+    margin-top: 25%;
+    padding-top: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +63,7 @@
 
 #landing-solutions-h2 {
     font-size: 4rem;
+    letter-spacing: 0.2rem;
 }
 
 #solutions-container {
@@ -135,7 +136,8 @@
 
 #stats-h2 {
     margin-top: 7%;
-    font-size: 3rem;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
     color: white;
 }
 
@@ -151,7 +153,8 @@
 }
 
 #flow-h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
     color: var(--purple);
 }
 
@@ -210,14 +213,15 @@
 
 
 #landing-testimonials-section {
-    margin: 7% 0;
+    margin: 15% 0 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #testimonials-h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
     color: var(--purple);
 }
 
@@ -228,7 +232,8 @@
     align-items: top;
     border: 0.3rem solid var(--purple);
     border-radius: 25px;
-    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+    background-color: var(--purple);
+    box-shadow: 0.7rem 0.8rem 0 var(--light-blue);
 }
 
 .testimonial-card {
@@ -239,7 +244,7 @@
    font-size: 1.3rem;
    letter-spacing: 0.1rem;
    font-weight: bolder;
-   color: var(--purple);
+   color: white;
 }
 
 .testimonial-top {
@@ -248,12 +253,14 @@
 }
 
 .testimonial-icon {
+    margin-top: 2%;
     padding: 0.5rem;
     font-size: 3rem;
     background-color: var(--light-blue);
     color: white;
     border-radius: 50px;
     height: 3rem;
+    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
 }
 
 .testimonial-name {
