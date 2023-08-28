@@ -58,6 +58,7 @@ body {
 .lets-talk-link:hover {
     cursor: pointer;
     background-color: var(--light-purple);
+    color: white;
 }
 
 .lets-talk-link:active {
