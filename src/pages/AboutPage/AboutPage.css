@@ -1,0 +1,108 @@
+#about-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 3% 5% 3% 10%;
+}
+
+#intro-right {
+    position: relative;
+    margin: 20% 5% 0 10%;
+}
+
+#intro-h1-container {
+    display: grid;
+    padding-left: center;
+}
+
+#about-h1 {
+    position: absolute;
+    top: -50%;
+    left: -35%;
+    color: var(--purple);
+    font-family: 'Tahoma', sans-serif;
+    font-size: 6rem;
+    text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+    letter-spacing: 0.8rem;
+}
+
+#sf-image {
+    width: 25rem;
+    border-radius: 25px;
+    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+}
+
+#about-intro-txt {
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: var(--light-blue);
+    box-shadow: 0.7rem 0.8rem 0 var(--purple);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+}
+
+
+/*--------------------*/
+
+
+#about-mission-section {
+    margin: 15% 0;
+    z-index: 2;
+}
+
+#about-mission-text {
+    padding: 4% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--purple);
+    color: white;
+}
+
+#mission-h2 {
+    font-size: 4rem;
+}
+
+#mission-p {
+    margin-top: 2%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#blob-container {
+    position: relative;
+}
+
+.mission-blue-blob::before {
+    content: "";
+    width: 45vw;
+    height: 30vh;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    display: block;
+}
+
+.mission-blob-1 {
+    position: absolute;
+    left: 2%;
+    top: -15%;
+    background: var(--light-blue);
+    animation: sliderShape 8s linear infinite;
+    -webkit-animation: sliderShape 8s linear infinite;
+    z-index: -2;
+}
+
+.mission-blob-2 {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    background: var(--light-blue);
+    animation: sliderShape 8s linear infinite;
+    -webkit-animation: sliderShape 8s linear infinite;
+    z-index: -2;
+}
+
+
+/*--------------------*/
