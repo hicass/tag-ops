@@ -51,8 +51,7 @@
 
 
 #landing-solutions-section {
-    margin-top: 25%;
-    padding-top: 4%;
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,7 +212,7 @@
 
 
 #landing-testimonials-section {
-    margin: 15% 0 10%;
+    margin: 10% 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,7 +225,7 @@
 }
 
 #testimonials-container {
-    margin: 5% 3%;
+    margin: 5% 3% 0;
     display: flex;
     flex-direction: row;
     align-items: top;
@@ -279,6 +278,10 @@
     line-height: 1.8rem;
 }
 
+#talk-link-landing {
+    margin-top: 5%;
+}
+
 
 /*--------------------*/
 
@@ -286,7 +289,7 @@
 .blob-6 {
     position: absolute;
     left: -15%;
-    top: 15%;
+    top: 12%;
     background: var(--light-blue);
     animation: sliderShape 10s linear infinite;
     -webkit-animation: sliderShape 10s linear infinite;
@@ -296,7 +299,7 @@
 .blob-5 {
     position: absolute;
     left: 15%;
-    top: 18%;
+    top: 15%;
     background: var(--light-blue);
     animation: sliderShape 15s linear infinite;
     -webkit-animation: sliderShape 15s linear infinite;
@@ -306,7 +309,7 @@
 .blob-4 {
     position: absolute;
     left: 55%;
-    top: 15%;
+    top: 12%;
     background: var(--light-blue);
     animation: sliderShape 13s linear infinite;
     -webkit-animation: sliderShape 13s linear infinite;
@@ -316,7 +319,7 @@
 .blob-3 {
     position: absolute;
     left: -20%;
-    top: 17%;
+    top: 13%;
     background: var(--purple);
     animation: sliderShape 15s linear infinite;
     -webkit-animation: sliderShape 15s linear infinite;
@@ -326,7 +329,7 @@
 .blob-2 {
     position: absolute;
     left: 60%;
-    top: 17%;
+    top: 13%;
     background: var(--purple);
     animation: sliderShape 18s linear infinite;
     -webkit-animation: sliderShape 18s linear infinite;
@@ -336,7 +339,7 @@
 .blob-1 {
     position: absolute;
     left: 15%;
-    top: 20%;
+    top: 16%;
     background: var(--purple);
     animation: sliderShape 16s linear infinite;
     -webkit-animation: sliderShape 16s linear infinite;

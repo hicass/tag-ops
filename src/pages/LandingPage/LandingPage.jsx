@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import widePurpleLogo from '../../assets/images/logos/tag-lg-logo-purple.png';
 
@@ -99,6 +100,14 @@ export default function LandingPage() {
                         <p className='flow-txt'>Assess whether Maintenance Mode is needed after project completion or if the project(s) can be closed out</p>
                     </div>
                 </div>
+
+                <div className='added-txt-container'>
+                    <p className='added-txt'>
+                        Our Tag Ops Flow is your key to achieving streamlined success. It's a carefully crafted process that ensures we fully understand your 
+                        unique needs and deliver precisely the support your business requires. From start to finish, we maintain clear communication, 
+                        set expectations, and provide accountability, so you can focus on what you do best – growing your business.
+                    </p>
+                </div>
             </div>
 
             <div id='landing-testimonials-section'>
@@ -161,6 +170,16 @@ export default function LandingPage() {
                         </p>   
                     </div>
                 </div>
+            </div>
+
+            <div className='added-txt-container'>
+                <p className='added-txt'>
+                    We simplify business operations, offering tailored solutions that scale with your needs. From optimizing processes 
+                    to strategic guidance, Tag Ops empowers businesses of all sizes to thrive while we handle the operational heavy lifting. 
+                    Discover a smarter way to run your company with Tag Ops.
+                </p>
+
+                <Link id='talk-link-landing' className='lets-talk-link' to='/contact'>Let's talk!</Link>
             </div>
         </section>
     )

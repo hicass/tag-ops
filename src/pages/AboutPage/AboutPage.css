@@ -60,14 +60,6 @@
     letter-spacing: 0.2rem;
 }
 
-.story-txt {
-    color: var(--purple);
-    font-size: 2rem;
-    margin: 5% 0 0 2%;
-    letter-spacing: 0.15rem;
-    line-height: 2.3rem;
-}
-
 
 /*--------------------*/
 
@@ -200,24 +192,3 @@
 /*--------------------*/
 
 
-#about-contact-link {
-    margin: 0 0 5%;
-    font-size: 2rem;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    background-color: var(--purple);
-    color: white;
-    border: 0.2rem solid var(--purple);
-    border-radius: 25px;
-    box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
-}
-
-#about-contact-link:hover {
-    cursor: pointer;
-    background-color: var(--light-purple);
-}
-
-#about-contact-link:active {
-    box-shadow: none;
-    transform: translateY(.3vw)
-}

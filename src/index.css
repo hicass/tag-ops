@@ -27,3 +27,40 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+.added-txt {
+    color: var(--purple);
+    font-size: 2rem;
+    margin: 5% 3% 0;
+    letter-spacing: 0.15rem;
+    line-height: 2.3rem;
+}
+
+.added-txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+}
+
+.lets-talk-link {
+    margin: 0 0 5%;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    background-color: var(--purple);
+    color: white;
+    border: 0.2rem solid var(--purple);
+    border-radius: 25px;
+    box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
+}
+
+.lets-talk-link:hover {
+    cursor: pointer;
+    background-color: var(--light-purple);
+}
+
+.lets-talk-link:active {
+    box-shadow: none;
+    transform: translateY(.3vw)
+}

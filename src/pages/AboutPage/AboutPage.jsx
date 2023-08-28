@@ -29,13 +29,13 @@ export default function AboutPage() {
             <div id='about-story-section'>
                 <h2 id='story-h2'>Our story</h2>
 
-                <p className='story-txt'>
+                <p className='added-txt'>
                     Tag Ops was founded on the fundamental belief that every company, regardless of its size, requires operational support. 
                     We understand that not every business necessitates a full-time Operations leader to oversee extensive back-office projects 
                     or manage repetitive tasks such as payroll and invoicing.
                 </p>
 
-                <p className='story-txt'>
+                <p className='added-txt'>
                     Our approach at Tag Ops is different. We provide a customizable model designed to meet you where you are in your business 
                     journey while offering the flexibility to scale as needed. We take the time to understand your unique requirements, 
                     conducting in-depth research to identify the most cost-effective tools, processes, and policies. Our goal is to dig deep 
@@ -113,14 +113,14 @@ export default function AboutPage() {
                 </div>
                 
                 <div id='team-txt-container'>
-                    <p className='story-txt'>
+                    <p className='added-txt'>
                         Our Tag Ops team is a dynamic group of experts dedicated to operational excellence. With diverse industry backgrounds, 
                         we bring a wealth of knowledge to every project. We're committed to tailoring solutions to your specific needs, 
                         from process optimization to strategic guidance.
                     </p>
                 </div>
 
-                <Link id='about-contact-link' to='/contact'>Let's talk!</Link>
+                <Link className='lets-talk-link' to='/contact'>Let's talk!</Link>
             </div>
         </section>
     )
