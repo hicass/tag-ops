@@ -1,0 +1,23 @@
+#price-page {
+    padding: 2% 0 10% 0;
+}
+
+#price-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#price-h1 {
+    color: var(--purple);
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+#price-h2 {
+    margin-top: 1%;
+    color: var(--purple);
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+}
