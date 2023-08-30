@@ -23,3 +23,50 @@
     font-size: 1.5rem;
     text-align: center;
 }
+
+.price-table {
+    margin: 5% 0 0;
+}
+
+.plan-title {
+    color: white;
+    background-color: var(--purple);
+    position: sticky;
+    top: 0;
+}
+
+th {
+    border: 1px solid red;
+    font-size: 2rem;
+    color: var(--purple);
+}
+
+.th-icon {
+    font-size: 2rem;
+}
+
+td {
+   width: 25rem; 
+   border: 1px solid green;
+   color: var(--purple);
+   font-size: 1.2rem;
+}
+
+.side-td {
+    width: 8rem;
+}
+
+.caption {
+    color: var(--purple);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* .grid-title {
+    border-radius: 25px;
+    border: 1px solid var(--purple);
+    padding: 5%;
+    font-size: 2.5rem;
+    background: linear-gradient(  rgba(94, 23, 235, 1) 0%, transparent 90%);
+    backdrop-filter: blur(5px);
+} */
