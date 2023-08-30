@@ -35,7 +35,7 @@
 #about-intro-txt {
     border-radius: 25px;
     padding: 1rem;
-    background-color: var(--purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
     box-shadow: 0.7rem 0.8rem 0 var(--light-blue);
     color: white;
     font-size: 1.5rem;
@@ -74,7 +74,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
     color: white;
 }
 
@@ -158,7 +158,7 @@
 }
 
 .member-bio {
-    background-color: var(--purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
     box-shadow: 0.5rem 0.6rem 0 var(--light-blue);
     color: white;
     margin-top: 7%;

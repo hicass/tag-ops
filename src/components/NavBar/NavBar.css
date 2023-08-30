@@ -28,17 +28,17 @@
 
 #contact-link {
     padding: 0.3rem 0.5rem;
-    background-color: var(--purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 180%);
     color: white;
     border: 0;
     border-radius: 7px;
-    box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
+    box-shadow: 0.2rem 0.2rem 0 var(--light-blue);
     transition: all 0.3s ease;
 }
 
 #contact-link:hover {
     cursor: pointer;
-    background-color: var(--light-purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 100%);
 }
 
 #contact-link:active {

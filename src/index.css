@@ -13,6 +13,7 @@
     --light-purple: #bba6e8;
     --light-blue: #B1C5EC;
     --light-grey: #f3f3f3;
+    --light-grey-2: #e6e6e6;
     --grey: #737D91;
     --black: #2c2c2c;
 }
@@ -48,7 +49,7 @@ body {
     font-size: 2rem;
     padding: 0.7rem 1.5rem;
     text-decoration: none;
-    background-color: var(--purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 180%);
     color: white;
     border: 0;
     border-radius: 25px;
@@ -57,7 +58,7 @@ body {
 
 .lets-talk-link:hover {
     cursor: pointer;
-    background-color: var(--light-purple);
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 100%);
     color: white;
 }
 

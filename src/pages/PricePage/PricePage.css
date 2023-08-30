@@ -26,17 +26,19 @@
 
 .price-table {
     margin: 5% 0 0;
+    border-collapse: collapse;
 }
 
 .plan-title {
+    padding: 1rem;
     color: white;
-    background-color: var(--purple);
+    background: linear-gradient(  var(--purple) 0%, transparent 180%);
+    backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
 }
 
 th {
-    border: 1px solid red;
     font-size: 2rem;
     color: var(--purple);
 }
@@ -47,9 +49,13 @@ th {
 
 td {
    width: 25rem; 
-   border: 1px solid green;
    color: var(--purple);
    font-size: 1.2rem;
+   padding: 0.5rem;
+}
+
+.tr-odd {
+    background-color: var(--light-grey);
 }
 
 .side-td {
@@ -60,6 +66,7 @@ td {
     color: var(--purple);
     font-size: 1.8rem;
     text-align: center;
+    padding: 4rem 0 1rem;
 }
 
 /* .grid-title {

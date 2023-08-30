@@ -21,7 +21,7 @@ export default function PricePage() {
                     <th className='side-td'><span class='material-symbols-outlined th-icon'>handshake</span>Support</th>
                 </tr>
 
-                <tr>
+                <tr className='tr-odd'>
                     <td className='side-td'>Revenue/month vs # of employees</td>
                     <td className='top-td'>0-19 employees</td>
                     <td className='top-td'>20-99 employees</td>
@@ -42,7 +42,7 @@ export default function PricePage() {
                     <td className='side-td'>Contact Us!</td>
                 </tr>
 
-                <tr>
+                <tr className='tr-odd'>
                     <td className='side-td'>Medium business $200,000-$500,000</td>
                     <td>
                         <span>Starting at $2,000/month</span>
@@ -75,7 +75,7 @@ export default function PricePage() {
                     </td>
                 </tr>
 
-                <tr>
+                <tr className='tr-odd'>
                     <td className='side-td'><h5>Human Resources</h5></td>
                     {/* Ignite */}
                     <td>
@@ -114,7 +114,7 @@ export default function PricePage() {
                     </td>
                 </tr>
 
-                <tr>
+                <tr className='tr-odd'>
                     <td className='side-td'><h5>Finance</h5></td>
                     {/* Ignite */}
                     <td>
@@ -124,11 +124,8 @@ export default function PricePage() {
                     </td>
                     {/* Growth */}
                     <td>
-                        <div>
-                            <h5>Finance</h5>
-                            <p><span class='material-symbols-outlined'>check</span>Includes everything from Ignite!</p>
-                            <p><span class='material-symbols-outlined'>verified</span>Financial health dashboard</p>
-                        </div>
+                        <p><span class='material-symbols-outlined'>check</span>Includes everything from Ignite!</p>
+                        <p><span class='material-symbols-outlined'>verified</span>Financial health dashboard</p>
                     </td>
                 </tr>
 
@@ -139,7 +136,7 @@ export default function PricePage() {
                     </td>
                 </tr>
 
-                <tr>
+                <tr className='tr-odd'>
                     <td className='side-td'><h5>Human Resources</h5></td>
                     {/* Ignite */}
                     <td>
@@ -171,7 +168,7 @@ export default function PricePage() {
                     </td>
                 </tr>
 
-                <tr>
+                <tr className='tr-odd'>
                     <td className='side-td'><h5>Finance</h5></td>
                     {/* Ignite */}
                     <td>
