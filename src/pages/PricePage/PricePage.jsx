@@ -13,191 +13,202 @@ export default function PricePage() {
                 </h2>
             </div>
 
+            
             <div>
-                <div>
-                    <div>
-                        <h3>Ignite</h3>
-                    </div>
+                <table>
+                    <caption>Our Pricing Plans</caption>
+                    <tr>
+                        <th></th>
+                        <th><span class='material-symbols-outlined'>local_fire_department</span>Ignite</th>
+                        <th><span class='material-symbols-outlined'>monitoring</span>Growth</th>
+                        <th><span class='material-symbols-outlined'>handshake</span>Support</th>
+                    </tr>
 
-                    <div>
-                        <h4>Core Services</h4>
-                        <div>
-                            <h5>Human Resources</h5>
-                            <p>Dedicated HR Manager</p>
-                            <p>Payroll</p>
-                            <p>Employee handbook management</p>
-                            <p>Employee onboarding & terminations</p>
-                            <p>State Compliance</p>
-                        </div>
+                    <tr>
+                        <td>Revenue/month vs # of employees</td>
+                        <td>0-19 employees</td>
+                        <td>20-99 employees</td>
+                        <td>100+ employees</td>
+                    </tr>
 
-                        <div>
-                            <h5>Operations</h5>
+                    <tr>
+                        <td>Small business $0-$200,000</td>
+                        <td>
+                            <span>Starting at $1,100/month</span>
                             <p>
-                                Weekly sync with Finance and HR to align on back office status 
-                                and goals to update Monday.com and leadership
+                                Finance support = 15 hours/month
+                                HR support = 5 hours/month
+                                Ops support = 5 hours/month
                             </p>
-                        </div>
+                        </td>
+                        <td></td>
+                        <td>Contact Us!</td>
+                    </tr>
 
-                        <div>
-                            <h5>Finance</h5>
-                            <p>Monthly Reconciliations</p>
-                            <p>Weekly Transaction categorization & basic reporting</p>
-                            <p>AP/AR Management</p>
-                        </div>
-                    </div>
+                    <tr>
+                        <td>Medium business $200,000-$500,000</td>
+                        <td>
+                            <span>Starting at $2,000/month</span>
+                            <p>
+                                Finance support = 25 hours/month
+                                HR support = 10 hours/month
+                                Ops support = 5 hours/month
+                            </p>
+                        </td>
+                        <td>
+                            <span>Starting at $5,000/month</span>
+                            <p>
+                                Finance support = 45 hours/month
+                                HR support = 35 hours/month
+                                Ops support = 20 hours/month
+                            </p>
+                        </td>
+                    </tr>
 
-                    <div>
-                        <h4>Additional Services</h4>
-                        <div>
-                            <h5>Human Resources</h5>
-                            <p>Performance tracking & reviews</p>
-                            <p>Employee satisfaction reviews</p>
-                            <p>Benefits administration</p>
-                            <p>Recruiting (Sourcing, pipeline management, interviews)</p>
-                        </div>
+                    <tr>
+                        <td>Large business $500,000+</td>
+                        <td>Contact Us!</td>
+                        <td>Contact Us!</td>
+                    </tr>
+                </table>
 
-                        <div>
-                            <h5>Operations</h5>
-                            <p>Software Migration/ Integration/ Implementation/ Administration</p>
-                            <p>Company wide Process/policy documentation</p>
-                            <p>Project Management</p>
-                            <p>Company intranet build and maintenance</p>
-                            <p>Hardware inventory tracking</p>
-                        </div>
-
-                        <div>
-                            <h5>Finance</h5>
-                            <p>Commission calculation</p>
-                            <p>Financial health dashboard (Cash burn, Customer churn, runway)</p>
-                            <p>Subscription Metrics and analysis (ARR, GDR, CAC)</p>
-                            <p>Financial audit</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4>Pricing</h4>
-                        <div>
+                <table>
+                    <caption>Core Solutions</caption>
+                    <tr>
+                        {/* Ignite */}
+                        <td>
                             <div>
-                                <h5>Small business:</h5>
-                                <p>Revenue/month $0-$200,000</p>
-                                <p>0-19 employees</p>
-
-                                <p>5 hours/month of Human Resources Support</p>
-                                <p>5 hours/month of Operational Support</p>
-                                <p>15 hours/month of Finiancial Support</p>
-
-                                <h6>Starting at $1,100/month</h6>
+                                <h5>Human Resources</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Dedicated HR Manager</p>
+                                <p><span class='material-symbols-outlined'>check</span>Payroll</p>
+                                <p><span class='material-symbols-outlined'>check</span>Employee handbook management</p>
+                                <p><span class='material-symbols-outlined'>check</span>Employee onboarding & terminations</p>
+                                <p><span class='material-symbols-outlined'>check</span>State Compliance</p>
                             </div>
-
+                        </td>
+                        {/* Growth */}
+                        <td>
                             <div>
-                                <h5>Medium business</h5>
-                                <p>Revenue/month $200,000-$500,000</p>
-                                <p>0-19 employees</p>
-
-                                <p>10 hours/month of Human Resources Support</p>
-                                <p>5 hours/ month of Operational Support</p>
-                                <p>25 hours/month of Financial Support</p>
-
-                                <h6>Starting at $2,000/month</h6>
+                                <h5>Human Resources</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Includes everything from Ignite!</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Performance tracking & reviews</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Employee satisfaction reviews</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Benefits administration</p>
                             </div>
+                        </td>
+                    </tr>
 
+                    <tr>
+                        {/* Ignite */}
+                        <td>
                             <div>
-                                <h5>Large business</h5>
-                                <p>$500,000+</p>
-                                <p>100+ employees</p>
-                                <p>Contact us!</p>
+                                <h5>Operations</h5>
+                                <p>
+                                    <span class='material-symbols-outlined'>check</span>
+                                    Weekly sync with Finance and HR to align on back office status 
+                                    and goals to update Monday.com and leadership
+                                </p>
                             </div>
-                        </div>
-                    </div>  
-                </div>
-
-                <div>
-                    <div>
-                        <h3>Growth</h3>
-                    </div>
-
-                    <div>
-                        <h4>Core Services</h4>
-                        <div>
-                            <h5>Human Resources</h5>
-                            <p>Includes everything from Ignite!</p>
-                            <p>Performance tracking & reviews</p>
-                            <p>Employee satisfaction reviews</p>
-                            <p>Benefits administration</p>
-                        </div>
-
-                        <div>
-                            <h5>Operations</h5>
-                            <p>Includes everything from Ignite!</p>
-                            <p>Software administration</p>
-                            <p>Company wide process/policy documentation</p>
-                            <p>Company intranet build and maintenance</p>
-                            <p>Hardware inventory tracking</p>
-                        </div>
-
-                        <div>
-                            <h5>Finance</h5>
-                            <p>Includes everything from Ignite!</p>
-                            <p>Financial health dashboard</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4>Additional Services</h4>
-                        <div>
-                            <h5>Human Resources</h5>
-                            <p>Recruiting (Sourcing, pipeline management, interviews)</p>
-                        </div>
-
-                        <div>
-                            <h5>Operations</h5>
-                            <p>Software Migration/ Integration/ Implementation</p>
-                            <p>Project Management</p>
-                        </div>
-
-                        <div>
-                            <h5>Finance</h5>
-                            <p>Commission calculation</p>
-                            <p>Financial audit</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4>Pricing</h4>
-                        <div>
+                        </td>
+                        {/* Growth */}
+                        <td>
                             <div>
-                                <h5>Small business:??????</h5>
-                                <p>Revenue/month $0-$200,000</p>
-                                <p>0-19 employees</p>
-
-                                <p>5 hours/month of Human Resources Support</p>
-                                <p>5 hours/month of Operational Support</p>
-                                <p>15 hours/month of Finiancial Support</p>
-
-                                <h6>Starting at $1,100/month</h6>
+                                <h5>Operations</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Includes everything from Ignite!</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Software administration</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Company wide process/policy documentation</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Company intranet build and maintenance</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Hardware inventory tracking</p>
                             </div>
+                        </td>
+                    </tr>
 
+                    <tr>
+                        {/* Ignite */}
+                        <td>
                             <div>
-                                <h5>Medium business</h5>
-                                <p>Revenue/month $200,000-$500,000</p>
-                                <p>0-19 employees</p>
-
-                                <p>35 hours/month of Human Resources Support</p>
-                                <p>20 hours/ month of Operational Support</p>
-                                <p>45 hours/month of Financial Support</p>
-
-                                <h6>Starting at $5,000/month</h6>
+                                <h5>Finance</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Monthly Reconciliations</p>
+                                <p><span class='material-symbols-outlined'>check</span>Weekly Transaction categorization & basic reporting</p>
+                                <p><span class='material-symbols-outlined'>check</span>AP/AR Management</p>
                             </div>
-
+                        </td>
+                        {/* Growth */}
+                        <td>
                             <div>
-                                <h5>Large business</h5>
-                                <p>$500,000+</p>
-                                <p>100+ employees</p>
-                                <p>Contact us!</p>
+                                <h5>Finance</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Includes everything from Ignite!</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Financial health dashboard</p>
                             </div>
-                        </div>
-                    </div>  
-                </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Additional Services</caption>
+                    <tr>
+                        {/* Ignite */}
+                        <td>
+                            <div>
+                                <h5><span class='material-symbols-outlined'>check</span>Human Resources</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Employee satisfaction reviews</p>
+                                <p><span class='material-symbols-outlined'>check</span>Benefits administration</p>
+                                <p><span class='material-symbols-outlined'>check</span>Performance tracking & reviews</p>
+                                <p><span class='material-symbols-outlined'>check</span>Recruiting (Sourcing, pipeline management, interviews)</p>
+                            </div>
+                        </td>
+                        {/* Growth */}
+                        <td>
+                            <div>
+                                <h5>Human Resources</h5>
+                                <p><span class='material-symbols-outlined'>verified</span>Recruiting (Sourcing, pipeline management, interviews)</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        {/* Ignite */}
+                        <td>
+                            <div>
+                                <h5>Operations</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Software Migration/ Integration/ Implementation/ Administration</p>
+                                <p><span class='material-symbols-outlined'>check</span>Company wide Process/policy documentation</p>
+                                <p><span class='material-symbols-outlined'>check</span>Project Management</p>
+                                <p><span class='material-symbols-outlined'>check</span>Company intranet build and maintenance</p>
+                                <p><span class='material-symbols-outlined'>check</span>Hardware inventory tracking</p>
+                            </div>
+                        </td>
+                        {/* Growth */}
+                        <td>
+                            <div>
+                                <h5>Operations</h5>
+                                <p><span class='material-symbols-outlined'>verified</span>Software Migration/ Integration/ Implementation</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Project Management</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        {/* Ignite */}
+                        <td>
+                            <div>
+                                <h5>Finance</h5>
+                                <p><span class='material-symbols-outlined'>check</span>Commission calculation</p>
+                                <p><span class='material-symbols-outlined'>check</span>Financial health dashboard (Cash burn, Customer churn, runway)</p>
+                                <p><span class='material-symbols-outlined'>check</span>Subscription Metrics and analysis (ARR, GDR, CAC)</p>
+                                <p><span class='material-symbols-outlined'>check</span>Financial audit</p>
+                            </div>
+                        </td>
+                        {/* Growth */}
+                        <td>
+                            <div>
+                                <h5>Finance</h5>
+                                <p><span class='material-symbols-outlined'>verified</span>Commission calculation</p>
+                                <p><span class='material-symbols-outlined'>verified</span>Financial audit</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </section>
     )
