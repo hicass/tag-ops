@@ -19,6 +19,7 @@ export default function App() {
   return (
     <main className='App'>
           <NavBar />
+
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path='/about' element={<AboutPage />} />
@@ -28,6 +29,7 @@ export default function App() {
             <Route path='/operations' element={<OpsPage />} />
             <Route path='/finance' element={<FinancePage />} />
           </Routes>
+          
           <Footer />
     </main>
   );
