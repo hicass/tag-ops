@@ -24,9 +24,13 @@ export default function NavBar() {
     transition: 'color 0.2s ease-in-out',
   };
 
+
   return (
     <nav id='main-nav'>
-        <Link to='/' ><img id='nav-logo' src={smallPurpleLogo} alt='Tag Operations Logo' /></Link>
+      <Link to='/' >
+        <img id='nav-logo' src={smallPurpleLogo} alt='Tag Ops Logo' />
+      </Link>
+
       <div id='link-div'>
         <Link className='nav-link' to='/about'>About Us</Link>
 
@@ -48,6 +52,7 @@ export default function NavBar() {
 
         <Link id='contact-link' className='nav-link' to='/contact'>Contact</Link>
       </div>
+      
       <div>
       </div>
     </nav>
