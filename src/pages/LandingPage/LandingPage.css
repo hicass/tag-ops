@@ -1,12 +1,14 @@
 #landing-page {
     position: relative;
+    margin-top: -7%;
     height: 100%;
     width: 100vw;
     overflow-x: hidden;
+    z-index: -1;
 }
 
 #landing-page-intro {
-    margin-top: 4rem;    
+    margin-top: 3rem;
     padding: 5rem;
     display: flex;
     align-items: center;

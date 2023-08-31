@@ -1,7 +1,8 @@
 #main-nav {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
+    height: 25vh;
 }
 
 #nav-logo {
@@ -9,7 +10,13 @@
     width: 5rem;
 }
 
+#link-div {
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-link {
+    height: fit-content;
     margin: 2rem;
     font-size: 1.4rem;
     font-weight: bold;
@@ -20,6 +27,7 @@
 
 .nav-link:hover {
     color: var(--light-purple);
+    cursor: pointer;
 }
 
 .down-arrow {
@@ -28,13 +36,13 @@
 }
 
 #contact-link {
+    height: fit-content;
     padding: 0.3rem 0.5rem;
     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 180%);
     color: white;
     border: 0;
     border-radius: 7px;
     box-shadow: 0.2rem 0.2rem 0 var(--light-blue);
-    transition: all 0.3s ease;
 }
 
 #contact-link:hover {
@@ -45,4 +53,8 @@
 #contact-link:active {
     box-shadow: none;
     transform: translateY(.3vw)
+}
+
+#dropdown-parent-div {
+    position: relative;
 }

@@ -6,7 +6,7 @@ import './AboutPage.css'
 
 export default function AboutPage() {
     return (
-        <section>
+        <section id='about-page'>
             <div id='about-top'>
                 <div id='about-intro'>
                     <div id='intro-right'>
