@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2% 0 10% 0;
+    padding: 4% 0 10% 0;
 }
 
 #price-headline {
@@ -13,14 +13,17 @@
 
 #price-h1 {
     color: var(--purple);
+    font-family: 'Tahoma', sans-serif;
     font-size: 3rem;
-    letter-spacing: 0.2rem;
+    text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+    letter-spacing: 0.3rem;
 }
 
-#price-h2 {
-    margin-top: 1%;
+#price-intro-txt {
+    margin: 1% 10%;
     color: var(--purple);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
     text-align: center;
 }
 
@@ -29,51 +32,124 @@
     border-collapse: collapse;
 }
 
+
 .plan-title {
-    padding: 1rem;
-    color: white;
     background: linear-gradient(  var(--purple) 0%, transparent 180%);
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
+    font-size: 2rem;
 }
 
 th {
-    font-size: 2rem;
-    color: var(--purple);
+    color: white;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background: linear-gradient(  var(--purple) 0%, transparent 180%);
+    letter-spacing: 0.08rem;
+}
+
+.table-icon {
+    position: absolute;
+    transform: translate(-120%, 0%);
 }
 
 .th-icon {
     font-size: 2rem;
+    position: absolute;
+    transform: translate(-120%, 10%);
+}
+
+.support-icon {
+    font-size: 1.2rem;
 }
 
 td {
-   width: 25rem; 
-   color: var(--purple);
-   font-size: 1.2rem;
-   padding: 0.5rem;
+    width: 25rem; 
+    color: var(--purple);
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+}
+
+p {
+    margin: 0.5rem;
 }
 
 .tr-odd {
     background-color: var(--light-grey);
 }
 
+.tr-even {
+    background-color: var(--light-grey-2);
+}
+
 .side-td {
     width: 8rem;
+}
+
+#top-row-l {
+    border-radius: 25px 0 0 0;
+}
+
+#top-row-r {
+    border-radius: 0 25px 0 0;
+}
+
+#bot-row-l {
+    border-radius: 0 0 0 25px;
+}
+
+#bot-row-r {
+    border-radius: 0 0 25px 0;
 }
 
 .caption {
     color: var(--purple);
     font-size: 1.8rem;
     text-align: center;
-    padding: 4rem 0 1rem;
+    padding: 3% 0 1%;
+    letter-spacing: 0.15rem;
 }
 
-/* .grid-title {
-    border-radius: 25px;
-    border: 1px solid var(--purple);
-    padding: 5%;
-    font-size: 2.5rem;
-    background: linear-gradient(  rgba(94, 23, 235, 1) 0%, transparent 90%);
-    backdrop-filter: blur(5px);
-} */
+.price-icons {
+    position: absolute;
+    transform: translate(10%, 20%);
+}
+
+.label-td {
+    background-color: white;
+}
+
+.solution-label {
+    width: 90%;
+    font-size: 1.19rem;
+    padding: 0.5rem 0.3rem;
+    text-align: center;
+    border: 0.1rem solid var(--purple);
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.2rem 0.5rem #0000001f, 0.3rem 0.2rem 0.5rem #0000001f;
+}
+
+.price-txt {
+    font-size: 1.45rem;
+}
+
+.price-num {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.border-r {
+    border-right: 3px dotted var(--light-grey-3);
+}
+
+.center {
+    text-align: center;
+}
+
+#link-row {
+    padding-top: 5%;
+}
+

@@ -11,8 +11,10 @@
 
 #contact-h1 {
     color: var(--purple);
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 5rem;
+    text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+    letter-spacing: 0.8rem;
 }
 
 #contact-page-txt {

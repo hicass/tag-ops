@@ -15,6 +15,7 @@
     font-weight: bold;
     text-decoration: none;
     color: var(--purple);
+    letter-spacing: 0.08rem;
 }
 
 .nav-link:hover {
