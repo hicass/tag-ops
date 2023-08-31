@@ -8,7 +8,7 @@ export default function DropdownMenu({ handleMouseLeave }) {
         <ul>
             <li className='dropdown-li'><Link className='dropdown-link' to='/human-resources'>Human Resources</Link></li>
             <li className='dropdown-li'><Link className='dropdown-link' to='/operations'>Operations</Link></li>
-            <li className='dropdown-li'><Link className='dropdown-link' to='/accounting-bookkeeping'>Accounting/ Bookkeeping</Link></li>
+            <li className='dropdown-li'><Link className='dropdown-link' to='/finance'>Accounting/ Bookkeeping</Link></li>
         </ul>
         </div>
     )

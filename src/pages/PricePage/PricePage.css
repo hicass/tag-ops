@@ -134,6 +134,15 @@ p {
     box-shadow: 0.3rem 0.2rem 0.5rem #0000001f, 0.3rem 0.2rem 0.5rem #0000001f;
 }
 
+.solution-label:hover {
+    box-shadow: 0.1rem 0.1rem 0.2rem #0000001f, 0.1rem 0.1rem 0.1rem #0000001f;
+}
+
+.label-link {
+    text-decoration: none;
+    color: var(--purple);
+}
+
 .price-txt {
     font-size: 1.45rem;
 }

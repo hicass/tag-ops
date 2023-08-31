@@ -8,6 +8,9 @@ import LandingPage from '../LandingPage/LandingPage';
 import AboutPage from'../AboutPage/AboutPage';
 import PricePage from '../PricePage/PricePage';
 import ContactPage from '../ContactPage/ContactPage';
+import HrPage from '../HrPage/HrPage';
+import OpsPage from '../OpsPage/OpsPage';
+import FinancePage from '../FinancePage/FinancePage';
 
 
 export default function App() {
@@ -21,6 +24,9 @@ export default function App() {
             <Route path='/about' element={<AboutPage />} />
             <Route path='/prices' element={<PricePage />} />
             <Route path='/contact' element={<ContactPage />} />
+            <Route path='/human-resources' element={<HrPage />} />
+            <Route path='/operations' element={<OpsPage />} />
+            <Route path='/finance' element={<FinancePage />} />
           </Routes>
           <Footer />
     </main>

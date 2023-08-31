@@ -15,7 +15,7 @@ export default function Footer() {
                     <p className='footer-col-label'>Services</p>
                     <Link to='/human-resources' className='footer-link'>Human Resources</Link>
                     <Link to='/operations' className='footer-link'>Operations</Link>
-                    <Link to='/accounting-bookkeeping' className='footer-link'>Accounting/ Bookkeeping</Link>
+                    <Link to='/finance' className='footer-link'>Accounting/ Bookkeeping</Link>
                 </div>
 
                 <div className='footer-col'>

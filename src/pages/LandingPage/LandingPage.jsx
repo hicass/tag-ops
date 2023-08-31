@@ -13,7 +13,7 @@ export default function LandingPage() {
                     <h2 id='intro-h2'>Simplify, Optimize, Thrive with Tag Operations!</h2>
 
                     <div id='txt-container'>
-                        <span id='intro-txt'>Your tech forward, embedded and flexible back office team!</span><br />
+                        <span id='intro-txt'>Your tech forward, embedded, and flexible back office team!</span><br />
                     </div>
                 </div>
 
@@ -33,15 +33,23 @@ export default function LandingPage() {
                 <h2 id='landing-solutions-h2'>Our Solutions</h2>
 
                 <div id='solutions-container'>
-                    <div id='hr-solution' className='solution'>
-                        <h3 className='solution-txt'>Human Resources</h3>
-                    </div>
-                    <div id='operations-solution' className='solution'>
-                        <h3 className='solution-txt'>Operations</h3>
-                    </div>
-                    <div id='finance-solution' className='solution'>
-                        <h3 className='solution-txt'>Finance</h3>
-                    </div>
+                    <Link className='solution-link' to='/human-resources'>
+                        <div id='hr-solution' className='solution'>
+                            <h3 className='solution-txt'>Human Resources</h3>
+                        </div>
+                    </Link>
+
+                    <Link className='solution-link' to='/operations'>
+                        <div id='operations-solution' className='solution'>
+                            <h3 className='solution-txt'>Operations</h3>
+                        </div>
+                    </Link>
+
+                    <Link className='solution-link' to='/finance'>
+                        <div id='finance-solution' className='solution'>
+                            <h3 className='solution-txt'>Finance</h3>
+                        </div>
+                    </Link>
                 </div>
 
                 <p id='solutions-bottom-txt'>We bring you expert level knowledge, automated processes, and clear policies</p>
