@@ -50,15 +50,15 @@ export default function PricePage() {
                         <p className='price-txt'>
                             Starting at <span className='price-num'>$1,100/month</span>
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             5hrs/month of HR Support
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             5hrs/month of Ops Support
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             15hrs/month of Finance Support
                         </p>
@@ -75,15 +75,15 @@ export default function PricePage() {
                         <p className='price-txt'>
                             Starting at <span className='price-num'>$2,000/month</span>
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             10hrs/month of HR Support
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             5hrs/month of Ops Support
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             25hrs/month of Finance Support
                         </p>
@@ -93,17 +93,17 @@ export default function PricePage() {
                         <p className='price-txt'>
                             Starting at <span className='price-num'>$5,000/month</span>
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             35hrs/month of HR Support
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             20hrs/month of Ops Support
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
-                            45hrs/ months of Finance Support
+                            45hrs/month of Finance Support
                         </p>
                     </td>
                     <td className='side-td'></td>
@@ -139,23 +139,23 @@ export default function PricePage() {
 
                     {/* Ignite */}
                     <td className='border-r'>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Dedicated HR Manager
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Payroll
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Employee handbook management
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Employee onboarding & terminations
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             State Compliance
                         </p>
@@ -163,19 +163,19 @@ export default function PricePage() {
 
                     {/* Growth */}
                     <td>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Includes everything from Ignite!
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Performance tracking & reviews
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Employee satisfaction reviews
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Benefits administration
                         </p>
@@ -190,7 +190,7 @@ export default function PricePage() {
                     </td>
 
                     <td className='border-r'>{/* Ignite */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Weekly sync with Finance and HR to align on back office status 
                             and goals to update Monday.com and leadership
@@ -198,23 +198,23 @@ export default function PricePage() {
                     </td>
                     
                     <td> {/* Growth */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Includes everything from Ignite!
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Software administration
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Company wide process/policy documentation
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Company intranet build and maintenance
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Hardware inventory tracking
                         </p>
@@ -229,26 +229,26 @@ export default function PricePage() {
                     </td>
                    
                     <td className='border-r'> {/* Ignite */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Monthly Reconciliations
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Weekly Transaction categorization & basic reporting
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             AP/AR Management
                         </p>
                     </td>
                     
                     <td> {/* Growth */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Includes everything from Ignite!
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Financial health dashboard
                         </p>
@@ -270,26 +270,26 @@ export default function PricePage() {
                     </td>
 
                     <td className='border-r'>  {/* Ignite */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Benefits administration
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Employee satisfaction reviews
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Performance tracking & reviews
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Recruiting (Sourcing, pipeline management, interviews)
                         </p>
                     </td>
                     
                     <td>{/* Growth */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Recruiting (Sourcing, pipeline management, interviews)
                         </p>
@@ -304,34 +304,34 @@ export default function PricePage() {
                     </td>
                     
                     <td className='border-r'>{/* Ignite */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Software Migration/ Integration/ Implementation/ Administration
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Company wide Process/policy documentation
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Project Management
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Company intranet build and maintenance
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Hardware inventory tracking
                         </p>
                     </td>
                     
                     <td> {/* Growth */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Software Migration/ Integration/ Implementation
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Project Management
                         </p>
@@ -346,30 +346,30 @@ export default function PricePage() {
                     </td>
                     
                     <td id='bot-row-l' className='border-r'> {/* Ignite */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Commission calculation
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Financial health dashboard (Cash burn, Customer churn, runway)
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Subscription Metrics and analysis (ARR, GDR, CAC)
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>check</span>
                             Financial audit
                         </p>
                     </td>
                     
                     <td id='bot-row-r'> {/* Growth */}
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Commission calculation
                         </p>
-                        <p>
+                        <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>verified</span>
                             Financial audit
                         </p>

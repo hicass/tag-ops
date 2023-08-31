@@ -68,3 +68,7 @@ body {
     box-shadow: none;
     transform: translateY(.3vw)
 }
+
+.center {
+    text-align: center;
+}

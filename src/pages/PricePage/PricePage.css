@@ -1,166 +1,162 @@
 #price-page {
-    margin-top: -7%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: -7%;
     padding: 4% 0 10% 0;
     z-index: -1;
 }
 
+
 #price-headline {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-#price-h1 {
-    color: var(--purple);
-    font-family: 'Tahoma', sans-serif;
-    font-size: 3rem;
-    text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
-    letter-spacing: 0.3rem;
-}
+    #price-h1 {
+        color: var(--purple);
+        font-family: 'Tahoma', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
+        text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+    }
 
-#price-intro-txt {
-    margin: 1% 10%;
-    color: var(--purple);
-    font-size: 1.6rem;
-    letter-spacing: 0.08rem;
-    text-align: center;
-}
+    #price-intro-txt {
+        color: var(--purple);
+        font-size: 1.6rem;
+        letter-spacing: 0.08rem;
+        margin: 1% 10%;
+        text-align: center;
+    }
+
 
 .price-table {
-    margin: 5% 0 0;
     border-collapse: collapse;
+    margin: 5% 0 0;
 }
 
+    th {
+        color: white;
+        background: linear-gradient(  var(--purple) 0%, transparent 180%);
+        font-size: 1.4rem;
+        letter-spacing: 0.08rem;
+        padding: 1rem;
+    }
 
-.plan-title {
-    background: linear-gradient(  var(--purple) 0%, transparent 180%);
-    backdrop-filter: blur(5px);
-    position: sticky;
-    top: 0;
-    font-size: 1.8rem;
-}
+        .plan-title {
+            backdrop-filter: blur(5px);
+            background: linear-gradient(  var(--purple) 0%, transparent 180%);
+            font-size: 1.8rem;
+            position: sticky;
+            top: 0;
+        }
 
-th {
-    color: white;
-    font-size: 1.4rem;
-    padding: 1rem;
-    background: linear-gradient(  var(--purple) 0%, transparent 180%);
-    letter-spacing: 0.08rem;
-}
+            .th-icon {
+                font-size: 2rem;
+                position: absolute;
+                transform: translate(-120%, 10%);
+            }
 
-.table-icon {
-    position: absolute;
-    transform: translate(-120%, 0%);
-}
+            .table-icon {
+                position: absolute;
+                transform: translate(-120%, 0%);
+            }
 
-.th-icon {
-    font-size: 2rem;
-    position: absolute;
-    transform: translate(-120%, 10%);
-}
+            .support-icon {
+                font-size: 1.2rem;
+            }
 
-.support-icon {
-    font-size: 1.2rem;
-}
+    .tr-odd {
+        background-color: var(--light-grey);
+    }
 
-td {
-    width: 21rem; 
-    color: var(--purple);
-    font-size: 1.2rem;
-    padding: 0.8rem 2rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.8rem;
-}
+    .tr-even {
+        background-color: var(--light-grey-2);
+    }
 
-p {
-    margin: 0.5rem;
-}
+    #top-row-l {
+        border-radius: 25px 0 0 0;
+    }
+    
+    #top-row-r {
+        border-radius: 0 25px 0 0;
+    }
+    
+    #bot-row-l {
+        border-radius: 0 0 0 25px;
+    }
+    
+    #bot-row-r {
+        border-radius: 0 0 25px 0;
+    }
 
-.tr-odd {
-    background-color: var(--light-grey);
-}
+    #link-row {
+        padding-top: 5%;
+    }
 
-.tr-even {
-    background-color: var(--light-grey-2);
-}
+        td {
+            color: var(--purple);
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.8rem;
+            padding: 0.8rem 2rem;
+            width: 21rem; 
+        }
 
-.side-td {
-    width: 7rem;
-}
+            .price-txt, .service-txt {
+                margin: 0.5rem;
+            }
 
-#top-row-l {
-    border-radius: 25px 0 0 0;
-}
+            .price-txt {
+                font-size: 1.45rem;
+            }
 
-#top-row-r {
-    border-radius: 0 25px 0 0;
-}
+            .price-num {
+                font-weight: bold;
+                font-size: 1.6rem;
+            }
+            
+                .price-icons {
+                    position: absolute;
+                    transform: translate(10%, 20%);
+                }
 
-#bot-row-l {
-    border-radius: 0 0 0 25px;
-}
+            .caption {
+                color: var(--purple);
+                font-size: 1.8rem;
+                letter-spacing: 0.15rem;
+                padding: 3% 0 1%;
+                text-align: center;
+            }
 
-#bot-row-r {
-    border-radius: 0 0 25px 0;
-}
+            .label-td {
+                background-color: white;
+            }
 
-.caption {
-    color: var(--purple);
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 3% 0 1%;
-    letter-spacing: 0.15rem;
-}
+                .label-link {
+                    color: var(--purple);
+                    text-decoration: none;
+                }
 
-.price-icons {
-    position: absolute;
-    transform: translate(10%, 20%);
-}
+                    .solution-label {
+                        border: 0.1rem solid var(--purple);
+                        border-radius: 10px;
+                        box-shadow: 0.3rem 0.2rem 0.5rem #0000001f, 0.3rem 0.2rem 0.5rem #0000001f;
+                        font-size: 1.19rem;
+                        padding: 0.5rem 0.3rem;
+                        text-align: center;
+                        width: 90%;
+                    }
 
-.label-td {
-    background-color: white;
-}
+                    .solution-label:hover {
+                        box-shadow: 0.1rem 0.1rem 0.2rem #0000001f, 0.1rem 0.1rem 0.1rem #0000001f;
+                    }
 
-.solution-label {
-    width: 90%;
-    font-size: 1.19rem;
-    padding: 0.5rem 0.3rem;
-    text-align: center;
-    border: 0.1rem solid var(--purple);
-    border-radius: 10px;
-    box-shadow: 0.3rem 0.2rem 0.5rem #0000001f, 0.3rem 0.2rem 0.5rem #0000001f;
-}
+        .side-td {
+            width: 7rem;
+        }
 
-.solution-label:hover {
-    box-shadow: 0.1rem 0.1rem 0.2rem #0000001f, 0.1rem 0.1rem 0.1rem #0000001f;
-}
-
-.label-link {
-    text-decoration: none;
-    color: var(--purple);
-}
-
-.price-txt {
-    font-size: 1.45rem;
-}
-
-.price-num {
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-.border-r {
-    border-right: 3px dotted var(--light-grey-3);
-}
-
-.center {
-    text-align: center;
-}
-
-#link-row {
-    padding-top: 5%;
-}
-
+        .border-r {
+            border-right: 3px dotted var(--light-grey-3);
+        }
