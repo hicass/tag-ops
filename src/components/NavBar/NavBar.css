@@ -1,60 +1,60 @@
 #main-nav {
-    display: flex;
     align-items: top;
-    justify-content: space-between;
-    height: 25vh;
-}
-
-#nav-logo {
-    margin: 0.5rem;
-    width: 5rem;
-}
-
-#link-div {
     display: flex;
-    flex-direction: row;
+    height: 25vh;
+    justify-content: space-between;
 }
 
-.nav-link {
-    height: fit-content;
-    margin: 2rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--purple);
-    letter-spacing: 0.08rem;
-}
+    #nav-logo {
+        margin: 0.5rem;
+        width: 5rem;
+    }
 
-.nav-link:hover {
-    color: var(--light-purple);
-    cursor: pointer;
-}
+    #link-div {
+        display: flex;
+        flex-direction: row;
+    }
 
-.down-arrow {
-    position: absolute;
-    transform: translate(10%, 20%);
-}
+        .nav-link {
+            color: var(--purple);
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            height: fit-content;
+            letter-spacing: 0.08rem;
+            margin: 2rem;
+        }
 
-#contact-link {
-    height: fit-content;
-    padding: 0.3rem 0.5rem;
-    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 180%);
-    color: white;
-    border: 0;
-    border-radius: 7px;
-    box-shadow: 0.2rem 0.2rem 0 var(--light-blue);
-}
+            .nav-link:hover {
+                color: var(--light-purple);
+                cursor: pointer;
+            }
 
-#contact-link:hover {
-    cursor: pointer;
-    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 100%);
-}
+            .down-arrow {
+                position: absolute;
+                transform: translate(10%, 20%);
+            }
 
-#contact-link:active {
-    box-shadow: none;
-    transform: translateY(.3vw)
-}
+            #contact-link {
+                color: white;
+                background: linear-gradient(  var(--purple) 0%, var(--light-purple) 180%);
+                border: 0;
+                border-radius: 7px;
+                box-shadow: 0.2rem 0.2rem 0 var(--light-blue);
+                height: fit-content;
+                padding: 0.3rem 0.5rem;
+            }
 
-#dropdown-parent-div {
-    position: relative;
-}
+                #contact-link:hover {
+                    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 100%);
+                    cursor: pointer;
+                }
+
+                #contact-link:active {
+                    box-shadow: none;
+                    transform: translateY(.3vw)
+                }
+
+        #dropdown-parent-div {
+            position: relative;
+        }
