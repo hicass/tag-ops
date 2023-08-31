@@ -3,197 +3,185 @@
     z-index: -1;
 }
 
-#about-intro {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin: 3% 5% 3% 10%;
-}
+    #about-intro {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 3% 5% 3% 10%;
+    }
 
-#intro-right {
-    position: relative;
-    margin: 20% 5% 0 7%;
-}
+        #intro-right {
+            margin: 20% 5% 0 7%;
+            position: relative;
+        }
 
-#intro-h1-container {
-    display: grid;
-    padding-left: center;
-}
+            #intro-h1-container {
+                display: grid;
+                padding-left: center;
+            }
 
-#about-h1 {
-    position: absolute;
-    top: -45%;
-    left: -25%;
-    color: var(--purple);
-    font-family: 'Tahoma', sans-serif;
-    font-size: 5rem;
-    text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
-    letter-spacing: 0.8rem;
-}
+                #about-h1 {
+                    color: var(--purple);
+                    font-family: 'Tahoma', sans-serif;
+                    font-size: 5rem;
+                    left: -25%;
+                    letter-spacing: 0.8rem;
+                    position: absolute;
+                    text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+                    top: -45%;
+                }
 
-#sf-image {
-    width: 25rem;
-    border-radius: 25px;
-    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
-}
+            #about-intro-txt {
+                background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
+                border-radius: 25px;
+                box-shadow: 0.7rem 0.8rem 0 var(--light-blue);
+                color: white;
+                font-size: 1.5rem;
+                letter-spacing: 0.18rem;
+                line-height: 2.2rem;
+                padding: 1rem;
+            }
 
-#about-intro-txt {
-    border-radius: 25px;
-    padding: 1rem;
-    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
-    box-shadow: 0.7rem 0.8rem 0 var(--light-blue);
-    color: white;
-    font-size: 1.5rem;
-    letter-spacing: 0.18rem;
-    line-height: 2.2rem;
-}
+        #sf-image {
+            border-radius: 25px;
+            box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+            width: 25rem;
+        }
 
+    #about-story-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 8% 10%;
+    }
 
-/*--------------------*/
-
-
-#about-story-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 8% 10%;
-}
-
-#story-h2 {
-    color: var(--purple);
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-}
+        #story-h2 {
+            color: var(--purple);
+            font-size: 4rem;
+            letter-spacing: 0.2rem;
+        }
 
 
-/*--------------------*/
+    #about-mission-section {
+        margin: 10% 0;
+        z-index: 2;
+    }
+
+        #about-mission-text {
+            align-items: center;
+            background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 5% 2%;
+        }
+        
+            #mission-h2 {
+                font-size: 4rem;
+                letter-spacing: 0.2rem;
+            }
 
 
-#about-mission-section {
-    margin: 10% 0;
-    z-index: 2;
-}
+            #mission-p {
+                font-size: 2.2rem;
+                margin-top: 2%;
+                text-align: center;
+            }
 
-#about-mission-text {
-    padding: 5% 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
-    color: white;
-}
+    #blob-container {
+        position: relative;
+    }
 
-#mission-h2 {
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-}
+        .mission-blue-blob::before {
+            content: "";
+            border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+            display: block;
+            height: 30vh;
+            width: 45vw;
+            will-change: border-radius, transform, opacity;
+        }
 
-#mission-p {
-    margin-top: 2%;
-    font-size: 2.2rem;
-    text-align: center;
-}
+        .mission-blob-1 {
+            animation: sliderShape 8s linear infinite;
+            background: var(--light-blue);
+            left: 2%;
+            position: absolute;
+            top: -15%;
+            z-index: -2;
+            -webkit-animation: sliderShape 8s linear infinite;
+        }
 
-#blob-container {
-    position: relative;
-}
-
-.mission-blue-blob::before {
-    content: "";
-    width: 45vw;
-    height: 30vh;
-    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-    will-change: border-radius, transform, opacity;
-    display: block;
-}
-
-.mission-blob-1 {
-    position: absolute;
-    left: 2%;
-    top: -15%;
-    background: var(--light-blue);
-    animation: sliderShape 8s linear infinite;
-    -webkit-animation: sliderShape 8s linear infinite;
-    z-index: -2;
-}
-
-.mission-blob-2 {
-    position: absolute;
-    left: 55%;
-    top: 50%;
-    background: var(--light-blue);
-    animation: sliderShape 8s linear infinite;
-    -webkit-animation: sliderShape 8s linear infinite;
-    z-index: -2;
-}
+        .mission-blob-2 {
+            animation: sliderShape 8s linear infinite;
+            background: var(--light-blue);
+            left: 55%;
+            position: absolute;
+            top: 50%;
+            z-index: -2;
+            -webkit-animation: sliderShape 8s linear infinite;
+        }
 
 
-/*--------------------*/
+    #about-team-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 
+        #team-h2 {
+            color: var(--purple);
+            font-size: 4rem;
+            letter-spacing: 0.2rem;
+        }
 
-#about-team-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        #team-container {
+            display: flex;
+            flex-direction: row;
+            margin: 0 5%;
+        }
 
-#team-container {
-    margin: 0 5%;
-    display: flex;
-    flex-direction: row;
-}
+            .team-member {
+                align-items: center;
+                margin: 5% 2%;
+                display: flex;
+                flex-direction: column;
+            }
 
-#team-h2 {
-    color: var(--purple);
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-}
+                .team-member-img {
+                    border-radius: 50%;
+                    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+                    width: 15rem;
+                }
 
-.team-member {
-    margin: 5% 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+                .member-bio {
+                    color: white;
+                    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
+                    border-radius: 25px;
+                    box-shadow: 0.5rem 0.6rem 0 var(--light-blue);
+                    margin-top: 7%;
+                    padding: 1rem;
+                }
 
-.team-member-img {
-    width: 15rem;
-    border-radius: 50%;
-    box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
-}
+                    .bio-name {
+                        font-family: 'Tahoma', sans-serif;
+                        font-size: 1.5rem;
+                        letter-spacing: 0.25rem;
+                    }
 
-.member-bio {
-    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
-    box-shadow: 0.5rem 0.6rem 0 var(--light-blue);
-    color: white;
-    margin-top: 7%;
-    border-radius: 25px;
-    padding: 1rem;
-}
+                    .bio-role {
+                        font-family: 'Tahoma', sans-serif;
+                        font-size: 1.2rem;
+                        letter-spacing: 0.15rem;
+                    }
 
-.bio-name {
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
-    font-family: 'Tahoma', sans-serif;
-}
+                    .bio-txt {
+                        font-size: 1.25rem;
+                        letter-spacing: 0.15rem;
+                        margin-top: 5%;
+                    }
 
-.bio-role {
-    font-size: 1.2rem;
-    letter-spacing: 0.15rem;
-    font-family: 'Tahoma', sans-serif;
-}
-
-.bio-txt {
-    margin-top: 5%;
-    font-size: 1.25rem;
-    letter-spacing: 0.15rem;
-}
-
-#team-txt-container {
-    margin: 0 10% 5%;
-}
-
-
-/*--------------------*/
+    #team-txt-container {
+        margin: 0 10% 5%;
+    }
 
 
