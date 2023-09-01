@@ -25,7 +25,7 @@ export default function AboutPage() {
 
                             <div id='about-intro-txt'>
                                 <p>
-                                    We are Tag Ops! Your partner in operational excellence. We believe that every business, 
+                                    We are Tag Operations! Your partner in operational excellence. We believe that every business, 
                                     regardless of size, deserves tailored support to thrive. Born from this belief, 
                                     Tag Ops offers innovative and flexible back-office solutions, 
                                     empowering you to streamline operations, optimize resources, and achieve lasting success.
@@ -38,7 +38,7 @@ export default function AboutPage() {
             </div>
 
 
-            <Fade triggerOnce='true'>
+            <Fade>
                 <div id='about-story-section'>
                     <h2 id='story-h2'>Our story</h2>
 

@@ -14,14 +14,14 @@ footer {
     }
 
         #footer-logo {
-            margin: 1rem;
+            margin: 1rem 1rem 0;
             width: 13rem;
         }
 
         .footer-col {
             display: flex;
             flex-direction: column;
-            margin: 4%;
+            margin: 4% 4% 0;
         }
 
             .footer-col-label {
@@ -42,6 +42,12 @@ footer {
                     color: var(--light-purple);
                     cursor: pointer;
                 }
+
+            #footer-email {
+                text-align: center;
+                letter-spacing: 0.15rem;
+                margin-top: 13%;
+            }
 
     #footer-right {
         padding: 0.5rem;

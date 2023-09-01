@@ -90,6 +90,7 @@
                         .solution:hover {
                             box-shadow: 0.2rem 0.3rem 0.2rem #0000001f, 0.2rem 0.3rem 0.2rem #0000001f;
                             cursor: pointer;
+                            color: white;
                         }
 
                         .solution-txt {
@@ -272,16 +273,8 @@
                         margin-top: 1rem;
                     }
 
-    #landing-bottom {
-        margin-bottom: 10%;
-    }
-        
         #landing-added-txt {
             margin-bottom: 5%;
-        }
-
-        #talk-link-landing {
-            margin-top: 15%;
         }
 
     .blob-6 {
@@ -299,7 +292,7 @@
         background: var(--light-blue);
         left: 15%;
         position: absolute;
-        top: 15%;
+        top: 14%;
         z-index: -2;
         -webkit-animation: sliderShape 15s linear infinite;
     }
@@ -339,7 +332,7 @@
         background: var(--purple);
         left: 15%;
         position: absolute;
-        top: 16%;
+        top: 15%;
         z-index: -1;
         -webkit-animation: sliderShape 16s linear infinite;
     }
@@ -390,10 +383,4 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(32, 40, 90) }
-}
-
-#secret-title {
-    display: none;
-    position: absolute;
-    visibility: hidden;
 }

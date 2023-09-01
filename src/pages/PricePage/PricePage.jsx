@@ -11,7 +11,7 @@ export default function PricePage() {
 
                 <p id='price-intro-txt'>
                     At Tag Ops, we believe in transparency, ensuring you know exactly what you're 
-                    getting and what you're paying for.Explore our pricing options below and find 
+                    getting and what you're paying for. Explore our pricing options below and find 
                     the perfect fit for your business.
                 </p>
             </div>
@@ -387,6 +387,16 @@ export default function PricePage() {
                     </td>
                 </tr>
             </table>
+
+            {/* TODO */}
+            <div id='price-faq-section'>
+                <h2>FAQ goes here</h2>
+            </div>
+
+            {/* TODO */}
+            <div id='terms-section'>
+                <h2>Terms and Conditions go here</h2>
+            </div>
         </section>
     )
 }

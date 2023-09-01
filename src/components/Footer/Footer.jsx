@@ -9,6 +9,7 @@ export default function Footer() {
             <div id='footer-left'>
                 <div>
                     <img id='footer-logo' src={wideWhiteLogo} alt='Tag Operations' />
+                    
                 </div>
 
 
@@ -39,6 +40,7 @@ export default function Footer() {
                     <Link to='/contact' className='footer-link'>
                         Contact
                     </Link>
+                    <p id='footer-email'>tag@tagoperations.com</p>
                 </div>
             </div>
 

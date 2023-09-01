@@ -9,7 +9,7 @@ export default function LandingPage() {
         <section id='landing-page'>
 
             <div id='landing-page-intro'>
-                <h1 id='secret-title'>Tag Operations</h1>
+                <h1 className='secret'>Tag Operations</h1>
 
                 <div id='intro-txt-section'>
                     <h2 id='intro-h2'>Simplify, Optimize, Thrive with Tag Operations!</h2>
@@ -229,9 +229,7 @@ export default function LandingPage() {
                     your company with Tag Ops.
                 </p>
 
-                <AttentionSeeker effect='tada' triggerOnce='true'>
-                    <Link id='talk-link-landing' className='lets-talk-link' to='/contact'>Let's talk!</Link>
-                </AttentionSeeker>
+                <Link id='talk-link-landing' className='lets-talk-link' to='/contact'>Let's talk!</Link>
             </div>
         </section>
     )

@@ -26,14 +26,14 @@
         color: var(--purple);
         font-size: 1.6rem;
         letter-spacing: 0.08rem;
-        margin: 1% 10%;
+        margin: 3% 10% 0;
         text-align: center;
     }
 
 
 .price-table {
     border-collapse: collapse;
-    margin: 5% 0 0;
+    margin: 1% 0;
 }
 
     th {
@@ -160,3 +160,11 @@
         .border-r {
             border-right: 3px dotted var(--light-grey-3);
         }
+
+    #price-faq-section {
+        margin-top: 5%;
+    }
+
+    #terms-section {
+        margin-top: 5%;
+    }
