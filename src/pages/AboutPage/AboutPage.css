@@ -5,7 +5,7 @@
 
     #about-intro {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: flex-end;
         margin: 3% 5% 3% 10%;
     }
@@ -28,7 +28,7 @@
                     letter-spacing: 0.8rem;
                     position: absolute;
                     text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
-                    top: -45%;
+                    top: -30%;
                 }
 
             #about-intro-txt {
@@ -39,6 +39,7 @@
                 font-size: 1.5rem;
                 letter-spacing: 0.18rem;
                 line-height: 2.2rem;
+                margin-top: 10%;
                 padding: 1rem;
             }
 
@@ -137,7 +138,7 @@
         #team-container {
             display: flex;
             flex-direction: row;
-            margin: 0 5%;
+            margin: 3% 5% 0;
         }
 
             .team-member {

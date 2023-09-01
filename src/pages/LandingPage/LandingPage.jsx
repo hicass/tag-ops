@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 import './LandingPage.css';
 import widePurpleLogo from '../../assets/images/logos/tag-lg-logo-purple.png';
 
@@ -33,7 +34,9 @@ export default function LandingPage() {
 
 
             <div id='landing-solutions-section'>
-                <h2 id='landing-solutions-h2'>Our Solutions</h2>
+                <AttentionSeeker effect='pulse'>
+                    <h2 id='landing-solutions-h2'>Our Solutions</h2>
+                </AttentionSeeker>
 
                 <div id='solutions-container'>
                     <Link className='solution-link' to='/human-resources'>
@@ -67,84 +70,86 @@ export default function LandingPage() {
             </div>
 
 
-            <div id='landing-flow-section'>
-                <h2 id='flow-h2'>The Tag Ops Flow:</h2>
+            <Fade triggerOnce='true'>
+                <div id='landing-flow-section'>
+                    <h2 id='flow-h2'>The Tag Ops Flow:</h2>
 
-                <div id='flow-container'>
-                    <div className='flow-card'>
-                        <span class='material-symbols-outlined flow-icon'>
-                            call
-                        </span>
+                    <div id='flow-container'>
+                        <div className='flow-card'>
+                            <span class='material-symbols-outlined flow-icon'>
+                                call
+                            </span>
 
-                        <p className='flow-number'>1</p>
-                        <p className='flow-title'>Intake</p>
-                        <p className='flow-txt'>
-                            Schedule a discovery call to identify your needs and where Tag Ops can help
-                        </p>
+                            <p className='flow-number'>1</p>
+                            <p className='flow-title'>Intake</p>
+                            <p className='flow-txt'>
+                                Schedule a discovery call to identify your needs and where Tag Ops can help
+                            </p>
+                        </div>
+
+                        <div className='flow-card'>
+                            <span class='material-symbols-outlined flow-icon'>
+                                pending_actions
+                            </span>
+
+                            <p className='flow-number'>2</p>
+                            <p className='flow-title'>Assess</p>
+                            <p className='flow-txt'>
+                                We'll create a project scope and timeline to get your project(s) across the finish line
+                            </p>
+                        </div>
+
+                        <div className='flow-card'>
+                            <span class='material-symbols-outlined flow-icon'>
+                                rocket_launch
+                            </span>
+
+                            <p className='flow-number'>3</p>
+                            <p className='flow-title'>Launch</p>
+                            <p className='flow-txt'>
+                                We'll sync up, review the project scope, and set expectations to guarantee 
+                                that the project(s) run smoothly
+                            </p>
+                        </div>
+
+                        <div className='flow-card'>
+                            <span class='material-symbols-outlined flow-icon'>
+                                emoji_people
+                            </span>
+
+                            <p className='flow-number'>4</p>
+                            <p className='flow-title'>Execute</p>
+                            <p className='flow-txt'>
+                                A weekly sync will be scheduled and you'll be invited to a project tracking 
+                                system to ensure accountability
+                            </p>
+                        </div>
+
+                        <div className='flow-card'>
+                            <span class='material-symbols-outlined flow-icon'>
+                                door_front
+                            </span>
+
+                            <p className='flow-number'>5</p>
+                            <p className='flow-title'>Exit</p>
+                            <p className='flow-txt'>
+                                Assess whether Maintenance Mode is needed after project completion or 
+                                if the project(s) can be closed out
+                            </p>
+                        </div>
                     </div>
 
-                    <div className='flow-card'>
-                        <span class='material-symbols-outlined flow-icon'>
-                            pending_actions
-                        </span>
-
-                        <p className='flow-number'>2</p>
-                        <p className='flow-title'>Assess</p>
-                        <p className='flow-txt'>
-                            We'll create a project scope and timeline to get your project(s) across the finish line
-                        </p>
-                    </div>
-
-                    <div className='flow-card'>
-                        <span class='material-symbols-outlined flow-icon'>
-                            rocket_launch
-                        </span>
-
-                        <p className='flow-number'>3</p>
-                        <p className='flow-title'>Launch</p>
-                        <p className='flow-txt'>
-                            We'll sync up, review the project scope, and set expectations to guarantee 
-                            that the project(s) run smoothly
-                        </p>
-                    </div>
-
-                    <div className='flow-card'>
-                        <span class='material-symbols-outlined flow-icon'>
-                            emoji_people
-                        </span>
-
-                        <p className='flow-number'>4</p>
-                        <p className='flow-title'>Execute</p>
-                        <p className='flow-txt'>
-                            A weekly sync will be scheduled and you'll be invited to a project tracking 
-                            system to ensure accountability
-                        </p>
-                    </div>
-
-                    <div className='flow-card'>
-                        <span class='material-symbols-outlined flow-icon'>
-                            door_front
-                        </span>
-
-                        <p className='flow-number'>5</p>
-                        <p className='flow-title'>Exit</p>
-                        <p className='flow-txt'>
-                            Assess whether Maintenance Mode is needed after project completion or 
-                            if the project(s) can be closed out
+                    <div className='added-txt-container'>
+                        <p className='added-txt'>
+                            Our Tag Ops Flow is your key to achieving streamlined success. It's a carefully 
+                            crafted process that ensures we fully understand your unique needs and deliver 
+                            precisely the support your business requires. From start to finish, we maintain 
+                            clear communication, set expectations, and provide accountability, so you can focus 
+                            on what you do best – growing your business.
                         </p>
                     </div>
                 </div>
-
-                <div className='added-txt-container'>
-                    <p className='added-txt'>
-                        Our Tag Ops Flow is your key to achieving streamlined success. It's a carefully 
-                        crafted process that ensures we fully understand your unique needs and deliver 
-                        precisely the support your business requires. From start to finish, we maintain 
-                        clear communication, set expectations, and provide accountability, so you can focus 
-                        on what you do best – growing your business.
-                    </p>
-                </div>
-            </div>
+            </Fade>
 
 
             <div id='landing-testimonials-section'>
@@ -216,15 +221,17 @@ export default function LandingPage() {
                 </div>
             </div>
 
-            <div className='added-txt-container'>
-                <p className='added-txt'>
+            <div id='landing-bottom' className='added-txt-container'>
+                <p id='landing-added-txt' className='added-txt'>
                     We simplify business operations, offering tailored solutions that scale with your needs. 
                     From optimizing processes to strategic guidance, Tag Ops empowers businesses of all sizes 
                     to thrive while we handle the operational heavy lifting. Discover a smarter way to run 
                     your company with Tag Ops.
                 </p>
 
-                <Link id='talk-link-landing' className='lets-talk-link' to='/contact'>Let's talk!</Link>
+                <AttentionSeeker effect='tada' triggerOnce='true'>
+                    <Link id='talk-link-landing' className='lets-talk-link' to='/contact'>Let's talk!</Link>
+                </AttentionSeeker>
             </div>
         </section>
     )

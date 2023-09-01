@@ -272,9 +272,17 @@
                         margin-top: 1rem;
                     }
 
-    #talk-link-landing {
-        margin-top: 5%;
+    #landing-bottom {
+        margin-bottom: 10%;
     }
+        
+        #landing-added-txt {
+            margin-bottom: 5%;
+        }
+
+        #talk-link-landing {
+            margin-top: 15%;
+        }
 
     .blob-6 {
         animation: sliderShape 10s linear infinite;
