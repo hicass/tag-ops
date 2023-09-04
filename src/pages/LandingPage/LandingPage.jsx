@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
-import './LandingPage.css';
 import widePurpleLogo from '../../assets/images/logos/tag-lg-logo-purple.png';
+import './LandingPage.css';
 
 
 export default function LandingPage() {
@@ -12,7 +12,7 @@ export default function LandingPage() {
                 <h1 className='secret'>Tag Operations</h1>
 
                 <div id='intro-txt-section'>
-                    <h2 id='intro-h2'>Simplify, Optimize, Thrive with Tag Operations!</h2>
+                    <h2 id='intro-h2'>Simplify, Optimize, Thrive<br /> with Tag Operations!</h2>
 
                     <div id='txt-container'>
                         <span id='intro-txt'>Your tech forward, embedded, and flexible back office team!</span><br />
@@ -23,17 +23,17 @@ export default function LandingPage() {
             </div>
 
 
-            <div id='bob-section'>
-                <div className='blue-blob blob-6'></div>
-                <div className='blue-blob blob-5'></div>
-                <div className='blue-blob blob-4'></div>
-                <div className='blue-blob blob-3'></div>
-                <div className='purple-blob blob-2'></div>
-                <div className='purple-blob blob-1'></div>
-            </div>
 
 
             <div id='landing-solutions-section'>
+                <div id='bob-section'>
+                    <div className='blue-blob blob-6'></div>
+                    <div className='blue-blob blob-5'></div>
+                    <div className='blue-blob blob-4'></div>
+                    <div className='blue-blob blob-3'></div>
+                    <div className='purple-blob blob-2'></div>
+                    <div className='purple-blob blob-1'></div>
+                </div>
                 <AttentionSeeker effect='pulse'>
                     <h2 id='landing-solutions-h2'>Our Solutions</h2>
                 </AttentionSeeker>

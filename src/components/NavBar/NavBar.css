@@ -6,8 +6,8 @@
 }
 
     #nav-logo {
-        margin: 0.5rem;
-        width: 5rem;
+        margin: 10%;
+        width: clamp(3rem, 6vw, 5rem);
     }
 
     #link-div {
@@ -18,10 +18,10 @@
         .nav-link {
             color: var(--purple);
             text-decoration: none;
-            font-size: 1.4rem;
+            font-size: clamp(1rem, 1.5vw, 4rem);
             font-weight: bold;
             height: fit-content;
-            letter-spacing: 0.08rem;
+            letter-spacing: 0.12em;
             margin: 2rem;
         }
 
@@ -31,6 +31,7 @@
             }
 
             .down-arrow {
+                font-size: clamp(1rem, 1.5vw, 4rem);
                 position: absolute;
                 transform: translate(10%, 20%);
             }
