@@ -9,14 +9,14 @@ export default function ContactPage() {
             <div id='contact-page-l'>
 
                 <div id='contact-page-l-top'>
-                    <AttentionSeeker effect='pulse'>
+                    <AttentionSeeker effect='pulse' triggerOnce='true'>
                         <h1 id='contact-h1'>Contact</h1>
                     </AttentionSeeker>
 
                     <p className='added-txt' id='contact-page-txt'>
-                        If you've made it this far, it means our mission to support your business
-                        has struck a chord with you. Whether your business is large or small, 
-                        we're here to assist you in achieving your operational goals. 
+                        Fill out this form to start the conversation on how we can best support 
+                        your business. Whether your business is large or small, we're here to assist 
+                        you in achieving your operational goals. 
                     </p>
                 </div>
 
@@ -62,7 +62,7 @@ export default function ContactPage() {
                                 <input className='form-checkbox' value='Operations' type='checkbox' />
                             </label>
                             <label className='form-label' id='service-select'>
-                                Accounting/Bookkeeping
+                                Accounting/<br />Bookkeeping
                                 <input className='form-checkbox' value='Accounting/ Bookkeeping' type='checkbox' />
                             </label>
                         </fieldset>

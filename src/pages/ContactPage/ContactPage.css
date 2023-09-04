@@ -1,13 +1,15 @@
 #contact-page {
     align-items: flex-start;
     display: flex;
-    margin: -5% 0 8%;
+    margin: -10% 0 8%;
+    overflow-x: hidden;
+    padding: 5%;
 }
 
     #contact-page-l {
         display: flex;
         flex-direction: column;
-        width: 48%;
+        width: 45%;
     }
 
         #contact-page-l-top {
@@ -18,13 +20,14 @@
             #contact-h1 {
                 color: var(--purple);
                 font-family: 'Tahoma', sans-serif;
-                font-size: 5rem;
-                letter-spacing: 0.8rem;
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                letter-spacing: 0.2em;
                 margin: 10% 0 0 10%;
-                text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+                text-shadow: 0.04em 0.04em 0 var(--light-blue);
             }
 
             #contact-page-txt {
+                font-size: clamp(0.8rem, 2.5vw, 1.8rem);
                 margin: 5% 10%;
             }
 
@@ -36,13 +39,13 @@
         }
             #contact-page-email {
                 color: var(--purple);
-                font-size: 1.5rem;
+                font-size: clamp(0.8rem, 2.2vw, 1.7rem);
             }
 
             #linkedin-link {
                 color: var(--purple);
-                font-size: 4rem;
-                text-shadow: 0.15rem 0.20rem 0 var(--light-blue);
+                font-size: clamp(2.5rem, 5vw, 4rem);
+                text-shadow: 0.04em 0.04em 0 var(--light-blue);
             }
 
             #linkedin-link:hover {
@@ -58,7 +61,8 @@
         padding: 2% 5% 15%;
         position: relative;
         margin-top: 5%;
-        width: 100%;
+        max-width: 80vw;
+        min-width: 40vw;
     }
 
         #contact-form-top {
@@ -70,27 +74,29 @@
                 border: 0;
                 display: flex;
                 flex-direction: column;
+                max-width: 45vw;
+                min-width: 20vw;
+                padding-right: 2%;
             }
             
                 .form-label {
                     color: var(--purple);
                     display: flex;
                     flex-direction: column;
-                    font-size: 1.6rem;
+                    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
                     font-weight: bold;
-                    letter-spacing: 0.1rem;
-                    padding: 0.5rem 2rem 0.5rem 0;
+                    letter-spacing: 0.08em;
+                    padding: 2% 3% 3% 0;
                 }
 
                 .form-input {
                     border: 0;
                     border-radius: 5px;
                     font-family: 'Lato', sans-serif;
-                    font-size: 1.3rem;
-                    line-height: 2.5rem;
-                    margin: 6% 0 0;
-                    padding: 0.2rem 0.4rem;
-                    width: 17rem;
+                    font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+                    line-height: 1.8em;
+                    margin: 5% 0 0;
+                    padding: 0.2em 0.4em;
                 }
 
             #form-top-r {
@@ -104,13 +110,13 @@
 
                 #service-select {
                     flex-direction: row-reverse;
-                    font-size: 1.2rem;
+                    font-size: clamp(0.8rem, 2vw, 1.4rem);
+                    overflow-wrap: break-word;
                 }
 
                 .form-checkbox {
-                    margin: 0 1rem 0 0;
+                    margin-right: 0.5em;
                     padding: 0;
-                    width: 1.3rem;
                 }
 
                 .form-checkbox:hover {
@@ -119,9 +125,9 @@
 
 
         #form-textarea {
-            font-size: 1rem;
+            font-size: clamp(1rem, 2vw, 1.8rem);
             margin-top: 2%;
-            padding: 0.1rem 0.6rem;
+            padding: 0.1em 0.6em;
             width: 97%;
         }
 
@@ -141,11 +147,11 @@
             border-radius: 7px;
             box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
             color: white;
-            font-size: 1.5rem;
+            font-size: clamp(1rem, 2vw, 1.5rem);
             left: 35%;
-            padding: 0.3rem 0.5rem;
+            padding: 0.3em 0.5em;
             position: absolute;
-            top: 90%;
+            top: 87%;
             transition: all 0.3s ease;
             width: 30%;
         }

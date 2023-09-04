@@ -70,7 +70,7 @@ export default function LandingPage() {
             </div>
 
 
-            <Fade triggerOnce='true'>
+            <Fade>
                 <div id='landing-flow-section'>
                     <h2 id='flow-h2'>The Tag Ops Flow:</h2>
 

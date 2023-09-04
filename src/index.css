@@ -41,9 +41,9 @@ body {
 
         .added-txt {
             color: var(--purple);
-            font-size: 2rem;
-            letter-spacing: 0.15rem;
-            line-height: 2.3rem;
+            font-size: clamp(1rem, 3vw, 2rem);
+            letter-spacing: 0.08em;
+            line-height: 1.5em;
             margin: 5% 3% 0;
         }
 
