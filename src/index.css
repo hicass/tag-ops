@@ -41,21 +41,21 @@ body {
 
         .added-txt {
             color: var(--purple);
-            font-size: clamp(1rem, 3vw, 2rem);
+            font-size: clamp(1.2rem, 1.8vw, 2rem);
             letter-spacing: 0.08em;
             line-height: 1.5em;
-            margin: 5% 3% 0;
+            margin: 3% 3% 0;
         }
 
     .lets-talk-link {
         background: linear-gradient(  var(--purple) 0%, var(--light-purple) 180%);
         border: 0;
         border-radius: 15px;
-        box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
+        box-shadow: 0.2em 0.2em 0 var(--light-blue);
         color: white;
-        font-size: 2rem;
+        font-size: clamp(1rem, 2.5vw, 1.8rem);
         margin: 0 0 5%;
-        padding: 0.7rem 1.5rem;
+        padding: 0.4em 1em;
         text-decoration: none;
     }
 

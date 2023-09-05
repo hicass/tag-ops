@@ -1,5 +1,5 @@
 #landing-page {
-    margin-top: -2%;
+    margin-top: -5%;
     overflow-x: hidden;
     position: relative;
     width: 100%;
@@ -19,9 +19,9 @@
                 color: var(--purple);
                 font-family: 'Tahoma', sans-serif;
                 font-size: 4.5vw;
-                letter-spacing: 0.2rem;
+                letter-spacing: 0.08em;
                 padding: 5% 0;
-                text-shadow: 0.11rem 0.14rem 0 var(--light-blue);
+                text-shadow: 0.04em 0.04em 0 var(--light-blue);
                 white-space: nowrap;
             }
 
@@ -52,19 +52,21 @@
         color: white;
         display: flex;
         flex-direction: column;
-        margin-top: 20%;
+        margin-top: 18%;
         z-index: 2;
     }
 
         #landing-solutions-h2 {
-            font-size: clamp(0rem, 4vw, 100000rem);
-            letter-spacing: 0.2rem;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            letter-spacing: 0.1em;
         }
 
         #solutions-container {
             display: flex;
-            gap: 2rem;
-            margin-top: 4rem;
+            align-items: center;
+            gap: 3%;
+            justify-content: center;
+            margin: 3% 0 0;
         }
 
             .solution-link {
@@ -77,11 +79,11 @@
                     border-radius: 25px;
                     box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
                     display: flex;
-                    font-size: 2rem;
-                    height: 25rem;
+                    font-size: clamp(0.5rem, 1.8vw, 2rem);
+                    min-height: 14em;
                     justify-content: center;
                     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                    width: 25rem;
+                    min-width: 14em;
                 }
 
                         .solution:hover {
@@ -92,11 +94,9 @@
 
                         .solution-txt {
                             background-color: var(--purple);
-                            border: 0.2rem solid var(--purple);
                             border-radius: 7px;
-                            box-shadow: 0.3rem 0.3rem 0 var(--light-blue);
-                            letter-spacing: 0.15rem;
-                            padding: 0.2rem 0.5rem;
+                            letter-spacing: 0.1em;
+                            padding: 0.2em 0.5em;
                             transition: all 0.3s ease;
                         }
 
@@ -118,9 +118,10 @@
                 }
 
             #solutions-bottom-txt {
-                font-size: 2rem;
-                letter-spacing: 0.15rem;
-                margin: 4rem;
+                font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+                letter-spacing: 0.1em;
+                margin: 3% 12%;
+                text-align: center;
             }
 
 
@@ -134,8 +135,8 @@
 
         #stats-h2 {
             color: white;
-            font-size: 4rem;
-            letter-spacing: 0.2rem;
+            font-size: clamp(2rem, 3vw, 3rem);
+            letter-spacing: 0.1em;
             margin-top: 7%;
         }
 
@@ -144,61 +145,62 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin-top: 7%;
+        margin-top: 10%;
     }
 
         #flow-h2 {
             color: var(--purple);
-            font-size: 4rem;
-            letter-spacing: 0.2rem;
+            font-size: clamp(2rem, 3vw, 3rem);
+            letter-spacing: 0.1em;
         }
 
         #flow-container {
-            display: flex;
-            flex-direction: row;
-            margin-top: 7%;
-            width: 80%;
+            display: grid;
+            justify-content: center;
+            margin-top: 5%;
+            gap: 2%;
+            grid-template-columns: 20% 20% 20% 20% 20%;
         }
 
             .flow-card {
                 align-items: center;
-                border: 0.3rem solid var(--purple);
+                border: 0.4vw solid var(--purple);
                 border-radius: 10px;
-                box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+                box-shadow: 0.3em 0.5em 0.5em #0000001f, 0.3em 0.5em 0.5em #0000001f;
                 display: flex;
                 flex-direction: column;
-                height: 20rem;
                 margin: 1%;
-                width: 15rem;
+                padding: 2% 2% 10%;
+                width: clamp(8rem, 13vw, 15rem);
             }
 
                 .flow-icon {
                     background: linear-gradient(  rgba(94, 23, 235, 1) 0%, var(--light-purple) 200%);
                     border-radius: 50%;
                     color: white;
-                    font-size: 2.8rem;
-                    padding: 0.8rem;
+                    font-size: clamp(1.5rem, 3vw, 2.2rem);
+                    padding: 0.4em;
                     position: relative;
-                    top: -30px;
+                    top: -8%;
                 }
 
                 .flow-number {
                     color: var(--purple);
                     font-family: 'Tahoma', sans-serif;
-                    font-size: 2rem;
+                    font-size: clamp(1rem, 2vw, 1.8rem);
                     margin-top: -8%;
                 }
 
                 .flow-title {
                     color: var(--purple);
                     font-family: 'Tahoma', sans-serif;
-                    font-size: 2rem;
+                    font-size: clamp(1rem, 2vw, 1.5rem);
                 }
 
                 .flow-txt {
                     color: var(--purple);
-                    font-size: 1.05rem;
-                    letter-spacing: 0.15rem;
+                    font-size: clamp(0.5rem, 1.2vw, 1.3rem);
+                    letter-spacing: 0.1em;
                     margin: 10% 7%;
                     text-align: center;
                 }
@@ -208,35 +210,33 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 10% 0 0;
+        margin: 10% 3% 0;
         position: relative;
     }
 
         #testimonials-h2 {
             color: var(--purple);
-            font-size: 4rem;
-            letter-spacing: 0.2rem;
+            font-size: clamp(2rem, 3vw, 3rem);
+            letter-spacing: 0.1em;
         }
 
             #testimonials-container {
                 align-items: top;
                 background: linear-gradient(  rgba(94, 23, 235, 1) 0%, var(--light-purple) 180%);
                 border-radius: 25px;
-                box-shadow: 0.7rem 0.8rem 0 var(--light-blue);
+                box-shadow: 0.5em 0.5em 0 var(--light-blue);
                 display: flex;
                 flex-direction: row;
-                margin: 5% 3% 0;
+                margin: 3% 3% 0;
             }
 
                 .testimonial-card {
                     color: white;
                     border-radius: 25px;
-                    font-size: 1.3rem;
                     font-weight: bolder;
-                    letter-spacing: 0.1rem;
-                    margin: 0 2%;
-                    padding: 1.5rem;
-                    width: 80%;
+                    letter-spacing: 0.1em;
+                    padding: 2%;
+                    width: 70%;
                 }
 
                     .testimonial-top {
@@ -249,26 +249,29 @@
                             background-color: var(--light-blue);
                             border-radius: 50px;
                             box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
-                            font-size: 3rem;
-                            height: 3rem;
+                            font-size: clamp(2.2rem, 4vw, 2.5rem);
+                            height: fit-content;
                             margin-top: 2%;
-                            padding: 0.5rem;
+                            padding: 2%;
                         }
 
                             .testimonial-name {
                                 font-family: 'Tahoma', sans-serif;
-                                margin: 0.2rem 1rem;
+                                font-size: clamp(1rem, 2vw, 1.5rem);
+                                letter-spacing: 0.12em;
+                                margin: 2% 8%;
                             }
 
                             .testimonial-role {
-                                font-size: 1.2rem;
-                                margin: 0.2rem 1rem;
+                                font-size: clamp(0.5rem, 1.8vw, 1.3rem);
+                                margin: 2% 8%;
                             }
 
                     .testimonial-txt {
-                        font-size: 1.2rem;
-                        line-height: 1.8rem;
-                        margin-top: 1rem;
+                        font-size: clamp(0.5rem, 1.5vw, 1.3rem);
+                        letter-spacing: 0.1em;
+                        line-height: 1.5em;
+                        margin-top: 5%;
                     }
 
         #landing-added-txt {
