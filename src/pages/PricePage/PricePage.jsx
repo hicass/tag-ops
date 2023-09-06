@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import './PricePage.css';
 
 
 export default function PricePage() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
         <section id='price-page'>
 
@@ -48,8 +53,9 @@ export default function PricePage() {
 
                     <td className='top-td border-r'>
                         <p className='price-txt'>
-                            Starting at <span className='price-num'>$1,100/month</span>
+                            Starting at 
                         </p>
+                        <p className='price-num'>$1,100/month</p>
                         <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             5hrs/month of HR Support
@@ -73,8 +79,9 @@ export default function PricePage() {
 
                     <td className='border-r'>
                         <p className='price-txt'>
-                            Starting at <span className='price-num'>$2,000/month</span>
+                            Starting at 
                         </p>
+                        <p className='price-num'>$2,000/month</p>
                         <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             10hrs/month of HR Support
@@ -91,8 +98,9 @@ export default function PricePage() {
 
                     <td className='border-r'>
                         <p className='price-txt'>
-                            Starting at <span className='price-num'>$5,000/month</span>
+                            Starting at 
                         </p>
+                        <p className='price-num'>$5,000/month</p>
                         <p className='service-txt'>
                             <span class='material-symbols-outlined table-icon'>schedule</span>
                             35hrs/month of HR Support
@@ -113,11 +121,11 @@ export default function PricePage() {
                     <td id='bot-row-l' className='side-td border-r'>Large business $500,000+</td>
 
                     <td className='border-r center'>
-                        <Link id='contact-link' className='nav-link' to='/contact'>Contact Us!</Link>
+                        <Link className='nav-link contact-link-price' to='/contact'>Contact Us!</Link>
                     </td>
 
                     <td className='border-r center'>
-                        <Link id='contact-link' className='nav-link' to='/contact'>Contact Us!</Link>
+                        <Link className='nav-link contact-link-price' to='/contact'>Contact Us!</Link>
                     </td>
 
                     <td id='bot-row-r' className='side-td'></td>
@@ -379,11 +387,11 @@ export default function PricePage() {
                 <tr> {/*Contact row*/}
                     <td className='side-td'></td>
                     <td id='link-row' className='center'>
-                        <Link className='lets-talk-link' to='/contact'>Let's Talk!</Link>
+                        <Link className='lets-talk-link lets-talk-link-price' to='/contact'>Let's Talk!</Link>
                     </td>
 
                     <td id='link-row' className='center'>
-                        <Link className='lets-talk-link' to='/contact'>Let's Talk!</Link>
+                        <Link className='lets-talk-link lets-talk-link-price' to='/contact'>Let's Talk!</Link>
                     </td>
                 </tr>
             </table>

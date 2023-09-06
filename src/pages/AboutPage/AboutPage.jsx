@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Slide } from 'react-awesome-reveal';
 import sfImage from '../../assets/images/about-page/about-sf.jpg';
@@ -7,6 +8,10 @@ import './AboutPage.css'
 
 
 export default function AboutPage() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    });
+
     return (
         <section id='about-page'>
 

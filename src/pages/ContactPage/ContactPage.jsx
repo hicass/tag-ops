@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { AttentionSeeker } from 'react-awesome-reveal';
 import { Slide } from 'react-awesome-reveal';
 import './ContactPage.css';
 
 
 export default function ContactPage() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    });
+
     return (
         <section id='contact-page'>
             <div id='contact-page-l'>
