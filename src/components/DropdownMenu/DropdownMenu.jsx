@@ -6,7 +6,7 @@ import './DropdownMenu.css';
 export default function DropdownMenu() {
     return (
         <div id='dropdown-menu-items'>
-                <Fade>
+            <Fade>
                 <ul>
                     <Fade cascade duration='400'>
                         <li className='dropdown-li'>

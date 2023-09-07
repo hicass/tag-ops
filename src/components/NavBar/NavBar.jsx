@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import smallPurpleLogo from '../../assets/images/logos/tag-sm-logo-purple.png';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
+import MobileMenu from '../MobileMenu/MobileMenu';
 import './NavBar.css'
 
 
 export default function NavBar() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [navActive, setNavActive] = useState(false);
 
   function handleMouseEnter() {
@@ -19,6 +21,10 @@ export default function NavBar() {
     setDropdownVisible(false);
   }
 
+  function toggleMobileMenu() {
+    setMobileMenuVisible((open) => !open);
+  }
+
   const navStyle = {
     color: navActive ? '#bba6e8' : '#5E17EB',
     transition: 'color 0.2s ease-in-out',
@@ -26,12 +32,13 @@ export default function NavBar() {
 
 
   return (
+    <>
     <nav id='main-nav'>
       <Link to='/' >
         <img id='nav-logo' src={smallPurpleLogo} alt='Tag Ops Logo' />
       </Link>
 
-      <div id='link-div'>
+      <div className='main-link-div'>
         <Link className='nav-link' to='/about'>About Us</Link>
 
         <div id='dropdown-parent-div' onMouseLeave={handleMouseLeave}>
@@ -45,16 +52,31 @@ export default function NavBar() {
               expand_more
             </span>
           </p>
+
           {isDropdownVisible && <DropdownMenu handleMouseLeave={handleMouseLeave} />}
         </div>
 
         <Link className='nav-link' to='/prices'>Prices</Link>
-
         <Link id='contact-link' className='nav-link' to='/contact'>Contact</Link>
       </div>
       
-      <div>
+      <div id='menu-toggle'>
+        <input id='toggle-checkbox' type='checkbox' />
+        <label 
+          className='toggle mobile-nav-trigger' 
+          for='toggle-checkbox' 
+          onClick={toggleMobileMenu}
+        >
+            <div className='bar bar--top'></div>
+            <div className='bar bar--middle'></div>
+            <div className='bar bar--bottom'></div>
+        </label>
       </div>
     </nav>
+
+    <div>
+      {isMobileMenuVisible && <MobileMenu toggleMobileMenu={toggleMobileMenu}/> }
+    </div>
+    </>
   );
 }
