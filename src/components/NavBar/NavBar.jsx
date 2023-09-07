@@ -61,15 +61,19 @@ export default function NavBar() {
       </div>
       
       <div id='menu-toggle'>
-        <input id='toggle-checkbox' type='checkbox' />
+        <input 
+          id='toggle-checkbox' 
+          className={isMobileMenuVisible ? 'toggle-on' : ''}
+          type='checkbox' 
+        />
         <label 
           className='toggle mobile-nav-trigger' 
           for='toggle-checkbox' 
           onClick={toggleMobileMenu}
         >
-            <div className='bar bar--top'></div>
-            <div className='bar bar--middle'></div>
-            <div className='bar bar--bottom'></div>
+          <div className='bar bar--top'></div>
+          <div className='bar bar--middle'></div>
+          <div className='bar bar--bottom'></div>
         </label>
       </div>
     </nav>
