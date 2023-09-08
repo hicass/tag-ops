@@ -3,13 +3,14 @@
     overflow-x: hidden;
     position: relative;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
     #landing-page-intro {
         align-items: center;
         display: flex;
         padding: 5%;
+        position: relative;
     }
 
         #intro-txt-section {
@@ -35,7 +36,7 @@
                     animation: 
                         typing 2s steps(20, end) forwards,
                         blink-caret 1s step-end infinite;
-                    border-right: 2px solid var(--light-blue);
+                    border-right: 0.1em solid var(--purple);
                     color: var(--purple);
                     font-size: 2.2vw;
                     overflow: hidden;
@@ -381,4 +382,170 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(32, 40, 90) }
+}
+
+@media screen and (max-width: 768px) {
+
+    #landing-page {
+        margin-top: 0;
+    }
+
+        #landing-page-intro {
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding-top: 0;
+        }
+
+            #intro-txt-section {
+                margin-right: 0;
+            }
+
+            #txt-container {
+                margin-left: 1%;
+            }
+
+                #intro-logo {
+                    width: 60%;
+                }
+
+                #intro-h2 {
+                    font-size: 6vw;
+                    text-align: center;
+                    margin-top: 2%;
+                }
+
+                    #intro-txt {
+                        padding-right: 1%;
+                        font-size: 3.5vw;
+                    }
+
+                #landing-solutions-h2 {
+                    margin-top: 15%;
+                    font-size: clamp(1.8rem, 6vw, 4rem);
+                }
+
+                #solutions-container {
+                    margin-top: 5%;
+                    flex-wrap: wrap;
+                }
+
+                    .solution-link {
+                        margin-bottom: 10%;
+                    }
+
+                        .solution {
+                            min-height: 25em;
+                            min-width: 25em;
+                            max-height: 25em;
+                            max-width: 25em;
+                        }
+
+                            .solution-txt {
+                                font-size: clamp(0.5rem, 5vw, 1.15rem);
+                            }
+
+                            #solutions-bottom-txt {
+                                font-size: clamp(1rem, 5vw, 2.5rem);
+                                margin: 2% 5%;
+                            }
+
+                            .solution-link {
+                                margin-bottom: 5%;
+                            }
+
+                #flow-h2 {
+                    font-size: clamp(1.8rem, 5vw, 8rem);
+                }
+
+                #flow-container {
+                    margin: 2%;
+                    flex-wrap: wrap;
+                    display: flex;
+                    gap: 5%;
+                }
+
+                    .flow-card {
+                        border: 0.3em solid var(--purple);
+                        width: clamp(8rem,25vw, 100rem);
+                        margin-top: 5%;
+                        padding-bottom: 5%;
+                    }
+
+                        .flow-icon {
+                            font-size: clamp(1.8rem, 3vw, 3rem);
+                            top: -15%;
+                        }
+
+                        .flow-number {
+                            font-size: clamp(1.2rem, 4vw, 4rem);
+                        }
+
+                        .flow-title {
+                            font-size: clamp(1.2rem, 3vw, 4rem);
+                        }
+
+                        .flow-txt {
+                            font-size: clamp(0.8rem, 2.5vw, 3rem);
+                            margin-top: 5%;
+                        }
+
+                #testimonials-h2 {
+                    font-size: clamp(1.7rem, 5vw, 8rem);
+                }
+
+                #testimonials-container {
+                    flex-direction: column;
+                    align-items: center;
+                    width: fit-content;
+                    margin-bottom: 5%;
+                }
+
+                    .testimonial-card {
+                        width: 90%;
+                    }
+
+                        .testimonial-icon {
+                            font-size: clamp(1.5rem, 4vw, 2.5rem);
+                        }
+
+                        .testimonial-name {
+                            font-size: clamp(1.2rem, 2vw, 1.5rem);
+                        }
+
+                        .testimonial-role {
+                            font-size: clamp(0.9rem, 1.8vw, 1.3rem);
+                        }
+
+                        .testimonial-txt {
+                            margin-top: 2%;
+                           font-size: clamp(1rem, 1.5vw, 1.3rem);
+                        }
+
+                #landing-added-txt {
+                    margin-bottom: 10%;
+                }
+
+            .blob-1 {
+                top: 80vw;
+            }
+
+            .blob-2 {
+                top: 75vw;
+            }
+
+            .blob-3 {
+                top: 75vw;
+            }
+
+            .blob-4 {
+                top: 72vw;
+            }
+
+            .blob-5 {
+                top: 77vw;
+            }
+
+            .blob-6 {
+                top: 72vw;
+            }
 }

@@ -83,3 +83,13 @@ body {
         position: absolute;
         visibility: hidden;
     }
+
+@media screen and (max-width: 768px) {
+    .added-txt {
+        font-size: clamp(1.3rem, 1.8vw, 2rem);
+    }
+
+    .lets-talk-link {
+        font-size: clamp(0.8rem, 5vw, 5rem);
+    }
+}

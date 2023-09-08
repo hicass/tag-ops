@@ -78,7 +78,7 @@ export default function NavBar() {
       </div>
     </nav>
 
-    <div>
+    <div className='mobile-nav-div'>
       {isMobileMenuVisible && <MobileMenu toggleMobileMenu={toggleMobileMenu}/> }
     </div>
     </>

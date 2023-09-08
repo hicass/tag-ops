@@ -23,8 +23,6 @@ export default function LandingPage() {
             </div>
 
 
-
-
             <div id='landing-solutions-section'>
                 <div id='bob-section'>
                     <div className='blue-blob blob-6'></div>
