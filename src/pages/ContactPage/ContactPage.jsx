@@ -67,7 +67,7 @@ export default function ContactPage() {
                                 <input className='form-checkbox' value='Operations' type='checkbox' />
                             </label>
                             <label className='form-label' id='service-select'>
-                                Accounting/<br />Bookkeeping
+                                Finance
                                 <input className='form-checkbox' value='Accounting/ Bookkeeping' type='checkbox' />
                             </label>
                         </fieldset>

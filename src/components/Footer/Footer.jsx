@@ -25,7 +25,7 @@ export default function Footer() {
                     </Link>
 
                     <Link to='/finance' className='footer-link'>
-                        Accounting/ Bookkeeping
+                        Finance
                     </Link>
                 </div>
 
@@ -40,23 +40,12 @@ export default function Footer() {
                     <Link to='/contact' className='footer-link'>
                         Contact
                     </Link>
-                    <p id='footer-email'>tag@tagoperations.com</p>
                 </div>
             </div>
 
 
             <div id='footer-right'>
-                <p className='creator-link'>
-                    Website created by: 
-                    <a 
-                        href='https://hicass.dev/' 
-                        target='_blank' 
-                        rel='noreferrer'  
-                        className='creator-link'
-                    >
-                    Cass Walters
-                    </a>
-                </p>
+                <p id='footer-email'>tag@tagoperations.com</p>
             </div>
         </footer>
     )

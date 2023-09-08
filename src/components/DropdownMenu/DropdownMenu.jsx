@@ -23,7 +23,7 @@ export default function DropdownMenu() {
 
                         <li className='dropdown-li'>
                             <Link className='dropdown-link' to='/finance'>
-                                Accounting/ Bookkeeping
+                                Finance
                             </Link>
                         </li>
                     </Fade>
