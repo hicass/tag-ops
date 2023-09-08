@@ -1,6 +1,6 @@
 footer {
     align-items: baseline;
-    background-color: var(--purple);
+    background: linear-gradient(  rgba(94, 23, 235, 1) 0%, var(--light-purple) 250%);
     color: white;
     display: flex;
     flex-direction: row;

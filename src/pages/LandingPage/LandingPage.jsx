@@ -12,7 +12,7 @@ export default function LandingPage() {
                 <h1 className='secret'>Tag Operations</h1>
 
                 <div id='intro-txt-section'>
-                    <h2 id='intro-h2'>Simplify, Optimize, Thrive<br /> with Tag Operations!</h2>
+                    <h2 id='intro-h2'>Simplify, Optimize, Scale<br /> with Tag Operations!</h2>
 
                     <div id='txt-container'>
                         <span id='intro-txt'>Your tech forward, embedded, and flexible back office team!</span><br />

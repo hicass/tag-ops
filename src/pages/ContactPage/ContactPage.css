@@ -1,9 +1,9 @@
 #contact-page {
     align-items: flex-start;
     display: flex;
-    margin: -10% 0 8%;
+    margin:  0 0 8%;
     overflow-x: hidden;
-    padding: 5%;
+    padding: 0 5% 5%;
 }
 
     #contact-page-l {

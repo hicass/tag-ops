@@ -45,7 +45,7 @@ export default function AboutPage() {
 
             <Fade>
                 <div id='about-story-section'>
-                    <h2 id='story-h2'>Our story</h2>
+                    <h2 id='story-h2'>Our Story</h2>
 
                     <p className='added-txt'>
                         Tag Ops was founded on the fundamental belief that every company, regardless of its size, 
@@ -73,7 +73,7 @@ export default function AboutPage() {
                         <h2 id='mission-h2'>Our Mission</h2>
 
                         <p id='mission-p'>
-                            Simplify your operations, optimize your resources, and help you thrive.<br />
+                            Simplify your operations, optimize your resources, and help you scale.<br />
                             We make your business journey smoother, more efficient, and ultimately more successful!
                         </p>
                     </div>
