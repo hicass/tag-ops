@@ -6,7 +6,7 @@
 </h1>
 
 <p align='center'>- STILL IN DEVELOPMENT-</p>
-<p align='center'>Please see Demo below</p>
+<p align='center'>Please see Demo below...</p>
 <p align='center'>
   The second version of <a href='https://www.tagoperations.com/' target='_blank'>tagoperations.com</a> built with <a href='https://react.dev/' target='_blank'>React.</a> Designed and developed by me.
 </p>
