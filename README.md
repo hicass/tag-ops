@@ -6,7 +6,7 @@
 </h1>
 
 <p align='center'>- STILL IN DEVELOPMENT-</p>
-<p align='center'>Please see Demo below...</p>
+<p align='center'>Please see demo below...</p>
 <p align='center'>
   The second version of <a href='https://www.tagoperations.com/' target='_blank'>tagoperations.com</a> built with <a href='https://react.dev/' target='_blank'>React.</a> Designed and developed by me.
 </p>
@@ -20,7 +20,7 @@
 </div>
 
 
-## Tech Stack
+### Tech Stack
 
 **Client:** 
 - [React](https://react.dev/)
@@ -32,7 +32,7 @@
 **Deployment:**
 - Still in development
 
-## Features
+### Features
 
 - A landing page that provides an engaging introduction to the business.
 - Navigation links at the top of the website ensure easy navigation, and a services section activates a drop-down menu upon hovering, optimizing screen space efficiency.
@@ -44,7 +44,7 @@
 - For smaller screens, a distinctive navigation hamburger icon that activates the navigation menu.
 
 
-## Demo
+### Demo
 
 ![Landing Page](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3BrMWc5NDZ4aDNqZTIwYTFxcmc3YzlnbnVwemg4bHkxcGszOWcyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6CxWm9voNz14e6ha0O/giphy.gif)
 
@@ -54,7 +54,7 @@
 
 ![Mobile Nav](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NkaG1yZGVqYzl3bm92MDN5ZnJiYjZvaDAxaTJ5b2J2Zjc2bnR6aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dF63FCSPSn0RsF1F08/giphy.gif)
 
-## Color Reference
+### Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -67,7 +67,7 @@
 | Grey | ![#737D91](https://via.placeholder.com/10/737D91?text=+) #737D91 |
 | Black | ![#2c2c2c](https://via.placeholder.com/10/2c2c2c?text=+) #2c2c2c |
 
-## Roadmap
+### Roadmap
 
 - A pricing page that elegantly presents the pricing plans.
 - Service pages utilizing an efficient and modular template to provide in-depth information about the various services offered by Tag Operations.
