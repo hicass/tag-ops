@@ -1,5 +1,5 @@
 <div align='center'>
-    <Img alt='Logo' src='./public/favicon.ico' width='10px'/>
+    <Img alt='Logo' src='./public/favicon.ico' width='120px'/>
 </div>
 <h1 align='center'>
   tagoperations.com - v2
