@@ -1,5 +1,5 @@
 <div align='center'>
-    <Img alt='Logo' src='./public/favicon.ico' width='50px'/>
+    <Img alt='Logo' src='./public/favicon.ico' width='10px'/>
 </div>
 <h1 align='center'>
   tagoperations.com - v2
@@ -16,7 +16,7 @@
 </p>
 
 <div align='center'>
-    <Img alt='App Screen Shot' src='./public/images/readme.png'>
+    <Img alt='App Screen Shot' src='./public/readme.png'>
 </div>
 
 
