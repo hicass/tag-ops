@@ -25,6 +25,7 @@
 **Client:** 
 - [React](https://react.dev/)
 - [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+- [Email.JS](https://www.emailjs.com/)
 
 **Server:** 
 - [Node](https://nodejs.org/en)
@@ -42,6 +43,7 @@
 - A footer that offers additional navigation options for the website.
 - A beautiful, modern, and engaging design that aligns perfectly with the company's personality.
 - For smaller screens, a distinctive navigation hamburger icon that activates the navigation menu.
+- Utilized [Email.JS](https://www.emailjs.com/) for the contact form to enable customization of received emails and their layout, tailored to the business's preferences.
 
 
 # Demo
@@ -71,5 +73,4 @@
 
 - A pricing page that elegantly presents the pricing plans.
 - Service pages utilizing an efficient and modular template to provide in-depth information about the various services offered by Tag Operations.
-- Utilizing [Email.Js](https://www.emailjs.com/) for the contact form to enable customization of received emails and their layout, tailored to the business's preferences.
 - A blog feature that allows the business owner to log in and create blog posts, which will be displayed on a dedicated blog page in the future.
