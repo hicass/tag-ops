@@ -94,8 +94,14 @@ export default function ContactPage() {
                 </div>
             </div>
 
-                <div>
-                {formSubmitted && <p>Thank you for reaching out, we will be in touch!</p>}
+
+            <div id='contact-page-r'>
+                <div id='confirmation-msg'>
+                {formSubmitted && 
+                    <p>Thank you for reaching out, we will be in touch!
+                        <span className='place-holder'>p</span>
+                    </p>
+                }
                 </div>
 
                 <form id='contact-form' ref={form} onSubmit={sendEmail} noValidate>
@@ -125,7 +131,10 @@ export default function ContactPage() {
                                     onChange={(e) => handleEmail(e)}
                                     required 
                                 />
-                                <p id='email-message'>{emailMessage}</p>
+                                <p id='email-message'>
+                                    {emailMessage}
+                                    <span className='place-holder'>p</span>
+                                </p>
                             </label>
 
                             <label className='form-label'>
@@ -193,6 +202,7 @@ export default function ContactPage() {
                     
                     <input id='form-submit' type='submit' />
                 </form>
+            </div>
         </section>
     )
 }
