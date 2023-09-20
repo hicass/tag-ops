@@ -6,9 +6,12 @@ import './ContactPage.css';
 
 
 export default function ContactPage() {
-    const form = useRef()
+    const form = useRef();
     const [formSubmitted, setFormSubmitted] = useState(false);
     const [emailMessage, setEmailMessage] = useState('');
+    const [isHRChecked, setIsHRChecked] = useState(false);
+    const [isOpsChecked, setIsOpsChecked] = useState(false);
+    const [isFinChecked, setIsFinChecked] = useState(false);
     const [formValues, setFormValues] = useState({
       name: '',
       email: '',
@@ -16,6 +19,7 @@ export default function ContactPage() {
       message: '',
       service: ''
     });
+
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -32,12 +36,16 @@ export default function ContactPage() {
             }
     
           }, (error) => {
-              console.log(error.text)
+              console.log(error.text);
           });
     }
 
     const handleSubmit = () => {
-        setFormSubmitted(true)
+        setEmailMessage('');
+        setFormSubmitted(true);
+        setIsHRChecked(false);
+        setIsOpsChecked(false);
+        setIsFinChecked(false);
         setFormValues({
             name: '',
             email: '',
@@ -45,7 +53,7 @@ export default function ContactPage() {
             message: '',
             service: ''
         });
-        setEmailMessage('');
+
         setTimeout(() => setFormSubmitted(false), 7000);
       }
 
@@ -64,11 +72,26 @@ export default function ContactPage() {
         validateEmail(e);
     }
 
+    const handleCheck = (service) => {
+        switch (service) {
+            case 'HR':
+                setIsHRChecked(!isHRChecked);
+                break;
+            case 'Ops':
+                setIsOpsChecked(!isOpsChecked);
+                break;
+            case 'Fin':
+                setIsFinChecked(!isFinChecked);
+                break;
+            default: 
+                console.log('Invalid option!');
+        }
+    }
+
 
     return (
         <section id='contact-page'>
             <div id='contact-page-l'>
-
                 <div id='contact-page-l-top'>
                     <AttentionSeeker effect='pulse' triggerOnce='true'>
                         <h1 id='contact-h1'>Contact</h1>
@@ -94,14 +117,13 @@ export default function ContactPage() {
                 </div>
             </div>
 
-
             <div id='contact-page-r'>
                 <div id='confirmation-msg'>
-                {formSubmitted && 
-                    <p>Thank you for reaching out, we will be in touch!
-                        <span className='place-holder'>p</span>
-                    </p>
-                }
+                    <span className='place-holder'>p</span>
+                    
+                    {formSubmitted && 
+                        <p>Thank you for reaching out, we will be in touch!</p>
+                    }
                 </div>
 
                 <form id='contact-form' ref={form} onSubmit={sendEmail} noValidate>
@@ -162,6 +184,8 @@ export default function ContactPage() {
                                     name='selected_service'
                                     value=' Human Resources' 
                                     type='checkbox' 
+                                    checked={isHRChecked}
+                                    onChange={() => handleCheck('HR')}
                                 />
                             </label>
 
@@ -172,6 +196,8 @@ export default function ContactPage() {
                                     name='selected_service'
                                     value=' Operations' 
                                     type='checkbox' 
+                                    checked={isOpsChecked}
+                                    onChange={() => handleCheck('Ops')}
                                 />
                             </label>
 
@@ -182,6 +208,8 @@ export default function ContactPage() {
                                     name='selected_service'
                                     value=' Finance' 
                                     type='checkbox' 
+                                    checked={isFinChecked}
+                                    onChange={() => handleCheck('Fin')}
                                 />
                             </label>
                         </fieldset>

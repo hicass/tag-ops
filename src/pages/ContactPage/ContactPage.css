@@ -61,8 +61,10 @@
     }
 
         #confirmation-msg {
-            margin-left: 2%;
+            margin-left: -2%;
             font-size: clamp(1rem, 1.8vw, 1.4rem);
+            display: flex;
+            flex-direction: row;
         }
 
     #contact-form {
