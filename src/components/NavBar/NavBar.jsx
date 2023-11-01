@@ -48,7 +48,7 @@ export default function NavBar() {
             style={navStyle}
           >
             Services 
-            <span class='material-symbols-outlined down-arrow'>
+            <span className='material-symbols-outlined down-arrow'>
               expand_more
             </span>
           </p>
@@ -68,7 +68,7 @@ export default function NavBar() {
         />
         <label 
           className='toggle mobile-nav-trigger' 
-          for='toggle-checkbox' 
+          htmlFor='toggle-checkbox' 
           onClick={toggleMobileMenu}
         >
           <div className='bar bar--top'></div>
