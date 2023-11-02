@@ -1,0 +1,63 @@
+#service-content-title-container {
+    color: white;
+    padding: 2%;
+    margin: 3% 0;
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
+}
+
+    #service-content-title {
+        font-size: clamp(2rem, 4.8vw, 5rem);
+        letter-spacing: 0.2em;
+        text-align: center;
+    }
+
+#service-content-quote-div {
+    box-shadow: 0.4em 0.4em 0 var(--light-blue);
+    color: var(--purple);
+    color: white;
+    background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
+    font-size: clamp(1rem, 1.6vw, 2rem);
+    letter-spacing: 0.08em;
+    border-radius: 0.5em;
+    padding: 2%;
+    margin: 5% 10%;
+}
+
+#service-phrase {
+    color: var(--purple);
+    margin: 0 15%;
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    letter-spacing: 0.1em;
+}
+
+.service-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .service-img {
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0.3em 0.5em 0.5em #0000001f, 0.3em 0.5em 0.5em #0000001f;
+        width: 15vw;
+        height: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .service-item {
+        border-radius: 25px;
+        padding: 1em;
+        width: 60%;
+        margin: 5%;
+        border: 0.1rem solid var(--purple);
+        background: white;
+        color: var(--purple);
+    }

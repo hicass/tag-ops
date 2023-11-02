@@ -167,6 +167,7 @@
                         font-family: 'Tahoma', sans-serif;
                         font-size: clamp(1rem, 2vw, 1.5rem);
                         letter-spacing: 0.14em;
+                        margin-bottom: 1%;
                     }
 
                     .bio-role {
