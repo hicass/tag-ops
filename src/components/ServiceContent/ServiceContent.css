@@ -1,3 +1,10 @@
+#service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
 #service-content-title-container {
     color: white;
     padding: 2%;
@@ -23,11 +30,39 @@
     margin: 5% 10%;
 }
 
+    #service-content-quote {
+        display: flex;
+        margin-bottom: 2%;
+    }
+
+        #quote-bulb {
+            font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+            margin: 0.5% 1% 0 0;
+        } 
+
+        #service-content-quote-source {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            #service-quote-link {
+                color: var(--light-grey-5);
+            }
+
+                #service-quote-link:hover {
+                    color: white;
+                }
+
+    
+
 #service-phrase {
-    color: var(--purple);
-    margin: 0 15%;
+    margin: 2% 5% 2%;
     font-size: clamp(1.5rem, 2.2vw, 2.2rem);
     letter-spacing: 0.1em;
+}
+
+#services-container {
+    margin: 5% 0;
 }
 
 .service-div {
@@ -35,6 +70,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
     .service-img {
         overflow: hidden;
         border-radius: 50%;
@@ -53,11 +93,35 @@
         }
 
     .service-item {
-        border-radius: 25px;
         padding: 1em;
         width: 60%;
-        margin: 5%;
-        border: 0.1rem solid var(--purple);
+        margin: 3%;
         background: white;
         color: var(--purple);
     }
+
+        .service-item-txt {
+            padding: 1em;
+            border: 0.1rem solid var(--purple);
+            border-radius: 25px;
+        }
+
+#pricing-link {
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .service-div {
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+
+        .service-item {
+            width: 80%;
+        }
+
+        .service-img {
+            width: 35vw;
+            height: 35vw;
+        }
+}

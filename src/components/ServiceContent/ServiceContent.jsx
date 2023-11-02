@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
+import { Fade, Slide } from 'react-awesome-reveal';
 import './ServiceContent.css';
 
 export default function ServicePage({
@@ -34,24 +35,28 @@ export default function ServicePage({
       <Fade>
         <div id="service-content-title-container">
           <h1 id="service-content-title">{serviceName}</h1>
+          <p id="service-phrase">{phrase}</p>
         </div>
 
-        <p id="service-phrase">{phrase}</p>
-
-        <div id="service-content-quote-div">
-          <p>{serviceQuote}</p>
-          <div>
-            <p>
-              - {quoteSource}
-              <a href={sourceLink} target="_blank" rel="noreferrer">
-                {sourceLinkText}
-              </a>
+        <Slide direction="right" triggerOnce="true">
+          <div id="service-content-quote-div">
+            <p id="service-content-quote">
+              <span className="material-symbols-outlined" id="quote-bulb">lightbulb</span>
+              {serviceQuote}
             </p>
+            <div id="service-content-quote-source">
+              <p>
+                - {quoteSource}
+                <a id="service-quote-link" href={sourceLink} target="_blank" rel="noreferrer">
+                  {sourceLinkText}
+                </a>
+              </p>
+            </div>
           </div>
-        </div>
+        </Slide>
       </Fade>
 
-      <div>
+      <div id="services-container">
         <Fade>
           <div className="service-div">
             <div className="service-img">
@@ -60,20 +65,24 @@ export default function ServicePage({
 
             <div className="service-item">
               <p className="bio-name">{service1Title}</p>
-              <p className="bio-role">{service1Txt}</p>
+              <div className="service-item-txt">
+                <p className="bio-role">{service1Txt}</p>
+              </div>
             </div>
           </div>
         </Fade>
 
         <Fade>
-          <div className="service-div">
-            <div className="service-item">
-              <p className="bio-name">{service2Title}</p>
-              <p className="bio-role">{service2Txt}</p>
-            </div>
-
+          <div className="service-div reverse">
             <div className="service-img">
               <img src={service2Img} alt={service2Title} />
+            </div>
+
+            <div className="service-item">
+              <p className="bio-name">{service2Title}</p>
+              <div className="service-item-txt">
+                <p className="bio-role">{service2Txt}</p>
+              </div>
             </div>
           </div>
         </Fade>
@@ -86,20 +95,24 @@ export default function ServicePage({
 
             <div className="service-item">
               <p className="bio-name">{service3Title}</p>
-              <p className="bio-role">{service3Txt}</p>
+              <div className="service-item-txt">
+                <p className="bio-role">{service3Txt}</p>
+              </div>
             </div>
           </div>
         </Fade>
 
         <Fade>
-          <div className="service-div">
-            <div className="service-item">
-              <p className="bio-name">{service4Title}</p>
-              <p className="bio-role">{service4Txt}</p>
-            </div>
-
+          <div className="service-div reverse">
             <div className="service-img">
               <img src={service4Img} alt={service4Title} />
+            </div>
+
+            <div className="service-item">
+              <p className="bio-name">{service4Title}</p>
+              <div className="service-item-txt">
+                <p className="bio-role">{service4Txt}</p>
+              </div>
             </div>
           </div>
         </Fade>
@@ -112,11 +125,15 @@ export default function ServicePage({
 
             <div className="service-item">
               <p className="bio-name">{service5Title}</p>
-              <p className="bio-role">{service5Txt}</p>
+              <div className="service-item-txt">
+                <p className="bio-role">{service5Txt}</p>
+              </div>
             </div>
           </div>
         </Fade>
       </div>
+
+      <Link className='lets-talk-link' id="pricing-link" to='/prices'>Check out our pricing plans</Link>
     </section>
   );
 }
