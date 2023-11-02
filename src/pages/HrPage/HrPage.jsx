@@ -15,18 +15,25 @@ export default function HrPage() {
     sourceLinkText: 'Article',
     sourceLink:
       'https://www.peoplekeep.com/blog/employee-retention-the-real-cost-of-losing-an-employee',
-    phrase: 'Let us help you build back office processes, recruit the right people, and train seamlessly!',
+    phrase:
+      'Let us help you build back office processes, recruit the right people, and train seamlessly!',
     service1Title: 'Benefits Administration',
-    service1Txt: 'Optimize your employee benefits with our expertise in benefits administration. We specialize in managing, enrolling, and overseeing your benefits programs to ensure they align with your organization\'s goals and meet regulatory requirements.',
+    service1Txt:
+      "Optimize your employee benefits with our expertise in benefits administration. We specialize in managing, enrolling, and overseeing your benefits programs to ensure they align with your organization's goals and meet regulatory requirements.",
     service2Title: 'HR Policy Documentation',
-    service2Txt: 'Refine your organizational guidelines with our expert HR policy documentation, including the creation and maintenance of a detailed employee handbook. We specialize in crafting comprehensive, compliant policies tailored to your needs.',
+    service2Txt:
+      'Refine your organizational guidelines with our expert HR policy documentation, including the creation and maintenance of a detailed employee handbook. We specialize in crafting comprehensive, compliant policies tailored to your needs.',
     service3Title: 'Employee Transitions',
-    service3Txt: 'Simplify employee transitions with our expertise. From seamless onboarding for new hires to professional and compliant termination processes, we ensure smooth workforce management.',
+    service3Txt:
+      'Simplify employee transitions with our expertise. From seamless onboarding for new hires to professional and compliant termination processes, we ensure smooth workforce management.',
     service4Title: 'HR Reporting',
-    service4Txt: 'Transform your HR strategy with our reporting expertise. From performance metrics to employee morale insights, we craft comprehensive reports for a holistic view of your workforce.',
+    service4Txt:
+      'Transform your HR strategy with our reporting expertise. From performance metrics to employee morale insights, we craft comprehensive reports for a holistic view of your workforce.',
     service5Title: 'Recruiting',
-    service5Txt: 'Optimize your talent acquisition strategy with comprehensive recruiting expertise. We partner with multiple recruiting agencies to cast a wider net and ensure access to the best talent pool available. With our combined efforts, you can navigate the competitive landscape of recruitment efficiently and confidently.'
+    service5Txt:
+      'Optimize your talent acquisition strategy with comprehensive recruiting expertise. We partner with multiple recruiting agencies to cast a wider net and ensure access to the best talent pool available. With our combined efforts, you can navigate the competitive landscape of recruitment efficiently and confidently.',
   };
+
   return (
     <ServiceContent
       serviceName={service.name}

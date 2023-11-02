@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 #service-content-title-container {
@@ -10,6 +11,7 @@
     padding: 2%;
     margin: 3% 0;
     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
+    width: 100vw;
 }
 
     #service-content-title {
@@ -101,7 +103,7 @@
     }
 
         .service-item-txt {
-            padding: 1em;
+            padding: 1.2em;
             border: 0.1rem solid var(--purple);
             border-radius: 25px;
         }
