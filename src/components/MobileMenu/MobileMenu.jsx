@@ -58,16 +58,6 @@ export default function MobileMenu({ toggleMobileMenu }) {
                             </Fade >
                         </li>
 
-                        <li>
-                            <Link 
-                                to='/prices'
-                                onClick={toggleMobileMenu}
-                                className='mobile-nav-link'
-                            >
-                                Prices
-                            </Link>
-                        </li>
-
                         <li id='mobile-contact-link-container'>
                             <Link 
                                 to='/contact'

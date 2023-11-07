@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { Fade, Slide } from 'react-awesome-reveal';
 import './ServiceContent.css';
 
@@ -132,8 +131,6 @@ export default function ServicePage({
           </div>
         </Fade>
       </div>
-
-      <Link className='lets-talk-link' id="pricing-link" to='/prices'>Check out our pricing plans</Link>
     </section>
   );
 }

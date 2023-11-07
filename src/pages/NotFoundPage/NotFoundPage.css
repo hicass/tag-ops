@@ -1,0 +1,25 @@
+#not-found-page {
+    display: flex;
+    padding: 10% 10% 15%;
+}
+
+#not-found-h2 {
+    color: var(--purple);
+    font-family: 'Tahoma', sans-serif;
+    font-size: clamp(2rem, 4.8vw, 5rem);
+    letter-spacing: 0.2em;
+    text-shadow: 0.04em 0.04em 0 var(--light-blue);
+    margin-bottom: 5%;
+}
+
+#not-found-h3 {
+    color: var(--purple);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    letter-spacing: 0.1em;
+    margin-bottom: 10%;
+}
+
+#not-found-logo {
+    width: 30vw;
+    margin: 5%;
+}

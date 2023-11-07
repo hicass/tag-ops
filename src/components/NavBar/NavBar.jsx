@@ -56,7 +56,6 @@ export default function NavBar() {
           {isDropdownVisible && <DropdownMenu handleMouseLeave={handleMouseLeave} />}
         </div>
 
-        <Link className='nav-link' to='/prices'>Prices</Link>
         <Link id='contact-link' className='nav-link' to='/contact'>Contact</Link>
       </div>
       
