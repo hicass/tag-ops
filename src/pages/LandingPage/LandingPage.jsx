@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
+import FlowCarousel from '../../components/FlowCarousel/FlowCarousel';
 import widePurpleLogo from '../../assets/images/logos/tag-lg-logo-purple.png';
-import flowImg from '../../assets/images/landing-page/tag-ops-flow.png';
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -99,7 +99,7 @@ export default function LandingPage() {
               what you do best – growing your business.
             </p>
           </div>
-          <img src={flowImg} alt="Tag Ops Flow Diagram" id="flow-img" />
+          <FlowCarousel />
         </div>
       </Fade>
 
