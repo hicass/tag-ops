@@ -1,4 +1,5 @@
 import ServiceContent from '../../components/ServiceContent/ServiceContent';
+import HRImg from '../../assets/images/landing-page/landing-hr.jpg';
 import benefitsAdminImg from '../../assets/images/service-page/hr/benefits-admin-min.jpg';
 import hrDocumentation from '../../assets/images/service-page/hr/hr-policy-min.jpg';
 import hrTransitions from '../../assets/images/service-page/hr/employee-transitions-min.jpg';
@@ -9,6 +10,8 @@ import './HrPage.css';
 export default function HrPage() {
   const service = {
     name: 'Human Resources',
+    introTxt:
+      'From benefits administration to recruiting, we offer expert solutions for your HR needs, ensuring seamless processes and the right people in your organization.',
     quote:
       "Some studies predict that every time a business replaces a salaried employee, it costs 6 to 9 months' salary on average.",
     quoteSource: 'People Keep, ',
@@ -37,6 +40,8 @@ export default function HrPage() {
   return (
     <ServiceContent
       serviceName={service.name}
+      serviceImg={HRImg}
+      serviceIntroTxt={service.introTxt}
       serviceQuote={service.quote}
       quoteSource={service.quoteSource}
       sourceLinkText={service.sourceLinkText}

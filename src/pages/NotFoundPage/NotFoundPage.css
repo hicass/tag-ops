@@ -1,6 +1,7 @@
 #not-found-page {
     display: flex;
     padding: 10% 10% 15%;
+    height: 60vh;
 }
 
 #not-found-h2 {

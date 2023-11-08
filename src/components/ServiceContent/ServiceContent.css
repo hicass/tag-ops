@@ -19,6 +19,31 @@
         text-align: center;
     }
 
+#service-top-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7% 7% 3%;
+}
+
+    #service-top-img {
+        border-radius: 25px;
+        box-shadow: 0.3em 0.5em 0.5em #0000001f, 0.3em 0.5em 0.5em #0000001f;
+        height: 25vw;
+        width: 35vw;
+        object-fit: cover;
+        margin-left: 5%;
+    }
+
+    .service-intro-txt {
+        font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+        letter-spacing: 0.1em;
+        color: var(--purple);
+        padding: 5%;
+        margin: 0 5% 0 10%;
+        border-left: 1.5px solid var(--purple)
+    }
+
 #service-content-quote-div {
     box-shadow: 0.4em 0.4em 0 var(--light-blue);
     color: var(--purple);
@@ -57,7 +82,7 @@
     
 
 .service-phrase {
-    margin: 1% 5% 3%;
+    margin: 1% 10% 3%;
     font-size: clamp(1.5rem, 2.2vw, 2.2rem);
     letter-spacing: 0.1em;
     color: var(--purple);

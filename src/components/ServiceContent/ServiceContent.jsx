@@ -5,6 +5,8 @@ import './ServiceContent.css';
 
 export default function ServicePage({
   serviceName,
+  serviceImg,
+  serviceIntroTxt,
   serviceQuote,
   quoteSource,
   sourceLinkText,
@@ -37,7 +39,15 @@ export default function ServicePage({
           <h1 id="service-content-title">{serviceName}</h1>
         </div>
 
-        <Slide direction="right" triggerOnce="true">
+        <div id="service-top-intro">
+          <Slide direction="left" triggerOnce="true">
+            <img id="service-top-img" src={serviceImg} alt="Service" />
+          </Slide>
+          <Slide direction="right" triggerOnce="true">
+            <p className="service-intro-txt">{serviceIntroTxt}</p>
+          </Slide>
+        </div>
+
           <div id="service-content-quote-div">
             <p id="service-content-quote">
               <span className="material-symbols-outlined" id="quote-bulb">
@@ -59,7 +69,6 @@ export default function ServicePage({
               </p>
             </div>
           </div>
-        </Slide>
 
         <p className="service-phrase">{phrase}</p>
       </Fade>

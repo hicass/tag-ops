@@ -1,4 +1,5 @@
 import ServiceContent from '../../components/ServiceContent/ServiceContent';
+import FinImg from '../../assets/images/landing-page/landing-finance.jpg';
 import bookkeepingImg from '../../assets/images/service-page/finance/bookkeeping-min.jpg';
 import apArManagImg from '../../assets/images/service-page/finance/ap-ar-min.jpg';
 import commissionCalcImg from '../../assets/images/service-page/finance/calculator-min.jpg';
@@ -9,8 +10,10 @@ import './FinancePage.css';
 export default function FinancePage() {
   const service = {
     name: 'Finance',
+    introTxt:
+      'From precise bookkeeping to optimized cash flow, our tailored financial solutions drive savings and streamline operations.',
     quote:
-      "Inefficiencies cost many organizations as much as 20 to 30 percent of their revenue each year.",
+      'Inefficiencies cost many organizations as much as 20 to 30 percent of their revenue each year.',
     quoteSource: 'Stampli, ',
     sourceLinkText: 'Blog',
     sourceLink:
@@ -19,7 +22,7 @@ export default function FinancePage() {
       'Let us find these inefficiencies, provide you with data, and help you make decisions that cut costs!',
     service1Title: 'Bookkeeping',
     service1Txt:
-      "Simplify your financial processes with our bookkeeping expertise. We specialize in meticulous financial record-keeping, ensuring accuracy and compliance. With our bookkeeping services, you can focus on your core business while we handle the numbers, providing you with peace of mind and financial insight.",
+      'Simplify your financial processes with our bookkeeping expertise. We specialize in meticulous financial record-keeping, ensuring accuracy and compliance. With our bookkeeping services, you can focus on your core business while we handle the numbers, providing you with peace of mind and financial insight.',
     service2Title: 'AP/AR Aging & management',
     service2Txt:
       'We specialize in optimizing cash flow, ensuring timely payments, and maintaining strong relationships with vendors and clients. With our tailored solutions, you can enhance efficiency, reduce risks, and maintain financial stability.',
@@ -37,6 +40,8 @@ export default function FinancePage() {
   return (
     <ServiceContent
       serviceName={service.name}
+      serviceImg={FinImg}
+      serviceIntroTxt={service.introTxt}
       serviceQuote={service.quote}
       quoteSource={service.quoteSource}
       sourceLinkText={service.sourceLinkText}

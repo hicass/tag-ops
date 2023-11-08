@@ -1,4 +1,5 @@
 import ServiceContent from '../../components/ServiceContent/ServiceContent';
+import OpsImg from '../../assets/images/landing-page/landing-operations.jpg';
 import interDepImg from '../../assets/images/service-page/ops/interdepartment-min.jpg';
 import softwareStratImg from '../../assets/images/service-page/ops/software-strat-min.jpg';
 import inventManagImg from '../../assets/images/service-page/ops/inventory-mana-min.jpg';
@@ -9,6 +10,8 @@ import './OpsPage.css';
 export default function OpsPage() {
   const service = {
     name: 'Operations',
+    introTxt:
+      'From interdepartmental harmony to cutting-edge software and inventory management, we help your business thrive in the digital age.',
     quote:
       "With a recent statistic showing that the Fortune 500 companies had an estimated $480 billion 'lost' in inefficiencies from back office processes, taking the small steps to counter this loss is very important.",
     quoteSource: 'The Shared Services & Outsourcing Network Editor, ',
@@ -19,7 +22,7 @@ export default function OpsPage() {
       'Let us help you standardize, optimize, and document your back office processes!',
     service1Title: 'Establish interdepartmental processes/policies',
     service1Txt:
-      "Empower your organization with seamless collaboration. We specialize in establishing interdepartmental processes and policies, ensuring cohesive workflows that drive efficiency and unity across your entire business.",
+      'Empower your organization with seamless collaboration. We specialize in establishing interdepartmental processes and policies, ensuring cohesive workflows that drive efficiency and unity across your entire business.',
     service2Title: 'Software Strategization',
     service2Txt:
       "Stay ahead in the digital era with our help. We scout, implement, and train on cutting-edge software that fuels your company's growth. Embrace adaptability and thrive in the ever-evolving tech landscape.",
@@ -37,6 +40,8 @@ export default function OpsPage() {
   return (
     <ServiceContent
       serviceName={service.name}
+      serviceImg={OpsImg}
+      serviceIntroTxt={service.introTxt}
       serviceQuote={service.quote}
       quoteSource={service.quoteSource}
       sourceLinkText={service.sourceLinkText}
