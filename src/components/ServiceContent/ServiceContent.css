@@ -28,7 +28,7 @@
 
     #service-top-img {
         border-radius: 25px;
-        box-shadow: 0.3em 0.5em 0.5em #0000001f, 0.3em 0.5em 0.5em #0000001f;
+        box-shadow: 0.3em 0.5em 0.5em #6969691f, 0.3em 0.5em 0.5em #7070701f;
         height: 25vw;
         width: 35vw;
         object-fit: cover;
@@ -131,7 +131,7 @@
             padding: 1.2em;
             border: 0.1rem solid var(--purple);
             border-radius: 25px;
-            box-shadow: 0.3em 0.5em 0.5em #4141411f, 0.3em 0.5em 0.5em #5555551f;
+            box-shadow: 0.3em 0.5em 0.5em #6666661f, 0.3em 0.5em 0.5em #7c7c7c1f;
         }
 
 #pricing-link {
@@ -139,6 +139,23 @@
 }
 
 @media screen and (max-width: 768px) {
+    #service-top-intro {
+        flex-direction: column;
+        margin: 7% 2% 5%;
+    }
+
+        #service-top-img {
+            width: 70vw;
+            height: 40vw;
+            margin-left: 0;
+        }
+
+        .service-intro-txt {
+            padding: 5%;
+            border-left: 0;
+            margin: 0;
+        }
+
     #service-content-quote-div {
         margin: 5% 10%;
     }

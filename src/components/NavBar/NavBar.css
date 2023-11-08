@@ -4,7 +4,7 @@
     height: fit-content;
     justify-content: space-between;
     z-index: 2;
-    box-shadow: 0.2em 0.3em 0.3em #4747471f, 0.2em 0.3em 0.3em #4747471f;
+    box-shadow: 0.2em 0.3em 0.3em #8383831f, 0.2em 0.3em 0.3em #7b7b7b1f;
     position: sticky;
     background-color: var(--light-grey-2);
     top: 0;
