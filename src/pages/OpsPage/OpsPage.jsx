@@ -20,7 +20,7 @@ export default function OpsPage() {
       'https://www.ssonetwork.com/business-process-outsourcing/whitepapers/workforce-optimization-in-business-process-outsour',
     phrase:
       'Let us help you standardize, optimize, and document your back office processes!',
-    service1Title: 'Establish interdepartmental processes/policies',
+    service1Title: 'Establish Interdepartmental Processes/Policies',
     service1Txt:
       'Empower your organization with seamless collaboration. We specialize in establishing interdepartmental processes and policies, ensuring cohesive workflows that drive efficiency and unity across your entire business.',
     service2Title: 'Software Strategization',

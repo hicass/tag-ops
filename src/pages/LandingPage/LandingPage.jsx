@@ -67,7 +67,7 @@ export default function LandingPage() {
           <span className="solutions-bottom-accent-txt">$7,000</span> per month
           per role, totaling{' '}
           <span className="solutions-bottom-accent-txt">$63,000</span> per
-          quarter?!
+          quarter.
         </p>
 
         <p className="solutions-bottom-txt">
@@ -77,7 +77,7 @@ export default function LandingPage() {
           <span className="solutions-bottom-accent-txt">fit your needs</span> as
           a business,{' '}
           <span className="solutions-bottom-accent-txt">saving</span> you as
-          much as we can for you.
+          much as we can.
         </p>
       </div>
 
@@ -87,7 +87,6 @@ export default function LandingPage() {
       <Fade>
         <div id="landing-flow-section">
           <h2 id="flow-h2">The Tag Ops Flow:</h2>
-
 
           <div className="added-txt-container">
             <p className="added-txt">

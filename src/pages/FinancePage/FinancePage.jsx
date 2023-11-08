@@ -23,10 +23,10 @@ export default function FinancePage() {
     service1Title: 'Bookkeeping',
     service1Txt:
       'Simplify your financial processes with our bookkeeping expertise. We specialize in meticulous financial record-keeping, ensuring accuracy and compliance. With our bookkeeping services, you can focus on your core business while we handle the numbers, providing you with peace of mind and financial insight.',
-    service2Title: 'AP/AR Aging & management',
+    service2Title: 'AP/AR Management',
     service2Txt:
       'We specialize in optimizing cash flow, ensuring timely payments, and maintaining strong relationships with vendors and clients. With our tailored solutions, you can enhance efficiency, reduce risks, and maintain financial stability.',
-    service3Title: 'Commission calculation',
+    service3Title: 'Commission Calculation',
     service3Txt:
       'We offer tailored solutions to streamline the process of calculating commissions, ensuring precision and fairness. With our assistance, you can navigate the complexities of commission calculations effortlessly, fostering a results-driven and motivated sales environment.',
     service4Title: 'Financial Health Reporting',

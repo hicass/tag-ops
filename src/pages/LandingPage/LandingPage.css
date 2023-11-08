@@ -121,13 +121,13 @@
                 }
 
             .solutions-bottom-txt {
-                font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+                font-size: clamp(1.3rem, 2vw, 2rem);
                 letter-spacing: 0.1em;
-                margin: 1% 5%;
+                margin: 1% 10%;
             }
 
                 .solutions-bottom-accent-txt {
-                    font-size: clamp(1.5rem, 2.7vw, 2.7rem);
+                    font-size: clamp(1rem, 2.3vw, 2.3rem);
                     font-weight: bold;
                 }
 

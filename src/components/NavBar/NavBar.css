@@ -3,7 +3,11 @@
     display: flex;
     height: fit-content;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
+    box-shadow: 0.2em 0.3em 0.3em #4747471f, 0.2em 0.3em 0.3em #4747471f;
+    position: sticky;
+    background-color: var(--light-grey-2);
+    top: 0;
 }
 
     #nav-logo {
@@ -22,6 +26,7 @@
             font-size: clamp(1rem, 1.5vw, 4rem);
             font-weight: bold;
             height: fit-content;
+            /* font-family: 'Tahoma'; */
             letter-spacing: 0.12em;
             margin: 2rem;
         }
@@ -73,6 +78,7 @@
     #menu-toggle {
         opacity: 0;
         visibility: hidden;
+        display: none;
     }
 
 @media screen and (max-width: 768px) {
@@ -97,6 +103,7 @@
             opacity: 1;
             margin: 3%;
             visibility: visible;
+            display: block;
         }
         
             .mobile-nav-trigger {

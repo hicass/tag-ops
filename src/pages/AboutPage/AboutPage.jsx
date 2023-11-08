@@ -4,6 +4,9 @@ import { Fade } from 'react-awesome-reveal';
 import { Slide } from 'react-awesome-reveal';
 import sfImage from '../../assets/images/about-page/about-sf.jpg';
 import courtneyImage from '../../assets/images/about-page/courtney-profile.jpeg';
+import danielImage from '../../assets/images/about-page/daniel-soyinka.png';
+import alloLogo from '../../assets/images/about-page/allo-hire.png';
+import synLogo from '../../assets/images/about-page/synergic-group.png';
 import './AboutPage.css';
 
 export default function AboutPage() {
@@ -85,6 +88,16 @@ export default function AboutPage() {
       <div id="about-team-section">
         <h2 id="team-h2">Meet the team!</h2>
 
+        <div id="team-txt-container">
+          <p className="added-txt">
+            Our Tag Ops team is a dynamic group of experts dedicated to
+            operational excellence. With diverse industry backgrounds, we bring
+            a wealth of knowledge to every project. We're committed to tailoring
+            solutions to your specific needs, from process optimization to
+            strategic guidance.
+          </p>
+        </div>
+
         <div id="team-container">
           <Fade cascade direction="left" duration="900" triggerOnce="true">
             <div className="team-member">
@@ -100,13 +113,15 @@ export default function AboutPage() {
                 <h4 className="bio-role">Founder & Operations Consultant</h4>
 
                 <p className="bio-txt">
-                  Twee austin scenester polaroid keffiyeh VHS shabby chic cronut
-                  wolf. Solarpunk gochujang try-hard quinoa normcore typewriter
-                  vexillologist. Yuccie blog master cleanse, semiotics narwhal
-                  irony kitsch offal quinoa marxism helvetica. Small batch paleo
-                  kinfolk tofu fam jean shorts Brooklyn PBR&B helvetica. VHS
-                  ennui banh mi actually taxidermy leggings stumptown vape sus,
-                  bodega boys distillery bitters farm-to-table yr.
+                  I founded Tag Ops after 8 years of working in Operations in
+                  the San Francisco startup sphere. From Accounting & HR SaaS
+                  companies, to FinTech and Cryptocurrency, to Recruiting.
+                  Regardless of the industry, I'm incredibly adaptable, enjoy
+                  learning, and love problem solving. I have a fiery passion for
+                  helping small companies strategize and stay organized amongst
+                  the chaos of scaling. In my spare time, I enjoy hiking around
+                  the Bay Area, playing dnd and strategy-based RPGs, and
+                  spending time with my family, friends, and partner.
                 </p>
               </div>
             </div>
@@ -114,62 +129,71 @@ export default function AboutPage() {
             <div className="team-member">
               <img
                 className="team-member-img"
-                src={courtneyImage}
+                src={danielImage}
                 alt="Courtney Walters"
               />
 
               <div className="member-bio">
-                <h3 className="bio-name">Courtney Walters</h3>
+                <h3 className="bio-name">Daniel Soyinka</h3>
 
-                <h4 className="bio-role">Founder & Operations Consultant</h4>
-
-                <p className="bio-txt">
-                  Twee austin scenester polaroid keffiyeh VHS shabby chic cronut
-                  wolf. Solarpunk gochujang try-hard quinoa normcore typewriter
-                  vexillologist. Yuccie blog master cleanse, semiotics narwhal
-                  irony kitsch offal quinoa marxism helvetica. Small batch paleo
-                  kinfolk tofu fam jean shorts Brooklyn PBR&B helvetica. VHS
-                  ennui banh mi actually taxidermy leggings stumptown vape sus,
-                  bodega boys distillery bitters farm-to-table yr.
-                </p>
-              </div>
-            </div>
-
-            <div className="team-member">
-              <img
-                className="team-member-img"
-                src={courtneyImage}
-                alt="Courtney Walters"
-              />
-
-              <div className="member-bio">
-                <h3 className="bio-name">Courtney Walters</h3>
-
-                <h4 className="bio-role">Founder & Operations Consultant</h4>
+                <h4 className="bio-role">Bookkeeping Consultant</h4>
 
                 <p className="bio-txt">
-                  Twee austin scenester polaroid keffiyeh VHS shabby chic cronut
-                  wolf. Solarpunk gochujang try-hard quinoa normcore typewriter
-                  vexillologist. Yuccie blog master cleanse, semiotics narwhal
-                  irony kitsch offal quinoa marxism helvetica. Small batch paleo
-                  kinfolk tofu fam jean shorts Brooklyn PBR&B helvetica. VHS
-                  ennui banh mi actually taxidermy leggings stumptown vape sus,
-                  bodega boys distillery bitters farm-to-table yr.
+                  With a degree in Accounting, I have gained experience across
+                  various roles in different companies, from internee to CEO. I
+                  have been helping numerous small and medium-size businesses
+                  grow by serving as a remote Bookkeeper. I possess
+                  comprehensive expertise in all aspects of Accounting and
+                  Bookkeeping.
                 </p>
               </div>
             </div>
           </Fade>
         </div>
 
-        <div id="team-txt-container">
-          <p className="added-txt">
-            Our Tag Ops team is a dynamic group of experts dedicated to
-            operational excellence. With diverse industry backgrounds, we bring
-            a wealth of knowledge to every project. We're committed to tailoring
-            solutions to your specific needs, from process optimization to
-            strategic guidance.
-          </p>
+        <h2 id="team-h2">Partnering with:</h2>
+
+        <div id="partner-logo-container">
+          <div>
+            <a
+              href="https://www.allohire.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="partner-logo-link"
+            >
+              <img
+                className="partner-logo"
+                src={alloLogo}
+                alt="AlloHire Logo"
+              />
+            <h3 className="partner-name">AlloHire</h3>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://www.synergic-corp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="partner-logo-link"
+            >
+              <img
+                className="partner-logo"
+                src={synLogo}
+                alt="Synergeic Group Logo"
+              />
+            <h3 className="partner-name">Synergic Group</h3>
+            </a>
+          </div>
         </div>
+
+        <p id="partner-txt" className="added-txt">
+          We pride ourselves on being versatile, the go-to team for all things,
+          while our partners excel as the masters we turn to for support, a
+          helping hand, or specialized expertise. We work with them to make the
+          most informed decisions and next steps to get your back office
+          established, organized, and scalable.
+        </p>
 
         <Link className="lets-talk-link" to="/contact">
           Let's talk!

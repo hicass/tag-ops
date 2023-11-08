@@ -129,9 +129,14 @@
                     overflow-wrap: break-word;
                 }
 
+                checkbox {
+                    border: 1px solid var(--purple);
+                }
+
                 .form-checkbox {
-                    margin-right: 0.5em;
+                    margin-right: 0.8em;
                     padding: 0;
+                    color: red;
                 }
 
                 .form-checkbox:hover {
