@@ -110,7 +110,7 @@ export default function ContactPage() {
                         target='_blank' 
                         rel='noreferrer'
                     >
-                        <i id='linkedin-link' class='fa fa-linkedin-square' aria-hidden='true'></i>
+                        <i id='linkedin-link' className='fa fa-linkedin-square' aria-hidden='true'></i>
                         <p className='secret'>Tag Operations LinkedIn</p>
                     </a>
                     <p id='contact-page-email'>tag@tagoperations.com</p>

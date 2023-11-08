@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Fade, Slide } from 'react-awesome-reveal';
 import './ServiceContent.css';
 
@@ -34,25 +35,33 @@ export default function ServicePage({
       <Fade>
         <div id="service-content-title-container">
           <h1 id="service-content-title">{serviceName}</h1>
-          <p id="service-phrase">{phrase}</p>
         </div>
 
         <Slide direction="right" triggerOnce="true">
           <div id="service-content-quote-div">
             <p id="service-content-quote">
-              <span className="material-symbols-outlined" id="quote-bulb">lightbulb</span>
+              <span className="material-symbols-outlined" id="quote-bulb">
+                lightbulb
+              </span>
               {serviceQuote}
             </p>
             <div id="service-content-quote-source">
               <p>
                 - {quoteSource}
-                <a id="service-quote-link" href={sourceLink} target="_blank" rel="noreferrer">
+                <a
+                  id="service-quote-link"
+                  href={sourceLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {sourceLinkText}
                 </a>
               </p>
             </div>
           </div>
         </Slide>
+
+        <p className="service-phrase">{phrase}</p>
       </Fade>
 
       <div id="services-container">
@@ -131,6 +140,16 @@ export default function ServicePage({
           </div>
         </Fade>
       </div>
+
+      <p className="service-phrase">
+        Discover our services designed to cater to your specific needs. For more
+        information and pricing details, get in touch with us to craft the ideal
+        solution for your business.
+      </p>
+
+      <Link id="talk-link-landing" className="lets-talk-link" to="/contact">
+        Let's talk!
+      </Link>
     </section>
   );
 }

@@ -9,7 +9,6 @@
 #service-content-title-container {
     color: white;
     padding: 2%;
-    margin: 3% 0;
     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
     width: 100vw;
 }
@@ -25,11 +24,11 @@
     color: var(--purple);
     color: white;
     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
-    font-size: clamp(1rem, 1.6vw, 2rem);
+    font-size: clamp(1rem, 2.8vw, 2rem);
     letter-spacing: 0.08em;
     border-radius: 0.5em;
     padding: 2%;
-    margin: 5% 10%;
+    margin: 5% 10% 2%;
 }
 
     #service-content-quote {
@@ -57,14 +56,15 @@
 
     
 
-#service-phrase {
-    margin: 2% 5% 2%;
+.service-phrase {
+    margin: 1% 5% 3%;
     font-size: clamp(1.5rem, 2.2vw, 2.2rem);
     letter-spacing: 0.1em;
+    color: var(--purple);
 }
 
 #services-container {
-    margin: 5% 0;
+    margin: 3% 0;
 }
 
 .service-div {
@@ -113,9 +113,17 @@
 }
 
 @media screen and (max-width: 768px) {
+    #service-content-quote-div {
+        margin: 5% 10%;
+    }
+
+    .service-phrase {
+        margin: 1% 5% 10%;
+    }
+
     .service-div {
         flex-direction: column;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
         .service-item {
