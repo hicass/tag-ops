@@ -12,3 +12,14 @@
         width: fit-content;
         height: 5vw;
     }
+
+@media screen and (max-width: 768px) {
+    .flow-swiper {
+        width: 90%;
+        height: 50vw;
+    }
+
+    .flow-card {
+        height: 45vw;
+    }
+}

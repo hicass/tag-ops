@@ -8,7 +8,7 @@
 
 #service-content-title-container {
     color: white;
-    padding: 2%;
+    padding: 2% 0;
     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
     width: 100vw;
 }

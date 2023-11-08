@@ -49,7 +49,7 @@
 
                     .mobile-services-link {
                         color: var(--purple);
-                        font-size: clamp(0rem, 3vw, 4rem);
+                        font-size: clamp(1rem, 3vw, 4rem);
                         text-decoration: none;
                     }
 
