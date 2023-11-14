@@ -370,7 +370,7 @@
 @media screen and (max-width: 768px) {
 
     #landing-page {
-        margin-top: 0;
+        margin-top: 5%;
     }
 
         #landing-page-intro {
@@ -415,13 +415,6 @@
                     .solution-link {
                         margin-bottom: 10%;
                     }
-
-                        .solution {
-                            min-height: 15em;
-                            min-width: 15em;
-                            max-height: 15em;
-                            max-width: 15em;
-                        }
 
                             .solution-txt {
                                 font-size: clamp(0.5rem, 5vw, 1.15rem);
@@ -471,12 +464,12 @@
                     flex-direction: column;
                     align-items: center;
                     width: fit-content;
-                    margin: 3% 10% 5%;
+                    margin: 5% 10%;
                 }
 
                     .testimonial-card {
-                        width: 90%;
                         padding: 5%;
+                        width: 90%;
                     }
 
                         .testimonial-icon {
@@ -523,4 +516,48 @@
             .blob-6 {
                 top: 72vw;
             }
+
+            #dashboard-credit {
+                width: 90vw;
+            }
+    
+                #teamwork-logo {
+                    width: 100%;
+                    margin-left: 4vw;
+                }
+}
+
+@media screen and (max-width: 520px) {
+    #landing-page-intro {
+        margin-top: 7%;
+    }
+
+        #intro-logo {
+            width: 45vw;
+        }
+
+    #solutions-container {
+        margin-top: 10%;
+    }
+
+        .solution-txt {
+            font-size: clamp(0.5rem, 4vw, 4rem);
+        }
+
+        .solutions-bottom-txt {
+            margin: 3%;
+        }
+
+    #dashboard-container {
+        margin: 3% 0;
+    }
+
+        #dashboard-txt {
+            margin: 3% 6% 10%;
+            width: 96%;
+        }
+        
+        #dashboard-img {
+            width: 90vw;
+        }
 }

@@ -102,3 +102,9 @@ body {
         font-size: clamp(1rem, 3vw, 3rem);
     }
 }
+
+@media screen and (max-width: 520px) {
+    .added-txt-container {
+        margin: 3%;
+    }
+}
