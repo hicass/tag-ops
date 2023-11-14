@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 import FlowCarousel from '../../components/FlowCarousel/FlowCarousel';
 import widePurpleLogo from '../../assets/images/logos/tag-lg-logo-purple.png';
+import dashboardImg from '../../assets/images/landing-page/dashboard.png';
+import teamworkLogo from '../../assets/images/landing-page/teamwork-logo.png';
 import './LandingPage.css';
 
 export default function LandingPage() {
@@ -72,8 +74,7 @@ export default function LandingPage() {
 
         <p className="solutions-bottom-txt">
           We work with you to gain insights into your back office workload and{' '}
-          <span className="solutions-bottom-accent-txt">tailor</span> your back
-          office people costs to{' '}
+          tailor your back office people costs to{' '}
           <span className="solutions-bottom-accent-txt">fit your needs</span> as
           a business,{' '}
           <span className="solutions-bottom-accent-txt">saving</span> you as
@@ -98,7 +99,39 @@ export default function LandingPage() {
               what you do best – growing your business.
             </p>
           </div>
+
           <FlowCarousel />
+
+          <div id="dashboard-container">
+            <div id="dashboard-txt" className="added-txt-container">
+              <p className="added-txt">
+                Utilizing our project management software, we empower your
+                business with analytics, not only on tasks and project budget,
+                but also a breakdown on how much time is spent on any specific
+                task within any division (Finance, HR, Ops) every quarter.
+              </p>
+            </div>
+
+            <div id="dashboard-container-right">
+              <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
+              <div id="dashboard-credit">
+                <p className="added-txt">Powered by:</p>
+                <a
+                  href="https://www.teamwork.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="partner-logo-link"
+                >
+                  <img
+                    id="teamwork-logo"
+                    className="partner-logo"
+                    src={teamworkLogo}
+                    alt="Synergeic Group Logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </Fade>
 

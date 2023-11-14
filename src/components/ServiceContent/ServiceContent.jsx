@@ -48,30 +48,32 @@ export default function ServicePage({
           </Slide>
         </div>
 
-          <div id="service-content-quote-div">
-            <p id="service-content-quote">
-              <span className="material-symbols-outlined" id="quote-bulb">
-                lightbulb
-              </span>
-              {serviceQuote}
+        <div id="service-content-quote-div">
+          <p id="service-content-quote">
+            <span className="material-symbols-outlined" id="quote-bulb">
+              lightbulb
+            </span>
+            {serviceQuote}
+          </p>
+          <div id="service-content-quote-source">
+            <p>
+              - {quoteSource}
+              <a
+                id="service-quote-link"
+                href={sourceLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {sourceLinkText}
+              </a>
             </p>
-            <div id="service-content-quote-source">
-              <p>
-                - {quoteSource}
-                <a
-                  id="service-quote-link"
-                  href={sourceLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {sourceLinkText}
-                </a>
-              </p>
-            </div>
           </div>
+        </div>
 
         <p className="service-phrase">{phrase}</p>
       </Fade>
+
+      <h2 id="story-h2">How we can help:</h2>
 
       <div id="services-container">
         <Fade>
@@ -151,9 +153,8 @@ export default function ServicePage({
       </div>
 
       <p className="service-phrase">
-        Discover our services designed to cater to your specific needs. For more
-        information and pricing details, get in touch with us to craft the ideal
-        solution for your business.
+        For more information and pricing details, get in touch with us to craft
+        the ideal solution for your business.
       </p>
 
       <Link id="talk-link-landing" className="lets-talk-link" to="/contact">

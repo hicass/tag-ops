@@ -27,14 +27,14 @@
                     left: -8vw;
                     letter-spacing: 0.2em;
                     position: absolute;
-                    text-shadow: 0.04em 0.04em 0 var(--light-blue);
+                    text-shadow: 0.03em 0.03em 0 var(--light-blue);
                     top: -7vw;
                 }
 
             #about-intro-txt {
                 background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
                 border-radius: 25px;
-                box-shadow: 0.4em 0.4em 0 var(--light-blue);
+                box-shadow: 0.2em 0.2em 0 var(--light-blue);
                 color: white;
                 font-size: clamp(0.85rem, 1.8vw, 1.8rem);
                 letter-spacing: 0.12em;
@@ -161,9 +161,9 @@
                     color: white;
                     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
                     border-radius: 25px;
-                    box-shadow: 0.4em 0.4em 0 var(--light-blue);
+                    box-shadow: 0.3em 0.3em 0 var(--light-blue);
                     margin-top: 7%;
-                    padding: 1em;
+                    padding: 1.2em;
                     width: 38vw;
                 }
 
@@ -311,4 +311,14 @@
             font-size: clamp(0.8rem, 2.5vw, 2rem);
             margin-top: 3%;
         }
+
+    #partner-logo-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10vw;
+    }
+
+    #partner-txt {
+        margin: 0 0 5%;
+    }
 }

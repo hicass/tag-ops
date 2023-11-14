@@ -48,11 +48,11 @@ export default function AboutPage() {
           <h2 id="story-h2">Our Story</h2>
 
           <p className="added-txt">
-            Tag Ops was founded on the fundamental belief that every company,
-            regardless of its size, requires operational support. We understand
-            that not every business necessitates a full-time Operations leader
-            to oversee extensive back-office projects or manage repetitive tasks
-            such as payroll and invoicing.
+            Tag Ops was founded on the principle that high-quality operational
+            support is crucial for every business. We recognize that not all
+            companies require a dedicated Operations leader to oversee extensive
+            back-office projects or managing routine tasks like payroll and
+            invoicing.
           </p>
 
           <p className="added-txt">
@@ -166,7 +166,7 @@ export default function AboutPage() {
                 src={alloLogo}
                 alt="AlloHire Logo"
               />
-            <h3 className="partner-name">AlloHire</h3>
+              <h3 className="partner-name">AlloHire</h3>
             </a>
           </div>
 
@@ -182,7 +182,7 @@ export default function AboutPage() {
                 src={synLogo}
                 alt="Synergeic Group Logo"
               />
-            <h3 className="partner-name">Synergic Group</h3>
+              <h3 className="partner-name">Synergic Group</h3>
             </a>
           </div>
         </div>

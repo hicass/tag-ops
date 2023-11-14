@@ -54,3 +54,13 @@ footer {
     #footer-right {
         padding: 1%;
     }
+
+@media screen and (max-width: 768px) {
+    #footer-logo {
+        margin-right: 10%;
+    }
+
+    .footer-col {
+        width: 30%;
+    }
+}

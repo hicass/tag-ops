@@ -23,7 +23,7 @@
                 font-size: clamp(2.8rem, 5vw, 4rem);
                 letter-spacing: 0.2em;
                 margin: 10% 0 0 10%;
-                text-shadow: 0.04em 0.04em 0 var(--light-blue);
+                text-shadow: 0.03em 0.03em 0 var(--light-blue);
             }
 
             #contact-page-txt {
@@ -45,7 +45,7 @@
             #linkedin-link {
                 color: var(--purple);
                 font-size: clamp(2.5rem, 5vw, 4rem);
-                text-shadow: 0.04em 0.04em 0 var(--light-blue);
+                text-shadow: 0.03em 0.03em 0 var(--light-blue);
             }
 
             #linkedin-link:hover {
@@ -221,7 +221,7 @@
             }
 
     #contact-form {
-        min-width: 55vw;
+        min-width: 80vw;
     }
 
     .form-label {
