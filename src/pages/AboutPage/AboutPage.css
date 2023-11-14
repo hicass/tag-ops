@@ -313,7 +313,6 @@
         }
 
     #partner-logo-container {
-        flex-direction: column-reverse;
         align-items: center;
         gap: 10vw;
     }
@@ -321,4 +320,34 @@
     #partner-txt {
         margin: 0 0 5%;
     }
+}
+
+@media screen and (max-width: 520px) {
+    #about-story-section {
+        margin: 0 3% 25%;
+    }
+
+    .mission-blob-2 {
+        top: 135px;
+    }
+
+    #mission-p {
+        margin: 2% 3% 5%;
+    }
+
+    #team-txt-container {
+        margin: 5% 3% 10%;
+    }
+
+        #partner-logo-container {
+            margin-top: 8%;
+        }
+
+            #partner-txt {
+                width: 90%;
+            }
+
+            .partner-name {
+                font-size: 4vw;
+            }
 }
