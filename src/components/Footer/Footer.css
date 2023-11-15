@@ -66,6 +66,10 @@ footer {
 }
 
 @media screen and (max-width: 520px) {
+    footer {
+        padding: 5% 3% 5%; 
+    }
+
     #footer-logo {
         width: 25vw;
         margin-top: 10%;

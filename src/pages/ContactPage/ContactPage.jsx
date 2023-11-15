@@ -21,8 +21,18 @@ export default function ContactPage() {
   });
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-  });
+    const handleScrollToTop = () => {
+      if (window.innerWidth > 770) {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      }
+    };
+    window.addEventListener('resize', handleScrollToTop);
+    handleScrollToTop();
+
+    return () => {
+      window.removeEventListener('resize', handleScrollToTop);
+    };
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
