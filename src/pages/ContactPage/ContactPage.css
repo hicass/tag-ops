@@ -3,7 +3,7 @@
     display: flex;
     margin:  0 0 8%;
     overflow-x: hidden;
-    padding: 0 5% 5%;
+    padding: 0 3% 5%;
 }
 
     #contact-page-l {
@@ -73,11 +73,11 @@
         box-shadow: 0.8rem 0.8rem 0.3rem #0000001f;
         display: flex;
         flex-direction: column;
-        padding: 2% 5% 15%;
+        padding: 2% 5% 10%;
         position: relative;
         margin-top: 2%;
         max-width: 80vw;
-        min-width: 40vw;
+        min-width: 45vw;
     }
 
         #contact-form-top {
@@ -119,8 +119,8 @@
                 border-left: 1.2px solid var(--light-purple);
                 display: flex;
                 flex-direction: column;
-                padding: 10% 0% 0% 5%;
-                width: 35%;
+                padding: 10% 0% 0% 3%;
+                width: 40%;
             }
 
                 #service-select {
@@ -129,20 +129,63 @@
                     overflow-wrap: break-word;
                 }
 
-                checkbox {
-                    border: 1px solid var(--purple);
-                }
-
-                .form-checkbox {
-                    margin-right: 0.8em;
-                    padding: 0;
-                    color: red;
-                }
-
-                .form-checkbox:hover {
+                .service-option input {
+                    position: absolute;
+                    opacity: 0;
                     cursor: pointer;
+                    height: 0;
+                    width: 0;
                 }
 
+                .service-option {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none;
+                    margin-top: 5%;
+                }
+
+                /* Create a custom checkbox */
+                    .checkmark {
+                        position: relative;
+                        top: 0;
+                        left: 0;
+                        height: 1em;
+                        width: 1em;
+                        border-radius: 5px;
+                        background-color: white;
+                        border: 0.08rem solid var(--light-purple);
+                        margin-right: 5px;
+                    }
+                    
+                    /* When the checkbox is checked, add a blue background */
+                    .service-option input:checked ~ .checkmark {
+                        background-image: linear-gradient(  var(--purple) 0%, var(--light-purple) 200%);
+                    }
+                    
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    
+                    /* Show the checkmark when checked */
+                    .service-option input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                    
+                    /* Style the checkmark/indicator */
+                    .service-option .checkmark:after {
+                        left: 0.35em;
+                        top: 0.10em;
+                        width: 0.20em;
+                        height: 0.5em;
+                        border: solid white;
+                        border-width: 0 0.15em 0.15em 0;
+                        transform: rotate(45deg);
+                    }
 
         #form-textarea {
             font-size: clamp(0.8rem, 2vw, 1.4rem);
@@ -165,7 +208,7 @@
             background: linear-gradient(  var(--purple) 0%, var(--light-purple) 200%);
             border: 0;
             border-radius: 7px;
-            box-shadow: 0.7rem 0.5rem 0.5rem #0000001f, 0.7rem 0.5rem 0.5rem #0000001f;
+            box-shadow: 0.15em 0.15em 0 var(--light-blue);
             color: white;
             font-size: clamp(1rem, 2vw, 1.5rem);
             left: 35%;
@@ -231,4 +274,38 @@
     .form-input {
         font-size: clamp(0.8rem, 2vw, 1.4rem);
     }
+}
+
+
+@media screen and (max-width: 520px) {
+    #contact-form {
+        padding-bottom: 15%;
+    }
+
+    #contact-form-top {
+        flex-direction: column;
+    }
+
+        #form-top-l {
+            width: 100%;
+        }
+
+            .form-label {
+                margin: 0;
+                
+            }
+
+            .form-input {
+                margin-top: 3%;
+            }
+
+        #form-top-r {
+            border: 0;
+            width: 100%;
+            padding-top: 0;
+        }
+
+        #form-submit {
+            top: 92%
+        }
 }

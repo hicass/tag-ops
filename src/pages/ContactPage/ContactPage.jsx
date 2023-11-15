@@ -177,7 +177,7 @@ export default function ContactPage() {
                         <fieldset id='form-top-r'>
                             <p className='form-label'>Service</p>
 
-                            <label className='form-label' id='service-select'>
+                            <label className='service-option form-label' id='service-select'>
                                 Human Resources
                                 <input 
                                     className='form-checkbox' 
@@ -187,9 +187,10 @@ export default function ContactPage() {
                                     checked={isHRChecked}
                                     onChange={() => handleCheck('HR')}
                                 />
+                                <div className="checkmark"></div>
                             </label>
 
-                            <label className='form-label' id='service-select'>
+                            <label className='service-option  form-label' id='service-select'>
                                 Operations
                                 <input 
                                     className='form-checkbox' 
@@ -199,9 +200,10 @@ export default function ContactPage() {
                                     checked={isOpsChecked}
                                     onChange={() => handleCheck('Ops')}
                                 />
+                                <div className="checkmark"></div>
                             </label>
 
-                            <label className='form-label' id='service-select'>
+                            <label className='service-option  form-label' id='service-select'>
                                 Finance
                                 <input 
                                     className='form-checkbox' 
@@ -211,6 +213,7 @@ export default function ContactPage() {
                                     checked={isFinChecked}
                                     onChange={() => handleCheck('Fin')}
                                 />
+                                <div className="checkmark"></div>
                             </label>
                         </fieldset>
                     </div>
