@@ -4,6 +4,7 @@
     align-items: center;
     margin: 3% 0 5%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #service-content-title-container {
@@ -36,7 +37,7 @@
     }
 
     .service-intro-txt {
-        font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+        font-size: clamp(0.85rem, 1.8vw, 1.8rem);
         letter-spacing: 0.1em;
         color: var(--purple);
         padding: 5% 0 5% 5%;
@@ -49,10 +50,10 @@
     color: var(--purple);
     color: white;
     background: linear-gradient(  var(--purple) 0%, var(--light-purple) 160%);
-    font-size: clamp(1rem, 2.8vw, 2rem);
+    font-size: clamp(0.85rem, 1.8vw, 1.8rem);
     letter-spacing: 0.08em;
     border-radius: 0.5em;
-    padding: 1%;
+    padding: 1.2em;
     margin: 5% 10% 1%;
 }
 
@@ -82,14 +83,14 @@
     
 
 .service-phrase {
-    margin: 1% 10% 3%;
-    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    margin: 1% 0 10%;
+    font-size: clamp(0.85rem, 1.8vw, 1.8rem);
     letter-spacing: 0.1em;
     color: var(--purple);
 }
 
 #services-container {
-    margin: 0 0 3%;
+    margin: 3% 0;
 }
 
 .service-div {
@@ -132,16 +133,24 @@
             border: 0.1rem solid var(--purple);
             border-radius: 25px;
             box-shadow: 0.3em 0.5em 0.5em #6666661f, 0.3em 0.5em 0.5em #7c7c7c1f;
+            font-size: clamp(0.5rem, 1.5vw, 1.3rem);
+            letter-spacing: 0.1em;
+            line-height: 1.5em;
         }
+
+#service-txt-bot {
+    width: 80%;
+    margin-bottom: 3%;
+}
 
 #pricing-link {
     width: fit-content;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     #service-top-intro {
         flex-direction: column;
-        margin: 7% 2% 5%;
+        margin: 7% 2% 0;
     }
 
         #service-top-img {
@@ -168,7 +177,7 @@
 
     .service-div {
         flex-direction: column;
-        margin: 10% 0;
+        margin: 7% 0 5%;
     }
 
         .service-item {
@@ -176,7 +185,39 @@
         }
 
         .service-img {
-            width: 35vw;
-            height: 35vw;
+            width: 25vw;
+            height: 25vw;
         }
+
+        .service-item-txt {
+            font-size: clamp(1rem, 1.5vw, 1.3rem);
+            line-height: 1.7em;
+        }
+}
+
+@media screen and (max-width: 520px) {
+    #service-top-img {
+        width: 90vw;
+    }
+
+    #service-content-quote-div {
+        margin: 5% 3%;
+    }
+
+    .service-img {
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .service-item {
+        width: 93%;
+    }
+
+    .service-item-txt {
+        padding: 0.8em;
+    }
+
+    #service-txt-bot {
+        width: 93%;
+    }
 }

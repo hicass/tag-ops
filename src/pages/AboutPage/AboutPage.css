@@ -1,6 +1,7 @@
 #about-page {
     margin-top: 3%;
     z-index: -1;
+    overflow-x: hidden;
 }
 
     #about-intro {
@@ -23,7 +24,7 @@
                 #about-h1 {
                     color: var(--purple);
                     font-family: 'Tahoma', sans-serif;
-                    font-size: clamp(2rem, 4.8vw, 5rem);
+                    font-size: clamp(2rem, 4.8vw, 4.8rem);
                     left: -8vw;
                     letter-spacing: 0.2em;
                     position: absolute;

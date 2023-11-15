@@ -560,4 +560,12 @@
         #dashboard-img {
             width: 90vw;
         }
+
+    #landing-testimonials-section {
+        margin: 10% 0 5%;
+    }
+
+    #testimonials-container {
+        margin: 5% 3%;
+    }
 }

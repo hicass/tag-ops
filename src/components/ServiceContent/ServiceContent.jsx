@@ -85,7 +85,7 @@ export default function ServicePage({
             <div className="service-item">
               <p className="bio-name">{service1Title}</p>
               <div className="service-item-txt">
-                <p className="bio-role">{service1Txt}</p>
+                <p>{service1Txt}</p>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function ServicePage({
             <div className="service-item">
               <p className="bio-name">{service2Title}</p>
               <div className="service-item-txt">
-                <p className="bio-role">{service2Txt}</p>
+                <p>{service2Txt}</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function ServicePage({
             <div className="service-item">
               <p className="bio-name">{service3Title}</p>
               <div className="service-item-txt">
-                <p className="bio-role">{service3Txt}</p>
+                <p>{service3Txt}</p>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function ServicePage({
             <div className="service-item">
               <p className="bio-name">{service4Title}</p>
               <div className="service-item-txt">
-                <p className="bio-role">{service4Txt}</p>
+                <p>{service4Txt}</p>
               </div>
             </div>
           </div>
@@ -145,14 +145,14 @@ export default function ServicePage({
             <div className="service-item">
               <p className="bio-name">{service5Title}</p>
               <div className="service-item-txt">
-                <p className="bio-role">{service5Txt}</p>
+                <p>{service5Txt}</p>
               </div>
             </div>
           </div>
         </Fade>
       </div>
 
-      <p className="service-phrase">
+      <p id="service-txt-bot" className="service-phrase">
         For more information and pricing details, get in touch with us to craft
         the ideal solution for your business.
       </p>

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-import { Fade } from 'react-awesome-reveal';
-import { Slide } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 import sfImage from '../../assets/images/about-page/about-sf.jpg';
 import courtneyImage from '../../assets/images/about-page/courtney-profile.jpeg';
 import danielImage from '../../assets/images/about-page/daniel-soyinka.png';
