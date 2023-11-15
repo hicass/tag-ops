@@ -5,8 +5,6 @@
   tagoperations.com - v2
 </h1>
 
-<p align='center'>- STILL IN DEVELOPMENT-</p>
-<p align='center'>Please see demo below...</p>
 <p align='center'>
   The second version of <a href='https://www.tagoperations.com/' target='_blank'>tagoperations.com</a> built with <a href='https://react.dev/' target='_blank'>React.</a> Designed and developed by me.
 </p>
@@ -29,9 +27,10 @@
 
 **Server:** 
 - [Node](https://nodejs.org/en)
+- [Express](https://expressjs.com/)
 
 **Deployment:**
-- Still in development
+- [Heroku](https://www.heroku.com/home)
 
 # Features
 
@@ -42,7 +41,6 @@
 - Links for convenient access to the contact page from various sections of the website.
 - A footer that offers additional navigation options for the website.
 - A beautiful, modern, and engaging design that aligns perfectly with the company's personality.
-- For smaller screens, a distinctive navigation hamburger icon that activates the navigation menu.
 - Utilized [Email.JS](https://www.emailjs.com/) for the contact form to enable customization of received emails and their layout, tailored to the business's preferences.
 
 
@@ -54,7 +52,6 @@
 
 ![Footer](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9jMTNnZm9xNTN3Nm8yb3pubWc3dWM3YWVvcXluMTI2ZzgzaGR0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XE62bBcvSR8MujdTEU/giphy.gif)
 
-![Mobile Nav](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3NkaG1yZGVqYzl3bm92MDN5ZnJiYjZvaDAxaTJ5b2J2Zjc2bnR6aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dF63FCSPSn0RsF1F08/giphy.gif)
 
 # Color Reference
 
