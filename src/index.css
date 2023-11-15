@@ -106,6 +106,12 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+    *,
+    *::before,
+    *::after {
+        transition: all none;
+    }
+
     .added-txt-container {
         margin: 3%;
     }

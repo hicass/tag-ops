@@ -4,7 +4,7 @@ import smallPurpleLogo from '../../assets/images/logos/tag-sm-logo-purple.png';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
 import './NavBar.css';
 
-export default function NavBar() {
+export default function NavBar({ shouldAnimate }) {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [navActive, setNavActive] = useState(false);
 
@@ -48,7 +48,7 @@ export default function NavBar() {
             </p>
 
             {isDropdownVisible && (
-              <DropdownMenu handleMouseLeave={handleMouseLeave} />
+              <DropdownMenu handleMouseLeave={handleMouseLeave} shouldAnimate={shouldAnimate} />
             )}
           </div>
 

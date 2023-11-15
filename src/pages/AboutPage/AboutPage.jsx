@@ -8,10 +8,86 @@ import alloLogo from '../../assets/images/about-page/allo-hire.png';
 import synLogo from '../../assets/images/about-page/synergic-group.png';
 import './AboutPage.css';
 
-export default function AboutPage() {
+export default function AboutPage({ shouldAnimate }) {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0 });
   });
+
+  const storySection = (
+    <div id="about-story-section">
+      <h2 id="story-h2">Our Story</h2>
+
+      <p className="added-txt">
+        Tag Ops was founded on the principle that high-quality operational
+        support is crucial for every business. We recognize that not all
+        companies require a dedicated Operations leader to oversee extensive
+        back-office projects or managing routine tasks like payroll and
+        invoicing.
+      </p>
+
+      <p className="added-txt">
+        Our approach at Tag Ops is different. We provide a customizable model
+        designed to meet you where you are in your business journey while
+        offering the flexibility to scale as needed. We take the time to
+        understand your unique requirements, conducting in-depth research to
+        identify the most cost-effective tools, processes, and policies. Our
+        goal is to dig deep with our clients, assisting in the establishment of
+        a robust infrastructure that ensures your company runs smoothly without
+        exhausting your resources.
+      </p>
+    </div>
+  );
+
+  const courtneySection = (
+    <div className="team-member">
+      <img
+        className="team-member-img"
+        src={courtneyImage}
+        alt="Courtney Walters"
+      />
+
+      <div className="member-bio">
+        <h3 className="bio-name">Courtney Walters</h3>
+
+        <h4 className="bio-role">Founder & Operations Consultant</h4>
+
+        <p className="bio-txt">
+          I founded Tag Ops after 8 years of working in Operations in the San
+          Francisco startup sphere. From Accounting & HR SaaS companies, to
+          FinTech and Cryptocurrency, to Recruiting. Regardless of the industry,
+          I'm incredibly adaptable, enjoy learning, and love problem solving. I
+          have a fiery passion for helping small companies strategize and stay
+          organized amongst the chaos of scaling. In my spare time, I enjoy
+          hiking around the Bay Area, playing dnd and strategy-based RPGs, and
+          spending time with my family, friends, and partner.
+        </p>
+      </div>
+    </div>
+  );
+
+  const danielSection = (
+    <div className="team-member">
+      <img
+        className="team-member-img"
+        src={danielImage}
+        alt="Courtney Walters"
+      />
+
+      <div className="member-bio">
+        <h3 className="bio-name">Daniel Soyinka</h3>
+
+        <h4 className="bio-role">Bookkeeping Consultant</h4>
+
+        <p className="bio-txt">
+          With a degree in Accounting, I have gained experience across various
+          roles in different companies, from internee to CEO. I have been
+          helping numerous small and medium-size businesses grow by serving as a
+          remote Bookkeeper. I possess comprehensive expertise in all aspects of
+          Accounting and Bookkeeping.
+        </p>
+      </div>
+    </div>
+  );
 
   return (
     <section id="about-page">
@@ -42,30 +118,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <Fade>
-        <div id="about-story-section">
-          <h2 id="story-h2">Our Story</h2>
-
-          <p className="added-txt">
-            Tag Ops was founded on the principle that high-quality operational
-            support is crucial for every business. We recognize that not all
-            companies require a dedicated Operations leader to oversee extensive
-            back-office projects or managing routine tasks like payroll and
-            invoicing.
-          </p>
-
-          <p className="added-txt">
-            Our approach at Tag Ops is different. We provide a customizable
-            model designed to meet you where you are in your business journey
-            while offering the flexibility to scale as needed. We take the time
-            to understand your unique requirements, conducting in-depth research
-            to identify the most cost-effective tools, processes, and policies.
-            Our goal is to dig deep with our clients, assisting in the
-            establishment of a robust infrastructure that ensures your company
-            runs smoothly without exhausting your resources.
-          </p>
-        </div>
-      </Fade>
+      {shouldAnimate ? <Fade>{storySection}</Fade> : storySection}
 
       <div id="about-mission-section">
         <div id="blob-container">
@@ -98,56 +151,15 @@ export default function AboutPage() {
         </div>
 
         <div id="team-container">
-          <Fade cascade direction="left" duration="900" triggerOnce="true">
-            <div className="team-member">
-              <img
-                className="team-member-img"
-                src={courtneyImage}
-                alt="Courtney Walters"
-              />
-
-              <div className="member-bio">
-                <h3 className="bio-name">Courtney Walters</h3>
-
-                <h4 className="bio-role">Founder & Operations Consultant</h4>
-
-                <p className="bio-txt">
-                  I founded Tag Ops after 8 years of working in Operations in
-                  the San Francisco startup sphere. From Accounting & HR SaaS
-                  companies, to FinTech and Cryptocurrency, to Recruiting.
-                  Regardless of the industry, I'm incredibly adaptable, enjoy
-                  learning, and love problem solving. I have a fiery passion for
-                  helping small companies strategize and stay organized amongst
-                  the chaos of scaling. In my spare time, I enjoy hiking around
-                  the Bay Area, playing dnd and strategy-based RPGs, and
-                  spending time with my family, friends, and partner.
-                </p>
-              </div>
-            </div>
-
-            <div className="team-member">
-              <img
-                className="team-member-img"
-                src={danielImage}
-                alt="Courtney Walters"
-              />
-
-              <div className="member-bio">
-                <h3 className="bio-name">Daniel Soyinka</h3>
-
-                <h4 className="bio-role">Bookkeeping Consultant</h4>
-
-                <p className="bio-txt">
-                  With a degree in Accounting, I have gained experience across
-                  various roles in different companies, from internee to CEO. I
-                  have been helping numerous small and medium-size businesses
-                  grow by serving as a remote Bookkeeper. I possess
-                  comprehensive expertise in all aspects of Accounting and
-                  Bookkeeping.
-                </p>
-              </div>
-            </div>
-          </Fade>
+          {shouldAnimate ? (
+            <Fade cascade direction="left" duration="900" triggerOnce="true">
+              {courtneySection} {danielSection}
+            </Fade>
+          ) : (
+            <>
+              {courtneySection} {danielSection}
+            </>
+          )}
         </div>
 
         <h2 id="team-h2">Partnering with:</h2>

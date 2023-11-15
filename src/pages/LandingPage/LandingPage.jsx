@@ -7,21 +7,7 @@ import dashboardImg from '../../assets/images/landing-page/dashboard.png';
 import teamworkLogo from '../../assets/images/landing-page/teamwork-logo.png';
 import './LandingPage.css';
 
-export default function LandingPage() {
-  const [shouldFade, setShouldFade] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setShouldFade(window.innerWidth > 770);
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+export default function LandingPage({ shouldAnimate }) {
   const flowSection = (
     <div id="landing-flow-section">
       <h2 id="flow-h2">The Tag Ops Flow:</h2>
@@ -40,15 +26,6 @@ export default function LandingPage() {
       <FlowCarousel />
 
       <div id="dashboard-container">
-        <div id="dashboard-txt" className="added-txt-container">
-          <p className="added-txt">
-            Utilizing our project management software, we empower your business
-            with analytics, not only on tasks and project budget but also a
-            breakdown on how much time is spent on any specific task within any
-            division (Finance, HR, Ops) every quarter.
-          </p>
-        </div>
-
         <div id="dashboard-container-right">
           <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
           <div id="dashboard-credit">
@@ -67,6 +44,14 @@ export default function LandingPage() {
               />
             </a>
           </div>
+        </div>
+        <div id="dashboard-txt" className="added-txt-container">
+          <p className="added-txt">
+            Utilizing our project management software, we empower your business
+            with analytics, not only on tasks and project budget but also a
+            breakdown on how much time is spent on any specific task within any
+            division (Finance, HR, Ops) every quarter.
+          </p>
         </div>
       </div>
     </div>
@@ -149,7 +134,7 @@ export default function LandingPage() {
 
       <div id="blue-bar"></div>
 
-      {shouldFade ? <Fade>{flowSection}</Fade> : flowSection}
+      {shouldAnimate ? <Fade>{flowSection}</Fade> : flowSection}
 
       <div id="landing-testimonials-section">
         <h2 id="testimonials-h2">See what our clients are saying...</h2>

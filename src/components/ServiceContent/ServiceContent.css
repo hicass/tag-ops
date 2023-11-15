@@ -87,6 +87,7 @@
     font-size: clamp(0.85rem, 1.8vw, 1.8rem);
     letter-spacing: 0.1em;
     color: var(--purple);
+    width: 80%;
 }
 
 #services-container {
@@ -127,6 +128,10 @@
         background: white;
         color: var(--purple);
     }
+
+        .service-title {
+            margin-left: 2%;
+        }
 
         .service-item-txt {
             padding: 1.2em;
