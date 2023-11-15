@@ -38,7 +38,7 @@ export default function ContactPage() {
         .then(
           (result) => {
             if (result.status === 200) {
-              handleSubmit();
+              handleSuccessfulSubmit();
             }
           },
           (error) => {
@@ -50,10 +50,10 @@ export default function ContactPage() {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (message, timeoutTime) => {
     setEmailMessage('');
     setFormSubmitted(true);
-    setConfirmationMessage('Thank you for reaching out, we will be in touch!');
+    setConfirmationMessage(message);
     setIsHRChecked(false);
     setIsOpsChecked(false);
     setIsFinChecked(false);
@@ -65,27 +65,18 @@ export default function ContactPage() {
       service: '',
     });
 
-    setTimeout(() => setFormSubmitted(false), 7000);
+    setTimeout(() => setFormSubmitted(false), timeoutTime);
+  };
+
+  const handleSuccessfulSubmit = () => {
+    const successMessage = 'Thank you for reaching out, we will be in touch!';
+    handleSubmit(successMessage, 7000);
   };
 
   const handleError = () => {
-    setEmailMessage('');
-    setFormSubmitted(true);
-    setConfirmationMessage(
-      "Oops! Something isn't working, email us directly instead."
-    );
-    setIsHRChecked(false);
-    setIsOpsChecked(false);
-    setIsFinChecked(false);
-    setFormValues({
-      name: '',
-      email: '',
-      company: '',
-      message: '',
-      service: '',
-    });
-
-    setTimeout(() => setFormSubmitted(false), 7000);
+    const errorMessage =
+      "Oops! Something isn't working, email us directly instead.";
+    handleSubmit(errorMessage, 8000);
   };
 
   const validateEmail = (e) => {
