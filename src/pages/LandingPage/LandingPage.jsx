@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 import FlowCarousel from '../../components/FlowCarousel/FlowCarousel';
@@ -7,6 +8,70 @@ import teamworkLogo from '../../assets/images/landing-page/teamwork-logo.png';
 import './LandingPage.css';
 
 export default function LandingPage() {
+  const [shouldFade, setShouldFade] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShouldFade(window.innerWidth > 770);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const flowSection = (
+    <div id="landing-flow-section">
+      <h2 id="flow-h2">The Tag Ops Flow:</h2>
+
+      <div className="added-txt-container">
+        <p className="added-txt">
+          Our Tag Ops Flow is your key to achieving streamlined success. It's a
+          carefully crafted process that ensures we fully understand your unique
+          needs and deliver precisely the support your business requires. From
+          start to finish, we maintain clear communication, set expectations,
+          and provide accountability, so you can focus on what you do best –
+          growing your business.
+        </p>
+      </div>
+
+      <FlowCarousel />
+
+      <div id="dashboard-container">
+        <div id="dashboard-txt" className="added-txt-container">
+          <p className="added-txt">
+            Utilizing our project management software, we empower your business
+            with analytics, not only on tasks and project budget but also a
+            breakdown on how much time is spent on any specific task within any
+            division (Finance, HR, Ops) every quarter.
+          </p>
+        </div>
+
+        <div id="dashboard-container-right">
+          <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
+          <div id="dashboard-credit">
+            <p className="added-txt">Powered by:</p>
+            <a
+              href="https://www.teamwork.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="partner-logo-link"
+            >
+              <img
+                id="teamwork-logo"
+                className="partner-logo"
+                src={teamworkLogo}
+                alt="Synergeic Group Logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section id="landing-page">
       <div id="landing-page-intro">
@@ -82,58 +147,9 @@ export default function LandingPage() {
         </p>
       </div>
 
-      {/* TODO */}
       <div id="blue-bar"></div>
 
-      <Fade>
-        <div id="landing-flow-section">
-          <h2 id="flow-h2">The Tag Ops Flow:</h2>
-
-          <div className="added-txt-container">
-            <p className="added-txt">
-              Our Tag Ops Flow is your key to achieving streamlined success.
-              It's a carefully crafted process that ensures we fully understand
-              your unique needs and deliver precisely the support your business
-              requires. From start to finish, we maintain clear communication,
-              set expectations, and provide accountability, so you can focus on
-              what you do best – growing your business.
-            </p>
-          </div>
-
-          <FlowCarousel />
-
-          <div id="dashboard-container">
-            <div id="dashboard-txt" className="added-txt-container">
-              <p className="added-txt">
-                Utilizing our project management software, we empower your
-                business with analytics, not only on tasks and project budget,
-                but also a breakdown on how much time is spent on any specific
-                task within any division (Finance, HR, Ops) every quarter.
-              </p>
-            </div>
-
-            <div id="dashboard-container-right">
-              <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
-              <div id="dashboard-credit">
-                <p className="added-txt">Powered by:</p>
-                <a
-                  href="https://www.teamwork.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="partner-logo-link"
-                >
-                  <img
-                    id="teamwork-logo"
-                    className="partner-logo"
-                    src={teamworkLogo}
-                    alt="Synergeic Group Logo"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Fade>
+      {shouldFade ? <Fade>{flowSection}</Fade> : flowSection}
 
       <div id="landing-testimonials-section">
         <h2 id="testimonials-h2">See what our clients are saying...</h2>
