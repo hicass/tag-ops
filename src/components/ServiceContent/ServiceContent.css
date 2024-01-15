@@ -15,7 +15,7 @@
 }
 
     #service-content-title {
-        font-size: clamp(2rem, 4.8vw, 5rem);
+        font-size: clamp(2rem, 3.8vw, 3.8rem);
         letter-spacing: 0.2em;
         text-align: center;
     }
@@ -25,22 +25,24 @@
     align-items: center;
     justify-content: center;
     margin: 7% 10% 3%;
+    max-width: 70rem;
 }
 
     #service-top-img {
         border-radius: 25px;
         box-shadow: 0.3em 0.5em 0.5em #6969691f, 0.3em 0.5em 0.5em #7070701f;
-        height: 25vw;
-        width: 35vw;
+        height: 18vw;
+        width: 28vw;
         object-fit: cover;
-        margin-left: 5%;
+        margin-right: 10%;
     }
 
     .service-intro-txt {
         font-size: clamp(0.85rem, 1.8vw, 1.8rem);
+        line-height: 1.5em;
         letter-spacing: 0.1em;
         color: var(--purple);
-        padding: 5% 0 5% 5%;
+        padding: 5% 0 5% 10%;
         margin-left: 10%;
         border-left: 1.5px solid var(--purple)
     }
@@ -54,7 +56,8 @@
     letter-spacing: 0.08em;
     border-radius: 0.5em;
     padding: 1.2em;
-    margin: 5% 10% 1%;
+    margin: 5% 10%;
+    max-width: 70rem;
 }
 
     #service-content-quote {
@@ -83,11 +86,7 @@
     
 
 .service-phrase {
-    margin: 1% 0 10%;
-    font-size: clamp(0.85rem, 1.8vw, 1.8rem);
-    letter-spacing: 0.1em;
-    color: var(--purple);
-    width: 80%;
+    margin: 7% 0 0;
 }
 
 #services-container {
@@ -98,6 +97,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 80rem;
 }
 
 .reverse {
@@ -108,8 +108,8 @@
         overflow: hidden;
         border-radius: 50%;
         box-shadow: 0.3em 0.5em 0.5em #0000001f, 0.3em 0.5em 0.5em #0000001f;
-        width: 15vw;
-        height: 15vw;
+        width: 12vw;
+        height: 12vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -146,6 +146,7 @@
 #service-txt-bot {
     width: 80%;
     margin-bottom: 3%;
+    max-width: 70rem;
 }
 
 #pricing-link {

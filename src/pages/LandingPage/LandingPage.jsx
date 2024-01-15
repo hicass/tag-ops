@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AttentionSeeker, Fade } from 'react-awesome-reveal';
 import FlowCarousel from '../../components/FlowCarousel/FlowCarousel';
@@ -26,32 +25,35 @@ export default function LandingPage({ shouldAnimate }) {
       <FlowCarousel />
 
       <div id="dashboard-container">
-        <div id="dashboard-container-right">
-          <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
-          <div id="dashboard-credit">
-            <p className="added-txt">Powered by:</p>
-            <a
-              href="https://www.teamwork.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="partner-logo-link"
-            >
-              <img
-                id="teamwork-logo"
-                className="partner-logo"
-                src={teamworkLogo}
-                alt="Synergeic Group Logo"
-              />
-            </a>
+        <h2 id="flow-h2">Analytics Empowerment</h2>
+        <div id="dashboard-container-bottom">
+          <div id="dashboard-container-right">
+            <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
+            <div id="dashboard-credit">
+              <p className="added-txt">Powered by:</p>
+              <a
+                href="https://www.teamwork.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="partner-logo-link"
+              >
+                <img
+                  id="teamwork-logo"
+                  className="partner-logo"
+                  src={teamworkLogo}
+                  alt="Synergeic Group Logo"
+                />
+              </a>
+            </div>
           </div>
-        </div>
-        <div id="dashboard-txt" className="added-txt-container">
-          <p className="added-txt">
-            Utilizing our project management software, we empower your business
-            with analytics, not only on tasks and project budget but also a
-            breakdown on how much time is spent on any specific task within any
-            division (Finance, HR, Ops) every quarter.
-          </p>
+          <div id="dashboard-txt" className="added-txt-container">
+            <p className="added-txt">
+              Utilizing our project management software, we empower your
+              business with analytics, not only on tasks and project budget but
+              also a breakdown on how much time is spent on any specific task
+              within any division (Finance, HR, Ops) every quarter.
+            </p>
+          </div>
         </div>
       </div>
     </div>

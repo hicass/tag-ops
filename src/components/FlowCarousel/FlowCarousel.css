@@ -1,11 +1,11 @@
 .flow-swiper {
-    width: 70%;
-    padding: 5%;
+    width: 50%;
+    padding: 5% 5% 2%;
     height: 20vw;
 }
 
     .flow-card {
-        height: 20vw;
+        height: 18vw;
     }
 
     .swiper-slide {

@@ -2,7 +2,15 @@
     margin-top: 3%;
     z-index: -1;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+    #about-top {
+        display: flex;
+        max-width: 100rem;
+    }
 
     #about-intro {
         display: flex;
@@ -84,7 +92,7 @@
 
 
             #mission-p {
-                font-size: clamp(1.2rem, 2vw, 2.4rem);
+                font-size: clamp(1.2rem, 1.8vw, 2.3em);
                 margin: 2% 5% 0;
                 line-height: 1.4em;
                 letter-spacing: 0.12em;
@@ -98,7 +106,7 @@
             content: "";
             border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
             display: block;
-            height: 25vw;
+            height: 20vw;
             width: 45vw;
             will-change: border-radius, transform, opacity;
         }
@@ -142,7 +150,7 @@
             flex-direction: row;
             margin-bottom: 10%;
             gap: 10%;
-            width: 100%;
+            max-width: 35rem;
             justify-content: center;
         }
 
@@ -155,7 +163,7 @@
                 .team-member-img {
                     border-radius: 50%;
                     box-shadow: 0.3em 0.5em 0.5em #0000001f, 0.3em 0.5em 0.5em #0000001f;
-                    width: 15vw;
+                    width: 12vw;
                 }
 
                 .member-bio {
@@ -166,6 +174,7 @@
                     margin-top: 7%;
                     padding: 1.2em;
                     width: 38vw;
+                    max-width: 30rem;
                 }
 
                     .bio-name {
@@ -209,8 +218,8 @@
         }
 
         .partner-logo {
-            max-width: 30vw;
-            max-height: 10vw;
+            max-width: 20vw;
+            max-height: 5vw;
             margin: 0 10%;
             object-fit: contain;
         }
