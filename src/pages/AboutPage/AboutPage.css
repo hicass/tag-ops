@@ -45,7 +45,7 @@
                 border-radius: 25px;
                 box-shadow: 0.2em 0.2em 0 var(--light-blue);
                 color: white;
-                font-size: clamp(0.85rem, 1.8vw, 1.8rem);
+                font-size: clamp(0.85rem, 1.8vw, 1.6rem);
                 letter-spacing: 0.12em;
                 line-height: 1.4em;
                 margin: 3% 5% 0 15%;
@@ -92,10 +92,11 @@
 
 
             #mission-p {
-                font-size: clamp(1.2rem, 1.8vw, 2.3em);
-                margin: 2% 5% 0;
+                font-size: clamp(1.2rem, 1.7vw, 2em);
+                margin: 2% 15% 0;
                 line-height: 1.4em;
                 letter-spacing: 0.12em;
+                text-align: center;
             }
 
     #blob-container {

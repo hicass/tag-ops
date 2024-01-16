@@ -30,7 +30,9 @@ export default function LandingPage({ shouldAnimate }) {
           <div id="dashboard-container-right">
             <img id="dashboard-img" src={dashboardImg} alt="User dashboard" />
             <div id="dashboard-credit">
-              <p className="added-txt">Powered by:</p>
+              <p className="added-txt" id="teamwork-txt">
+                Powered by:
+              </p>
               <a
                 href="https://www.teamwork.com/"
                 target="_blank"
@@ -209,20 +211,20 @@ export default function LandingPage({ shouldAnimate }) {
             </p>
           </div>
         </div>
-      </div>
+        
+        <div id="landing-bottom" className="added-txt-container">
+          <p id="landing-added-txt" className="added-txt">
+            We simplify business operations, offering tailored solutions that
+            scale with your needs. From optimizing processes to strategic
+            guidance, Tag Ops empowers businesses of all sizes to thrive while
+            we handle the operational heavy lifting. Discover a smarter way to
+            run your company with Tag Ops.
+          </p>
 
-      <div id="landing-bottom" className="added-txt-container">
-        <p id="landing-added-txt" className="added-txt">
-          We simplify business operations, offering tailored solutions that
-          scale with your needs. From optimizing processes to strategic
-          guidance, Tag Ops empowers businesses of all sizes to thrive while we
-          handle the operational heavy lifting. Discover a smarter way to run
-          your company with Tag Ops.
-        </p>
-
-        <Link id="talk-link-landing" className="lets-talk-link" to="/contact">
-          Let's talk!
-        </Link>
+          <Link id="talk-link-landing" className="lets-talk-link" to="/contact">
+            Let's talk!
+          </Link>
+        </div>
       </div>
     </section>
   );

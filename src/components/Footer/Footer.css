@@ -6,6 +6,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 0 1%;
 }
 
     #footer-left {
@@ -17,6 +18,7 @@ footer {
         #footer-logo {
             margin: 5% 5% 0;
             width: 17vw;
+            max-width: 15rem;
         }
 
         .footer-col {
@@ -26,7 +28,7 @@ footer {
         }
 
             .footer-col-label {
-                font-size: clamp(1rem, 1.8vw, 1.8rem);
+                font-size: clamp(1rem, 1.8vw, 1.6rem);
                 font-weight: bold;
                 letter-spacing: 0.2em;
             }

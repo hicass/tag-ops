@@ -45,7 +45,8 @@
                 }
 
         #intro-logo {
-            width: 30%;
+            width: 25%;
+            max-width: 25rem;
         }
 
 
@@ -122,13 +123,14 @@
                 }
 
             .solutions-bottom-txt {
-                font-size: clamp(1.3rem, 2vw, 1.8rem);
+                font-size: clamp(1.4rem, 2.1vw, 1.6rem);
                 letter-spacing: 0.1em;
-                margin: 1% 10%;
+                margin: 1% 5%;
+                max-width: 65rem;
             }
 
                 .solutions-bottom-accent-txt {
-                    font-size: clamp(1rem, 2.3vw, 2.3rem);
+                    font-size: clamp(1rem, 2.3vw, 2rem);
                     font-weight: bold;
                 }
 
@@ -181,6 +183,7 @@
 
             #dashboard-img {
                 width: 25vw;
+                max-width: 22rem;
                 padding: 3%;
                 height: fit-content;
                 border: 0.22rem solid var(--purple);
@@ -196,7 +199,12 @@
 
             #teamwork-logo {
                 width: 15vw;
+                max-width: 15rem;
                 margin-left: 18%;
+            }
+
+            #teamwork-txt {
+                margin-left: 3%;
             }
 
     #landing-testimonials-section {
@@ -222,6 +230,7 @@
                 flex-direction: row;
                 margin: 3% 3% 0;
                 max-width: 65rem;
+                padding: 1.5%;
             }
 
                 .testimonial-card {
